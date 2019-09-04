@@ -112,7 +112,7 @@ class anggotabpdAPIController extends AppBaseController
 
         $anggotabpds = $this->anggotabpdRepository->create($input);
 
-        return $this->sendResponse($anggotabpds->toArray(), 'Anggotabpd saved successfully');
+        return $this->sendResponse($anggotabpds->toArray(), 'Anggotabpd berhasil ditambahkan');
     }
 
     /**
@@ -224,7 +224,7 @@ class anggotabpdAPIController extends AppBaseController
 
         $anggotabpd = $this->anggotabpdRepository->update($input, $id);
 
-        return $this->sendResponse($anggotabpd->toArray(), 'anggotabpd updated successfully');
+        return $this->sendResponse($anggotabpd->toArray(), 'anggotabpd berhasil diperbarui');
     }
 
     /**

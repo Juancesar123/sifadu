@@ -58,7 +58,7 @@ class PerkebunanController extends AppBaseController
 
         $perkebunan->input_perkebunan_koordinate($input);
         $perkebunan->save();
-        Flash::success('Perkebunan saved successfully.');
+        Flash::success('Perkebunan berhasil ditambahkan.');
 
         return redirect(route('perkebunans.index'));
     }
@@ -126,7 +126,7 @@ class PerkebunanController extends AppBaseController
 
         $perkebunan = $this->perkebunanRepository->update($request->all(), $id);
 
-        Flash::success('Perkebunan updated successfully.');
+        Flash::success('Perkebunan berhasil diperbarui.');
 
         return redirect(route('perkebunans.index'));
     }

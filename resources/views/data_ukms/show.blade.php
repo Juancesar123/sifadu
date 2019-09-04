@@ -11,7 +11,7 @@
             <div class="box-body">
                 <div class="row" style="padding-left: 20px">
                     @include('data_ukms.show_fields')
-                    <a href="{!! route('dataUkms.index') !!}" class="btn btn-default">Back</a>
+                    <a href="{!! route('dataUkms.index') !!}" class="btn btn-default">Kembali</a>
                 </div>
             </div>
         </div>

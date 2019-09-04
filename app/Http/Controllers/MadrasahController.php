@@ -58,7 +58,7 @@ class MadrasahController extends AppBaseController
 
         $madrasah = $this->madrasahRepository->create($input);
 
-        Flash::success('madrasah saved successfully.');
+        Flash::success('madrasah berhasil ditambahkan.');
 
         return redirect(route('madrasah.index'));
     }
@@ -123,7 +123,7 @@ class MadrasahController extends AppBaseController
 
         $madrasah = $this->madrasahRepository->update($request->all(), $id);
 
-        Flash::success('madrasah updated successfully.');
+        Flash::success('madrasah berhasil diperbarui.');
 
         return redirect(route('madrasah.index'));
     }

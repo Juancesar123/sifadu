@@ -3,7 +3,7 @@
 <section class="content-header">
     <h1>
         GIS DESA
-        <a class="pull-right btn btn-primary pull-right" style="" href="{{url('home')}}">Back</a>
+        <a class="pull-right btn btn-primary pull-right" style="" href="{{url('home')}}">Kembali</a>
     </h1>
 </section>
 <div class="content">

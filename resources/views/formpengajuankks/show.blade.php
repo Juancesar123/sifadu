@@ -46,7 +46,7 @@
                         <a href="{{ route('detailkk.edit', $data->nomor_surat) }}" class="btn btn-sm btn-primary"><i class="fa fa-pencil-square-o"></i>
                         Edit Nama Kepala Keluarga <strong>{{ isset($data->datapenduduk) && $data->datapenduduk != null ? $data->datapenduduk->nama_lengkap : '-' }}</strong>
                         </a>
-                        <a href="{!! route('formpengajuankk.index') !!}" class="btn btn-default">{{__('Back') }}</a>
+                        <a href="{!! route('formpengajuankk.index') !!}" class="btn btn-default">{{__('Kembali') }}</a>
                     </div>
                 </div>
             </div>

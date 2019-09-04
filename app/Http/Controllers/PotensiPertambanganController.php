@@ -58,7 +58,7 @@ class PotensiPertambanganController extends AppBaseController
 
         $potensiPertambangan->input_koordinate($input);
         $potensiPertambangan->save();
-        Flash::success('Potensi Pertambangan saved successfully.');
+        Flash::success('Potensi Pertambangan berhasil ditambahkan.');
 
         return redirect(route('potensiPertambangans.index'));
     }
@@ -126,7 +126,7 @@ class PotensiPertambanganController extends AppBaseController
 
         $potensiPertambangan = $this->potensiPertambanganRepository->update($request->all(), $id);
 
-        Flash::success('Potensi Pertambangan updated successfully.');
+        Flash::success('Potensi Pertambangan berhasil diperbarui.');
 
         return redirect(route('potensiPertambangans.index'));
     }

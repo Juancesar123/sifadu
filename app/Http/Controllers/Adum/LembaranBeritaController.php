@@ -95,7 +95,7 @@ class LembaranBeritaController extends Controller
         try {
             $this->lembaranBeritaRepository->create($request->all());
 
-            return redirect(route('lember'))->with('success', 'Lembaran dan berita desa saved successfully');
+            return redirect(route('lember'))->with('success', 'Lembaran dan berita desa berhasil ditambahkan');
         } catch(\Exception $e) {
             Flash::error($e->getMessage());
 

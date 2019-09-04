@@ -58,7 +58,7 @@ class PeternakanController extends AppBaseController
 
         $peternakan->input_peternakan_koordinate($input);
         $peternakan->save();
-        Flash::success('Peternakan saved successfully.');
+        Flash::success('Peternakan berhasil ditambahkan.');
 
         return redirect(route('peternakans.index'));
     }
@@ -126,7 +126,7 @@ class PeternakanController extends AppBaseController
 
         $peternakan = $this->peternakanRepository->update($request->all(), $id);
 
-        Flash::success('Peternakan updated successfully.');
+        Flash::success('Peternakan berhasil diperbarui.');
 
         return redirect(route('peternakans.index'));
     }

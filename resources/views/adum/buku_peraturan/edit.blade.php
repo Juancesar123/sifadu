@@ -23,7 +23,7 @@
                     </div>
                     <div class="form-group col-sm-4">
                         {!! Form::label('abp_tanggal_tetap', 'Tanggal Ditetapkan') !!}
-                        {!! Form::date('abp_tanggal_tetap', null, ['class' => 'form-control','required' => 'required']) !!}
+                        {!! Form::date('abp_tanggal_tetap', isset($data->abp_tanggal_tetap) ? $data->abp_tanggal_tetap : null, ['class' => 'form-control','required' => 'required']) !!}
                     </div>
                     <div class="form-group col-sm-4">
                         {!! Form::label('abp_uraian_singkat', 'Uraian Singkat') !!}
@@ -31,19 +31,19 @@
                     </div>
                     <div class="form-group col-sm-4">
                         {!! Form::label('abp_tanggal_sepakat', 'Tanggal Disepakati') !!}
-                        {!! Form::date('abp_tanggal_sepakat', null, ['class' => 'form-control','required' => 'required']) !!}
+                        {!! Form::date('abp_tanggal_sepakat', isset($data->abp_tanggal_sepakat) ? $data->abp_tanggal_sepakat : null, ['class' => 'form-control','required' => 'required']) !!}
                     </div>
                     <div class="form-group col-sm-4">
                         {!! Form::label('abp_tanggal_lapor', 'Tanggal Dilaporkan') !!}
-                        {!! Form::date('abp_tanggal_lapor', null, ['class' => 'form-control','required' => 'required']) !!}
+                        {!! Form::date('abp_tanggal_lapor', isset($data->abp_tanggal_lapor) ? $data->abp_tanggal_lapor : null, ['class' => 'form-control','required' => 'required']) !!}
                     </div>
                     <div class="form-group col-sm-4">
                         {!! Form::label('abp_tanggal_undang_lembaran', 'Tanggal Diundangkan dalam Lembaran Desa') !!}
-                        {!! Form::date('abp_tanggal_undang_lembaran', null, ['class' => 'form-control','required' => 'required']) !!}
+                        {!! Form::date('abp_tanggal_undang_lembaran', isset($data->abp_tanggal_undang_lembaran) ? $data->abp_tanggal_undang_lembaran : null, ['class' => 'form-control','required' => 'required']) !!}
                     </div>                    
                     <div class="form-group col-sm-4">
                         {!! Form::label('abp_tanggal_undang_berita', 'Tanggal Diundangkan dalam Berita Desa') !!}
-                        {!! Form::date('abp_tanggal_undang_berita', null, ['class' => 'form-control','required' => 'required']) !!}
+                        {!! Form::date('abp_tanggal_undang_berita', isset($data->abp_tanggal_undang_berita) ? $data->abp_tanggal_undang_berita : null, ['class' => 'form-control','required' => 'required']) !!}
                     </div>
                     <div class="form-group col-sm-4">
                         {!! Form::label('abp_keterangan', 'Keterangan') !!}
@@ -52,8 +52,8 @@
 
                     <!-- Submit Field -->
                     <div class="form-group col-sm-12">
-                        {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-                        <a href="{!! route('adumkeputusan') !!}" class="btn btn-default">Cancel</a>
+                        {!! Form::submit('Simpan', ['class' => 'btn btn-primary']) !!}
+                        <a href="{!! route('adumkeputusan') !!}" class="btn btn-default">Batalkan</a>
                     </div>
                 {!! Form::close() !!}
                 </div>

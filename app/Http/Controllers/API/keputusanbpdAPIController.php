@@ -112,7 +112,7 @@ class keputusanbpdAPIController extends AppBaseController
 
         $keputusanbpds = $this->keputusanbpdRepository->create($input);
 
-        return $this->sendResponse($keputusanbpds->toArray(), 'Keputusanbpd saved successfully');
+        return $this->sendResponse($keputusanbpds->toArray(), 'Keputusanbpd berhasil ditambahkan');
     }
 
     /**
@@ -224,7 +224,7 @@ class keputusanbpdAPIController extends AppBaseController
 
         $keputusanbpd = $this->keputusanbpdRepository->update($input, $id);
 
-        return $this->sendResponse($keputusanbpd->toArray(), 'keputusanbpd updated successfully');
+        return $this->sendResponse($keputusanbpd->toArray(), 'keputusanbpd berhasil diperbarui');
     }
 
     /**

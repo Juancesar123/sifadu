@@ -112,7 +112,7 @@ class suratpengantarktpAPIController extends AppBaseController
 
         $suratpengantarktps = $this->suratpengantarktpRepository->create($input);
 
-        return $this->sendResponse($suratpengantarktps->toArray(), 'Suratpengantarktp saved successfully');
+        return $this->sendResponse($suratpengantarktps->toArray(), 'Suratpengantarktp berhasil ditambahkan');
     }
 
     /**
@@ -224,7 +224,7 @@ class suratpengantarktpAPIController extends AppBaseController
 
         $suratpengantarktp = $this->suratpengantarktpRepository->update($input, $id);
 
-        return $this->sendResponse($suratpengantarktp->toArray(), 'suratpengantarktp updated successfully');
+        return $this->sendResponse($suratpengantarktp->toArray(), 'suratpengantarktp berhasil diperbarui');
     }
 
     /**

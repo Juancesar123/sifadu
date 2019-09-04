@@ -6,7 +6,7 @@
             Surat Disdukcapil
         </h1>
         <h1 class="pull-right">
-                <a href="{!! route('suratpengantarktps.index') !!}" class="btn btn-default">Back</a>
+                <a href="{!! route('suratpengantarktps.index') !!}" class="btn btn-default">Kembali</a>
                 <button class="btn btn-primary" id="cetak"><i class="fa fa-print"></i> Cetak</button>
         </h1>
     </section>

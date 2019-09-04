@@ -112,7 +112,7 @@ class kegiatanpembangunanAPIController extends AppBaseController
 
         $kegiatanpembangunans = $this->kegiatanpembangunanRepository->create($input);
 
-        return $this->sendResponse($kegiatanpembangunans->toArray(), 'Kegiatanpembangunan saved successfully');
+        return $this->sendResponse($kegiatanpembangunans->toArray(), 'Kegiatanpembangunan berhasil ditambahkan');
     }
 
     /**
@@ -224,7 +224,7 @@ class kegiatanpembangunanAPIController extends AppBaseController
 
         $kegiatanpembangunan = $this->kegiatanpembangunanRepository->update($input, $id);
 
-        return $this->sendResponse($kegiatanpembangunan->toArray(), 'kegiatanpembangunan updated successfully');
+        return $this->sendResponse($kegiatanpembangunan->toArray(), 'kegiatanpembangunan berhasil diperbarui');
     }
 
     /**

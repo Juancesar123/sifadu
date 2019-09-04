@@ -58,7 +58,7 @@ class DataBudiDayaHutanController extends AppBaseController
 
         $dataBudiDayaHutan->input_koordinate($input);
         $dataBudiDayaHutan->save();
-        Flash::success('Data Budi Daya Hutan saved successfully.');
+        Flash::success('Data Budi Daya Hutan berhasil ditambahkan.');
 
         return redirect(route('dataBudiDayaHutans.index'));
     }
@@ -126,7 +126,7 @@ class DataBudiDayaHutanController extends AppBaseController
 
         $dataBudiDayaHutan = $this->dataBudiDayaHutanRepository->update($request->all(), $id);
 
-        Flash::success('Data Budi Daya Hutan updated successfully.');
+        Flash::success('Data Budi Daya Hutan berhasil diperbarui.');
 
         return redirect(route('dataBudiDayaHutans.index'));
     }

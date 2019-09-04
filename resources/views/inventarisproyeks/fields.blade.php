@@ -31,18 +31,22 @@
 <!-- Tahun Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('tahun', 'Tahun:') !!}
-    {!! Form::text('tahun', null, ['class' => 'form-control']) !!}
+    {!! Form::text('tahun', null, ['class' => 'form-control', 'maxlength'=>4, 'minlength'=>4]) !!}
 </div>
 
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
-    {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-    <a href="{!! route('inventarisproyeks.index') !!}" class="btn btn-default">Cancel</a>
+    {!! Form::submit('Simpan', ['class' => 'btn btn-primary']) !!}
+    <a href="{!! route('inventarisproyeks.index') !!}" class="btn btn-default">Batalkan</a>
 </div>
+
 @section('scripts')
 <script>
 $('document').ready(function(){
     $('.money').mask('000.000.000.000.000,00', {reverse: true});
+    $('#tahun').keyup(function() {
+      $(this).val($(this).val().replace(/[^\d.-]/g, ''))
+    })
 })
 </script>
 @endsection

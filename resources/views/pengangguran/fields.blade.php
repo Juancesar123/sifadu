@@ -1,7 +1,7 @@
 <!-- No KKl Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('nik', 'NIK :') !!}
-    {!! Form::number('nik', null, ['class' => 'form-control', 'required']) !!}
+    {!! Form::text('nik', null, ['class' => 'form-control', 'maxlength'=>16, 'minlength'=>16, 'required']) !!}
 </div>
 
 <!-- Nama ibu Field -->
@@ -19,7 +19,7 @@
 <!-- alamat Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('usia', 'Usia :') !!}
-    {!! Form::text('usia', null, ['class' => 'form-control ' , 'required']) !!}
+    {!! Form::text('usia', null, ['class' => 'form-control ', 'maxlength'=>3, 'required']) !!}
 </div>
 
 <!-- Jenis pengangguran Field -->
@@ -63,14 +63,18 @@
 
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
-    {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-    <a href="{!! route('pengangguran.index') !!}" class="btn btn-default">Cancel</a>
+    {!! Form::submit('Simpan', ['class' => 'btn btn-primary']) !!}
+    <a href="{!! route('pengangguran.index') !!}" class="btn btn-default">Batalkan</a>
 </div>
 
 @section('scripts')
 <script>
 $(document).ready(function() {
     $('.js-example-basic-single').select2();
+    // $('#nik, #usia').blur(function() {
+    $('#nik').keyup(function() {
+      $(this).val($(this).val().replace(/[^\d.-]/g, ''))
+    })
 });
 </script>
 @endsection

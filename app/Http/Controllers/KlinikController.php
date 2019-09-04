@@ -58,7 +58,7 @@ class KlinikController extends AppBaseController
 
         $klinik = $this->klinikRepository->create($input);
 
-        Flash::success('klinik saved successfully.');
+        Flash::success('klinik berhasil ditambahkan.');
 
         return redirect(route('klinik.index'));
     }
@@ -123,7 +123,7 @@ class KlinikController extends AppBaseController
 
         $klinik = $this->klinikRepository->update($request->all(), $id);
 
-        Flash::success('klinik updated successfully.');
+        Flash::success('klinik berhasil diperbarui.');
 
         return redirect(route('klinik.index'));
     }

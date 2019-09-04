@@ -11,7 +11,7 @@
             <div class="box-body">
                 <div class="row" style="padding-left: 20px">
                     @include('data_warungs.show_fields')
-                    <a href="{!! route('datawarung.index') !!}" class="btn btn-default">Back</a>
+                    <a href="{!! route('datawarung.index') !!}" class="btn btn-default">Kembali</a>
                 </div>
             </div>
         </div>

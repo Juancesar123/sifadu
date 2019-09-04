@@ -19,7 +19,7 @@
 <!-- Tanggal Lahir Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('tanggal_lahir', 'Tanggal Lahir:') !!}
-    {!! Form::date('tanggal_lahir', null, ['class' => 'form-control']) !!}
+    {!! Form::date('tanggal_lahir', isset($data->tanggal_lahir) ? $data->tanggal_lahir : null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Agama Field -->
@@ -43,7 +43,7 @@
 <!-- Tanggal Keputusan Pengangkatan Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('tanggal_keputusan_pengangkatan', 'Tanggal Keputusan Pengangkatan:') !!}
-    {!! Form::date('tanggal_keputusan_pengangkatan', null, ['class' => 'form-control']) !!}
+    {!! Form::date('tanggal_keputusan_pengangkatan', isset($data->tanggal_keputusan_pengangkatan) ? $data->tanggal_keputusan_pengangkatan : null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Nomor Keputusan Pemberentian Field -->
@@ -55,7 +55,7 @@
 <!-- Tanggal Keputusan Pemberentian Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('tanggal_keputusan_pemberentian', 'Tanggal Keputusan Pemberentian:') !!}
-    {!! Form::date('tanggal_keputusan_pemberentian', null, ['class' => 'form-control']) !!}
+    {!! Form::date('tanggal_keputusan_pemberentian', isset($data->tanggal_keputusan_pemberentian) ? $data->tanggal_keputusan_pemberentian : null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Keterangan Field -->
@@ -66,6 +66,6 @@
 
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
-    {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-    <a href="{!! route('anggotabpds.index') !!}" class="btn btn-default">Cancel</a>
+    {!! Form::submit('Simpan', ['class' => 'btn btn-primary']) !!}
+    <a href="{!! route('anggotabpds.index') !!}" class="btn btn-default">Batalkan</a>
 </div>

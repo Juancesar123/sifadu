@@ -112,7 +112,7 @@ class rencanapembangunanAPIController extends AppBaseController
 
         $rencanapembangunans = $this->rencanapembangunanRepository->create($input);
 
-        return $this->sendResponse($rencanapembangunans->toArray(), 'Rencanapembangunan saved successfully');
+        return $this->sendResponse($rencanapembangunans->toArray(), 'Rencanapembangunan berhasil ditambahkan');
     }
 
     /**
@@ -224,7 +224,7 @@ class rencanapembangunanAPIController extends AppBaseController
 
         $rencanapembangunan = $this->rencanapembangunanRepository->update($input, $id);
 
-        return $this->sendResponse($rencanapembangunan->toArray(), 'rencanapembangunan updated successfully');
+        return $this->sendResponse($rencanapembangunan->toArray(), 'rencanapembangunan berhasil diperbarui');
     }
 
     /**

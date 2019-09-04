@@ -56,7 +56,7 @@ class pendidikanController extends AppBaseController
 
         $pendidikan = $this->pendidikanRepository->create($input);
 
-        Flash::success('Pendidikan saved successfully.');
+        Flash::success('Pendidikan berhasil ditambahkan.');
 
         return redirect(route('pendidikans.index'));
     }
@@ -121,7 +121,7 @@ class pendidikanController extends AppBaseController
 
         $pendidikan = $this->pendidikanRepository->update($request->all(), $id);
 
-        Flash::success('Pendidikan updated successfully.');
+        Flash::success('Pendidikan berhasil diperbarui.');
 
         return redirect(route('pendidikans.index'));
     }

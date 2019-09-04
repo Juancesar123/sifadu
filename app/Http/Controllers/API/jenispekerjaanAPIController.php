@@ -112,7 +112,7 @@ class jenispekerjaanAPIController extends AppBaseController
 
         $jenispekerjaans = $this->jenispekerjaanRepository->create($input);
 
-        return $this->sendResponse($jenispekerjaans->toArray(), 'Jenispekerjaan saved successfully');
+        return $this->sendResponse($jenispekerjaans->toArray(), 'Jenispekerjaan berhasil ditambahkan');
     }
 
     /**
@@ -224,7 +224,7 @@ class jenispekerjaanAPIController extends AppBaseController
 
         $jenispekerjaan = $this->jenispekerjaanRepository->update($input, $id);
 
-        return $this->sendResponse($jenispekerjaan->toArray(), 'jenispekerjaan updated successfully');
+        return $this->sendResponse($jenispekerjaan->toArray(), 'jenispekerjaan berhasil diperbarui');
     }
 
     /**

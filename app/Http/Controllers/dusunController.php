@@ -58,7 +58,7 @@ class dusunController extends AppBaseController
 
         $dusun->input_dusun_koordinate($input);
         $dusun->save();
-        Flash::success('Dusun saved successfully.');
+        Flash::success('Dusun berhasil ditambahkan.');
 
         return redirect(route('dusuns.index'));
     }
@@ -126,7 +126,7 @@ class dusunController extends AppBaseController
 
         $dusun = $this->dusunRepository->update($request->all(), $id);
 
-        Flash::success('Dusun updated successfully.');
+        Flash::success('Dusun berhasil diperbarui.');
 
         return redirect(route('dusuns.index'));
     }

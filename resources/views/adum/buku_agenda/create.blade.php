@@ -23,7 +23,7 @@
                     </div>
                     <div class="form-group col-sm-4">
                         {!! Form::label('aba_tanggal_surat', 'Tanggal Surat') !!}
-                        {!! Form::date('aba_tanggal_surat', null, ['class' => 'form-control','required' => 'required']) !!}
+                        {!! Form::date('aba_tanggal_surat', isset($data->aba_tanggal_surat) ? $data->aba_tanggal_surat : null, ['class' => 'form-control','required' => 'required']) !!}
                     </div>
                     <div class="form-group col-sm-4">
                         {!! Form::label('aba_pengirim_surat', 'Pengirim Surat') !!}
@@ -44,8 +44,8 @@
 
                     <!-- Submit Field -->
                     <div class="form-group col-sm-12">
-                        {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-                        <a href="{!! route('adumagenda') !!}" class="btn btn-default">Cancel</a>
+                        {!! Form::submit('Simpan', ['class' => 'btn btn-primary']) !!}
+                        <a href="{!! route('adumagenda') !!}" class="btn btn-default">Batalkan</a>
                     </div>
                 {!! Form::close() !!}
                 </div>

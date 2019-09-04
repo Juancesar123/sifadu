@@ -11,7 +11,7 @@
             <div class="box-body">
                 <div class="row" style="padding-left: 20px">
                     @include('angka_putus_sekolahs.show_fields')
-                    <a href="{!! route('angkaPutusSekolahs.index') !!}" class="btn btn-default">Back</a>
+                    <a href="{!! route('angkaPutusSekolahs.index') !!}" class="btn btn-default">Kembali</a>
                 </div>
             </div>
         </div>

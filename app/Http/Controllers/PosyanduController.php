@@ -58,7 +58,7 @@ class PosyanduController extends AppBaseController
 
         $posyandu = $this->posyanduRepository->create($input);
 
-        Flash::success('posyandu saved successfully.');
+        Flash::success('posyandu berhasil ditambahkan.');
 
         return redirect(route('posyandu.index'));
     }
@@ -123,7 +123,7 @@ class PosyanduController extends AppBaseController
 
         $posyandu = $this->posyanduRepository->update($request->all(), $id);
 
-        Flash::success('posyandu updated successfully.');
+        Flash::success('posyandu berhasil diperbarui.');
 
         return redirect(route('posyandu.index'));
     }

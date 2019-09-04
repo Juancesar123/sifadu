@@ -58,7 +58,7 @@ class PenyakitMenularController extends AppBaseController
 
         $penyakitmenular = $this->penyakitmenularRepository->create($input);
 
-        Flash::success('penyakitmenular saved successfully.');
+        Flash::success('penyakitmenular berhasil ditambahkan.');
 
         return redirect(route('penyakitmenular.index'));
     }
@@ -123,7 +123,7 @@ class PenyakitMenularController extends AppBaseController
 
         $penyakitmenular = $this->penyakitmenularRepository->update($request->all(), $id);
 
-        Flash::success('penyakitmenular updated successfully.');
+        Flash::success('penyakitmenular berhasil diperbarui.');
 
         return redirect(route('penyakitmenular.index'));
     }

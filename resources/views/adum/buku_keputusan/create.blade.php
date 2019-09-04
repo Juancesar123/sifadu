@@ -31,13 +31,13 @@
                     </div>
                     <div class="form-group col-sm-4">
                         {!! Form::label('abk_nomor_tanggal_lapor', 'Tanggal Keputusan') !!}
-                        {!! Form::date('abk_nomor_tanggal_lapor', null, ['class' => 'form-control','required' => 'required']) !!}
+                        {!! Form::date('abk_nomor_tanggal_lapor', isset($data->abk_nomor_tanggal) ? $data->abk_nomor_tanggal : null, ['class' => 'form-control','required' => 'required']) !!}
                     </div>
 
                     <!-- Submit Field -->
                     <div class="form-group col-sm-12">
-                        {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-                        <a href="{!! route('adumkeputusan') !!}" class="btn btn-default">Cancel</a>
+                        {!! Form::submit('Simpan', ['class' => 'btn btn-primary']) !!}
+                        <a href="{!! route('adumkeputusan') !!}" class="btn btn-default">Batalkan</a>
                     </div>
                 {!! Form::close() !!}
                 </div>

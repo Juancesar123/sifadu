@@ -57,7 +57,7 @@ class suratketerangandesaController extends AppBaseController
 
         $suratketerangandesa = $this->suratketerangandesaRepository->create($input);
 
-        Flash::success('Suratketerangandesa saved successfully.');
+        Flash::success('Suratketerangandesa berhasil ditambahkan.');
 
         return redirect(route('suratketerangandesas.index'));
     }
@@ -122,7 +122,7 @@ class suratketerangandesaController extends AppBaseController
 
         $suratketerangandesa = $this->suratketerangandesaRepository->update($request->all(), $id);
 
-        Flash::success('Suratketerangandesa updated successfully.');
+        Flash::success('Suratketerangandesa berhasil diperbarui.');
 
         return redirect(route('suratketerangandesas.index'));
     }

@@ -58,7 +58,7 @@ class penduduklahirController extends AppBaseController
 
         $penduduklahir = $this->penduduklahirRepository->create($input);
 
-        Flash::success('Penduduklahir saved successfully.');
+        Flash::success('Penduduklahir berhasil ditambahkan.');
 
         return redirect(route('penduduklahirs.index'));
     }
@@ -123,7 +123,7 @@ class penduduklahirController extends AppBaseController
 
         $penduduklahir = $this->penduduklahirRepository->update($request->all(), $id);
 
-        Flash::success('Penduduklahir updated successfully.');
+        Flash::success('Penduduklahir berhasil diperbarui.');
 
         return redirect(route('penduduklahirs.index'));
     }

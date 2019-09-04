@@ -56,7 +56,7 @@ class jenispekerjaanController extends AppBaseController
 
         $jenispekerjaan = $this->jenispekerjaanRepository->create($input);
 
-        Flash::success('Jenispekerjaan saved successfully.');
+        Flash::success('Jenispekerjaan berhasil ditambahkan.');
 
         return redirect(route('jenispekerjaans.index'));
     }
@@ -121,7 +121,7 @@ class jenispekerjaanController extends AppBaseController
 
         $jenispekerjaan = $this->jenispekerjaanRepository->update($request->all(), $id);
 
-        Flash::success('Jenispekerjaan updated successfully.');
+        Flash::success('Jenispekerjaan berhasil diperbarui.');
 
         return redirect(route('jenispekerjaans.index'));
     }

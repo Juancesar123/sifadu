@@ -112,7 +112,7 @@ class pendidikanAPIController extends AppBaseController
 
         $pendidikans = $this->pendidikanRepository->create($input);
 
-        return $this->sendResponse($pendidikans->toArray(), 'Pendidikan saved successfully');
+        return $this->sendResponse($pendidikans->toArray(), 'Pendidikan berhasil ditambahkan');
     }
 
     /**
@@ -224,7 +224,7 @@ class pendidikanAPIController extends AppBaseController
 
         $pendidikan = $this->pendidikanRepository->update($input, $id);
 
-        return $this->sendResponse($pendidikan->toArray(), 'pendidikan updated successfully');
+        return $this->sendResponse($pendidikan->toArray(), 'pendidikan berhasil diperbarui');
     }
 
     /**

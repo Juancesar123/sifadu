@@ -58,7 +58,7 @@ class TKController extends AppBaseController
 
         $tk = $this->tkRepository->create($input);
 
-        Flash::success('TK saved successfully.');
+        Flash::success('TK berhasil ditambahkan.');
 
         return redirect(route('tk.index'));
     }
@@ -123,7 +123,7 @@ class TKController extends AppBaseController
 
         $tk = $this->tkRepository->update($request->all(), $id);
 
-        Flash::success('TK updated successfully.');
+        Flash::success('TK berhasil diperbarui.');
 
         return redirect(route('tk.index'));
     }

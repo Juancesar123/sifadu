@@ -7,13 +7,13 @@
 <!-- Tanggal Pengiriman Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('tanggal_pengiriman', 'Tanggal Pengiriman:') !!}
-    {!! Form::date('tanggal_pengiriman', null, ['class' => 'form-control']) !!}
+    {!! Form::date('tanggal_pengiriman', isset($data->tanggal_pengiriman) ? $data->tanggal_pengiriman : null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Tanggal Surat Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('tanggal_surat', 'Tanggal Surat:') !!}
-    {!! Form::date('tanggal_surat', null, ['class' => 'form-control']) !!}
+    {!! Form::date('tanggal_surat', isset($data->tanggal_surat) ? $data->tanggal_surat : null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Nomor Surat Field -->
@@ -42,6 +42,6 @@
 
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
-    {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-    <a href="{!! route('dataekspedisis.index') !!}" class="btn btn-default">Cancel</a>
+    {!! Form::submit('Simpan', ['class' => 'btn btn-primary']) !!}
+    <a href="{!! route('dataekspedisis.index') !!}" class="btn btn-default">Batalkan</a>
 </div>

@@ -112,7 +112,7 @@ class agamaAPIController extends AppBaseController
 
         $agamas = $this->agamaRepository->create($input);
 
-        return $this->sendResponse($agamas->toArray(), 'Agama saved successfully');
+        return $this->sendResponse($agamas->toArray(), 'Agama berhasil ditambahkan');
     }
 
     /**
@@ -224,7 +224,7 @@ class agamaAPIController extends AppBaseController
 
         $agama = $this->agamaRepository->update($input, $id);
 
-        return $this->sendResponse($agama->toArray(), 'agama updated successfully');
+        return $this->sendResponse($agama->toArray(), 'agama berhasil diperbarui');
     }
 
     /**

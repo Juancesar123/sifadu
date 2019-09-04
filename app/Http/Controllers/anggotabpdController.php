@@ -56,7 +56,7 @@ class anggotabpdController extends AppBaseController
 
         $anggotabpd = $this->anggotabpdRepository->create($input);
 
-        Flash::success('Anggotabpd saved successfully.');
+        Flash::success('Anggotabpd berhasil ditambahkan.');
 
         return redirect(route('anggotabpds.index'));
     }
@@ -121,7 +121,7 @@ class anggotabpdController extends AppBaseController
 
         $anggotabpd = $this->anggotabpdRepository->update($request->all(), $id);
 
-        Flash::success('Anggotabpd updated successfully.');
+        Flash::success('Anggotabpd berhasil diperbarui.');
 
         return redirect(route('anggotabpds.index'));
     }

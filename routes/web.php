@@ -13,7 +13,7 @@
 
 
 Route::get('/', function () {
-    return view('auth/login');
+	return \Auth::user() ? redirect('/home') : view('auth/login');
 });
 
 // Authentication Routes...
@@ -354,4 +354,4 @@ DATE : 24 juni 2019
 VIEW :customDatas
 NOTE : custom data GIS
 */
-Route::resource('customDatas', 'CustomDataController'); 
+Route::resource('customDatas', 'CustomDataController');

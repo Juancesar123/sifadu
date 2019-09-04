@@ -56,7 +56,7 @@ class agendabpdController extends AppBaseController
 
         $agendabpd = $this->agendabpdRepository->create($input);
 
-        Flash::success('Agenda BPBD saved successfully.');
+        Flash::success('Agenda BPBD berhasil ditambahkan.');
 
         return redirect(route('agendabpds.index'));
     }
@@ -121,7 +121,7 @@ class agendabpdController extends AppBaseController
 
         $agendabpd = $this->agendabpdRepository->update($request->all(), $id);
 
-        Flash::success('Agenda BPBD updated successfully.');
+        Flash::success('Agenda BPBD berhasil diperbarui.');
 
         return redirect(route('agendabpds.index'));
     }

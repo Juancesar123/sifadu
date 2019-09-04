@@ -58,7 +58,7 @@ class SMPController extends AppBaseController
 
         $smp = $this->smpRepository->create($input);
 
-        Flash::success('SMP saved successfully.');
+        Flash::success('SMP berhasil ditambahkan.');
 
         return redirect(route('smp.index'));
     }
@@ -123,7 +123,7 @@ class SMPController extends AppBaseController
 
         $smp = $this->smpRepository->update($request->all(), $id);
 
-        Flash::success('SMP updated successfully.');
+        Flash::success('SMP berhasil diperbarui.');
 
         return redirect(route('smp.index'));
     }

@@ -56,7 +56,7 @@ class AngkaPutusSekolahController extends AppBaseController
 
         $angkaPutusSekolah = $this->angkaPutusSekolahRepository->create($input);
 
-        Flash::success('Angka Putus Sekolah saved successfully.');
+        Flash::success('Angka Putus Sekolah berhasil ditambahkan.');
 
         return redirect(route('angkaPutusSekolahs.index'));
     }
@@ -121,7 +121,7 @@ class AngkaPutusSekolahController extends AppBaseController
 
         $angkaPutusSekolah = $this->angkaPutusSekolahRepository->update($request->all(), $id);
 
-        Flash::success('Angka Putus Sekolah updated successfully.');
+        Flash::success('Angka Putus Sekolah berhasil diperbarui.');
 
         return redirect(route('angkaPutusSekolahs.index'));
     }

@@ -54,8 +54,8 @@
 
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
-    {!! Form::submit('Save', ['id' => 'button_submit', 'class' => 'btn btn-primary']) !!}
-    <a href="{!! route('datawarung.index') !!}" class="btn btn-default">Cancel</a>
+    {!! Form::submit('Simpan', ['id' => 'button_submit', 'class' => 'btn btn-primary']) !!}
+    <a href="{!! route('datawarung.index') !!}" class="btn btn-default">Batalkan</a>
 </div>
 
 @include('leaflet.input_custom_js')

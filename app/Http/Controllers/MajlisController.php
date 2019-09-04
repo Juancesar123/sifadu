@@ -58,7 +58,7 @@ class MajlisController extends AppBaseController
 
         $majlis = $this->majlisRepository->create($input);
 
-        Flash::success('majlis saved successfully.');
+        Flash::success('majlis berhasil ditambahkan.');
 
         return redirect(route('majlis.index'));
     }
@@ -123,7 +123,7 @@ class MajlisController extends AppBaseController
 
         $majlis = $this->majlisRepository->update($request->all(), $id);
 
-        Flash::success('majlis updated successfully.');
+        Flash::success('majlis berhasil diperbarui.');
 
         return redirect(route('majlis.index'));
     }

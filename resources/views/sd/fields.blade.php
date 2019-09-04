@@ -6,7 +6,7 @@
 
 <!-- penanggungjawab Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('penanggungjawab', 'Penanggungjawab :') !!}
+    {!! Form::label('penanggungjawab', 'Penanggung jawab :') !!}
     {!! Form::text('penanggungjawab', null, ['class' => 'form-control ' , 'required']) !!}
 </div>
 
@@ -30,8 +30,8 @@
 
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
-    {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-    <a href="{!! route('sd.index') !!}" class="btn btn-default">Cancel</a>
+    {!! Form::submit('Simpan', ['class' => 'btn btn-primary']) !!}
+    <a href="{!! route('sd.index') !!}" class="btn btn-default">Batalkan</a>
 </div>
 
 @section('scripts')

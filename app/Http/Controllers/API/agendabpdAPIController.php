@@ -112,7 +112,7 @@ class agendabpdAPIController extends AppBaseController
 
         $agendabpds = $this->agendabpdRepository->create($input);
 
-        return $this->sendResponse($agendabpds->toArray(), 'Agendabpd saved successfully');
+        return $this->sendResponse($agendabpds->toArray(), 'Agendabpd berhasil ditambahkan');
     }
 
     /**
@@ -224,7 +224,7 @@ class agendabpdAPIController extends AppBaseController
 
         $agendabpd = $this->agendabpdRepository->update($input, $id);
 
-        return $this->sendResponse($agendabpd->toArray(), 'agendabpd updated successfully');
+        return $this->sendResponse($agendabpd->toArray(), 'agendabpd berhasil diperbarui');
     }
 
     /**

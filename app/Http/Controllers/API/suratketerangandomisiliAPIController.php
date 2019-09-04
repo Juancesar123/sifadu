@@ -112,7 +112,7 @@ class suratketerangandomisiliAPIController extends AppBaseController
 
         $suratketerangandomisilis = $this->suratketerangandomisiliRepository->create($input);
 
-        return $this->sendResponse($suratketerangandomisilis->toArray(), 'Suratketerangandomisili saved successfully');
+        return $this->sendResponse($suratketerangandomisilis->toArray(), 'Suratketerangandomisili berhasil ditambahkan');
     }
 
     /**
@@ -224,7 +224,7 @@ class suratketerangandomisiliAPIController extends AppBaseController
 
         $suratketerangandomisili = $this->suratketerangandomisiliRepository->update($input, $id);
 
-        return $this->sendResponse($suratketerangandomisili->toArray(), 'suratketerangandomisili updated successfully');
+        return $this->sendResponse($suratketerangandomisili->toArray(), 'suratketerangandomisili berhasil diperbarui');
     }
 
     /**

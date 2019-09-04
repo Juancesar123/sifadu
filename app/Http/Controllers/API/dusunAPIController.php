@@ -112,7 +112,7 @@ class dusunAPIController extends AppBaseController
 
         $dusuns = $this->dusunRepository->create($input);
 
-        return $this->sendResponse($dusuns->toArray(), 'Dusun saved successfully');
+        return $this->sendResponse($dusuns->toArray(), 'Dusun berhasil ditambahkan');
     }
 
     /**
@@ -224,7 +224,7 @@ class dusunAPIController extends AppBaseController
 
         $dusun = $this->dusunRepository->update($input, $id);
 
-        return $this->sendResponse($dusun->toArray(), 'dusun updated successfully');
+        return $this->sendResponse($dusun->toArray(), 'dusun berhasil diperbarui');
     }
 
     /**

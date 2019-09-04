@@ -96,7 +96,7 @@ class EkspedisiController extends Controller
         try {
             $this->ekspedisiRepository->create($request->all());
 
-            return redirect(route('ekspedisi'))->with('success', 'Ekspedisi desa saved successfully');
+            return redirect(route('ekspedisi'))->with('success', 'Ekspedisi desa berhasil ditambahkan');
         } catch(\Exception $e) {
             Flash::error($e->getMessage());
 

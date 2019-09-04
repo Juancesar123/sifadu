@@ -13,72 +13,45 @@ use Response;
 
 class DataUkmController extends AppBaseController
 {
-    /** @var  DataUkmRepository */
-    private $dataUkmRepository;
+	private $dataUkmRepository;
 
-    public function __construct(DataUkmRepository $dataUkmRepo)
-    {
-        $this->dataUkmRepository = $dataUkmRepo;
-        $this->middleware('auth');
-    }
+	public function __construct(DataUkmRepository $dataUkmRepo)
+	{
+		$this->dataUkmRepository = $dataUkmRepo;
+		$this->middleware('auth');
+	}
 
-    /**
-     * Display a listing of the DataUkm.
-     *
-     * @param DataUkmDataTable $dataUkmDataTable
-     * @return Response
-     */
-    public function index(DataUkmDataTable $dataUkmDataTable)
-    {
-        return $dataUkmDataTable->render('data_ukms.index');
-    }
+	public function index(DataUkmDataTable $dataUkmDataTable) {
+		return $dataUkmDataTable->render('data_ukms.index');
+	}
 
-    /**
-     * Show the form for creating a new DataUkm.
-     *
-     * @return Response
-     */
     public function create()
     {
-        return view('data_ukms.create');
+    	return view('data_ukms.create');
     }
 
-    /**
-     * Store a newly created DataUkm in storage.
-     *
-     * @param CreateDataUkmRequest $request
-     *
-     * @return Response
-     */
     public function store(CreateDataUkmRequest $request)
     {
-        $input = $request->all();
+    	$input = $request->all();
 
-        $dataUkm = $this->dataUkmRepository->create($input);
+    	$dataUkm = $this->dataUkmRepository->create($input);
 
-        Flash::success('Data Ukm saved successfully.');
+    	Flash::success('Data Ukm berhasil ditambahkan.');
 
-        return redirect(route('dataUkms.index'));
+    	return redirect(route('dataUkms.index'));
     }
 
-    /**
-     * Display the specified DataUkm.
-     *
-     * @param  int $id
-     *
-     * @return Response
-     */
     public function show($id)
     {
-        $dataUkm = $this->dataUkmRepository->findWithoutFail($id);
+    	$data = $this->dataUkmRepository->findWithoutFail($id);
 
-        if (empty($dataUkm)) {
-            Flash::error('Data Ukm not found');
+    	if (empty($data)) {
+    		Flash::error('Data Ukm not found');
 
-            return redirect(route('dataUkms.index'));
-        }
+    		return redirect(route('dataUkms.index'));
+    	}
 
-        return view('data_ukms.show')->with('dataUkm', $dataUkm);
+    	return view('data_ukms.show')->with('data', $data);
     }
 
     /**
@@ -90,15 +63,15 @@ class DataUkmController extends AppBaseController
      */
     public function edit($id)
     {
-        $dataUkm = $this->dataUkmRepository->findWithoutFail($id);
+    	$data = $this->dataUkmRepository->findWithoutFail($id);
 
-        if (empty($dataUkm)) {
-            Flash::error('Data Ukm not found');
+    	if (empty($data)) {
+    		Flash::error('Data Ukm not found');
 
-            return redirect(route('dataUkms.index'));
-        }
+    		return redirect(route('dataUkms.index'));
+    	}
 
-        return view('data_ukms.edit')->with('dataUkm', $dataUkm);
+    	return view('data_ukms.edit')->with('data', $data);
     }
 
     /**
@@ -111,19 +84,19 @@ class DataUkmController extends AppBaseController
      */
     public function update($id, UpdateDataUkmRequest $request)
     {
-        $dataUkm = $this->dataUkmRepository->findWithoutFail($id);
+    	$dataUkm = $this->dataUkmRepository->findWithoutFail($id);
 
-        if (empty($dataUkm)) {
-            Flash::error('Data Ukm not found');
+    	if (empty($dataUkm)) {
+    		Flash::error('Data Ukm not found');
 
-            return redirect(route('dataUkms.index'));
-        }
+    		return redirect(route('dataUkms.index'));
+    	}
 
-        $dataUkm = $this->dataUkmRepository->update($request->all(), $id);
+    	$dataUkm = $this->dataUkmRepository->update($request->all(), $id);
 
-        Flash::success('Data Ukm updated successfully.');
+    	Flash::success('Data Ukm berhasil diperbarui.');
 
-        return redirect(route('dataUkms.index'));
+    	return redirect(route('dataUkms.index'));
     }
 
     /**
@@ -135,18 +108,18 @@ class DataUkmController extends AppBaseController
      */
     public function destroy($id)
     {
-        $dataUkm = $this->dataUkmRepository->findWithoutFail($id);
+    	$dataUkm = $this->dataUkmRepository->findWithoutFail($id);
 
-        if (empty($dataUkm)) {
-            Flash::error('Data Ukm not found');
+    	if (empty($dataUkm)) {
+    		Flash::error('Data Ukm not found');
 
-            return redirect(route('dataUkms.index'));
-        }
+    		return redirect(route('dataUkms.index'));
+    	}
 
-        $this->dataUkmRepository->delete($id);
+    	$this->dataUkmRepository->delete($id);
 
-        Flash::success('Data Ukm deleted successfully.');
+    	Flash::success('Data Ukm deleted successfully.');
 
-        return redirect(route('dataUkms.index'));
+    	return redirect(route('dataUkms.index'));
     }
 }

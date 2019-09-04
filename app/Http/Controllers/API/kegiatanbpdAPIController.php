@@ -112,7 +112,7 @@ class kegiatanbpdAPIController extends AppBaseController
 
         $kegiatanbpds = $this->kegiatanbpdRepository->create($input);
 
-        return $this->sendResponse($kegiatanbpds->toArray(), 'Kegiatanbpd saved successfully');
+        return $this->sendResponse($kegiatanbpds->toArray(), 'Kegiatanbpd berhasil ditambahkan');
     }
 
     /**
@@ -224,7 +224,7 @@ class kegiatanbpdAPIController extends AppBaseController
 
         $kegiatanbpd = $this->kegiatanbpdRepository->update($input, $id);
 
-        return $this->sendResponse($kegiatanbpd->toArray(), 'kegiatanbpd updated successfully');
+        return $this->sendResponse($kegiatanbpd->toArray(), 'kegiatanbpd berhasil diperbarui');
     }
 
     /**

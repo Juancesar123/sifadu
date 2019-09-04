@@ -48,7 +48,7 @@ class CustomDataController extends AppBaseController
         $customData->input_geom($input);
         $customData->save();
 
-        Flash::success('Custom Data saved successfully.');
+        Flash::success('Custom Data berhasil ditambahkan.');
         
         $back = route($input['redirect'].'.index');
         return redirect($back);
@@ -99,7 +99,7 @@ class CustomDataController extends AppBaseController
         $customData->save();
         $customData = $this->customDataRepository->update($request->all(), $id);
 
-        Flash::success('Custom Data updated successfully.');
+        Flash::success('Custom Data berhasil diperbarui.');
 
         $back = route($request['redirect'].'.index');
         return redirect($back);

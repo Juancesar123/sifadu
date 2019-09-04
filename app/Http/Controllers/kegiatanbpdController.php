@@ -56,7 +56,7 @@ class kegiatanbpdController extends AppBaseController
 
         $kegiatanbpd = $this->kegiatanbpdRepository->create($input);
 
-        Flash::success('Kegiatanbpd saved successfully.');
+        Flash::success('Kegiatanbpd berhasil ditambahkan.');
 
         return redirect(route('kegiatanbpds.index'));
     }
@@ -121,7 +121,7 @@ class kegiatanbpdController extends AppBaseController
 
         $kegiatanbpd = $this->kegiatanbpdRepository->update($request->all(), $id);
 
-        Flash::success('Kegiatanbpd updated successfully.');
+        Flash::success('Kegiatanbpd berhasil diperbarui.');
 
         return redirect(route('kegiatanbpds.index'));
     }

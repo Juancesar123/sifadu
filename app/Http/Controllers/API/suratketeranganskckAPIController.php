@@ -112,7 +112,7 @@ class suratketeranganskckAPIController extends AppBaseController
 
         $suratketeranganskcks = $this->suratketeranganskckRepository->create($input);
 
-        return $this->sendResponse($suratketeranganskcks->toArray(), 'Suratketeranganskck saved successfully');
+        return $this->sendResponse($suratketeranganskcks->toArray(), 'Suratketeranganskck berhasil ditambahkan');
     }
 
     /**
@@ -224,7 +224,7 @@ class suratketeranganskckAPIController extends AppBaseController
 
         $suratketeranganskck = $this->suratketeranganskckRepository->update($input, $id);
 
-        return $this->sendResponse($suratketeranganskck->toArray(), 'suratketeranganskck updated successfully');
+        return $this->sendResponse($suratketeranganskck->toArray(), 'suratketeranganskck berhasil diperbarui');
     }
 
     /**

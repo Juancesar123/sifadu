@@ -58,7 +58,7 @@ class SDMIController extends AppBaseController
 
         $sd = $this->sdRepository->create($input);
 
-        Flash::success('SD/MI saved successfully.');
+        Flash::success('SD/MI berhasil ditambahkan.');
 
         return redirect(route('sd.index'));
     }
@@ -123,7 +123,7 @@ class SDMIController extends AppBaseController
 
         $sd = $this->sdRepository->update($request->all(), $id);
 
-        Flash::success('SD/MI updated successfully.');
+        Flash::success('SD/MI berhasil diperbarui.');
 
         return redirect(route('sd.index'));
     }

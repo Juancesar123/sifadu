@@ -56,7 +56,7 @@ class agamaController extends AppBaseController
 
         $agama = $this->agamaRepository->create($input);
 
-        Flash::success('Data Agama saved successfully.');
+        Flash::success('Data Agama berhasil ditambahkan.');
 
         return redirect(route('agamas.index'));
     }
@@ -121,7 +121,7 @@ class agamaController extends AppBaseController
 
         $agama = $this->agamaRepository->update($request->all(), $id);
 
-        Flash::success('Agama updated successfully.');
+        Flash::success('Agama berhasil diperbarui.');
 
         return redirect(route('agamas.index'));
     }

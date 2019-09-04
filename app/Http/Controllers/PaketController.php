@@ -58,7 +58,7 @@ class PaketController extends AppBaseController
 
         $paket = $this->paketRepository->create($input);
 
-        Flash::success('paket saved successfully.');
+        Flash::success('paket berhasil ditambahkan.');
 
         return redirect(route('paket.index'));
     }
@@ -123,7 +123,7 @@ class PaketController extends AppBaseController
 
         $paket = $this->paketRepository->update($request->all(), $id);
 
-        Flash::success('paket updated successfully.');
+        Flash::success('paket berhasil diperbarui.');
 
         return redirect(route('paket.index'));
     }

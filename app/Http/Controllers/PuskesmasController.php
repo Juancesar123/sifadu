@@ -58,7 +58,7 @@ class PuskesmasController extends AppBaseController
 
         $puskesmas = $this->puskesmasRepository->create($input);
 
-        Flash::success('puskesmas saved successfully.');
+        Flash::success('puskesmas berhasil ditambahkan.');
 
         return redirect(route('puskesmas.index'));
     }
@@ -123,7 +123,7 @@ class PuskesmasController extends AppBaseController
 
         $puskesmas = $this->puskesmasRepository->update($request->all(), $id);
 
-        Flash::success('puskesmas updated successfully.');
+        Flash::success('puskesmas berhasil diperbarui.');
 
         return redirect(route('puskesmas.index'));
     }

@@ -56,7 +56,7 @@ class parameterstatuskawinController extends AppBaseController
 
         $parameterstatuskawin = $this->parameterstatuskawinRepository->create($input);
 
-        Flash::success('Parameterstatuskawin saved successfully.');
+        Flash::success('Parameterstatuskawin berhasil ditambahkan.');
 
         return redirect(route('parameterstatuskawins.index'));
     }
@@ -121,7 +121,7 @@ class parameterstatuskawinController extends AppBaseController
 
         $parameterstatuskawin = $this->parameterstatuskawinRepository->update($request->all(), $id);
 
-        Flash::success('Parameterstatuskawin updated successfully.');
+        Flash::success('Parameterstatuskawin berhasil diperbarui.');
 
         return redirect(route('parameterstatuskawins.index'));
     }

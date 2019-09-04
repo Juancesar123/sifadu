@@ -112,7 +112,7 @@ class dataekspedisiAPIController extends AppBaseController
 
         $dataekspedisis = $this->dataekspedisiRepository->create($input);
 
-        return $this->sendResponse($dataekspedisis->toArray(), 'Dataekspedisi saved successfully');
+        return $this->sendResponse($dataekspedisis->toArray(), 'Dataekspedisi berhasil ditambahkan');
     }
 
     /**
@@ -224,7 +224,7 @@ class dataekspedisiAPIController extends AppBaseController
 
         $dataekspedisi = $this->dataekspedisiRepository->update($input, $id);
 
-        return $this->sendResponse($dataekspedisi->toArray(), 'dataekspedisi updated successfully');
+        return $this->sendResponse($dataekspedisi->toArray(), 'dataekspedisi berhasil diperbarui');
     }
 
     /**

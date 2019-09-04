@@ -3,6 +3,6 @@
     {!! Form::file('fileexcel', null, ['class' => 'form-control']) !!}
 </div>
 <div class="form-group col-sm-12">
-    {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-    <a href="{!! route('datapenduduks.index') !!}" class="btn btn-default">Cancel</a>
+    {!! Form::submit('Simpan', ['class' => 'btn btn-primary']) !!}
+    <a href="{!! route('datapenduduks.index') !!}" class="btn btn-default">Batalkan</a>
 </div>

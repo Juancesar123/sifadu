@@ -67,11 +67,11 @@
                     </div>
                     <div class="form-group col-sm-4">
                         {!! Form::label('abap_no_tanggal_pengangkatan', 'Tanggal Pengangkatan') !!}
-                        {!! Form::date('abap_no_tanggal_pengangkatan', null, ['class' => 'form-control', 'required' => 'required']) !!}
+                        {!! Form::date('abap_no_tanggal_pengangkatan', isset($data->abap_no_tanggal_pengangkatan) ? $data->abap_no_tanggal_pengangkatan : null, ['class' => 'form-control', 'required' => 'required']) !!}
                     </div>
                     <div class="form-group col-sm-4">
                         {!! Form::label('abap_no_tanggal_pemberhentian', 'Tanggal Pemberhentian') !!}
-                        {!! Form::date('abap_no_tanggal_pemberhentian', null, ['class' => 'form-control', 'required' => 'required']) !!}
+                        {!! Form::date('abap_no_tanggal_pemberhentian', isset($data->abap_no_tanggal_pemberhentian) ? $data->abap_no_tanggal_pemberhentian : null, ['class' => 'form-control', 'required' => 'required']) !!}
                     </div>
                     <div class="form-group col-sm-4">
                         {!! Form::label('abap_ket', 'Keterangan') !!}
@@ -80,8 +80,8 @@
 
                     <!-- Submit Field -->
                     <div class="form-group col-sm-12">
-                        {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-                        <a href="{!! route('adumaparat') !!}" class="btn btn-default">Cancel</a>
+                        {!! Form::submit('Simpan', ['class' => 'btn btn-primary']) !!}
+                        <a href="{!! route('adumaparat') !!}" class="btn btn-default">Batalkan</a>
                     </div>
                 {!! Form::close() !!}
                 </div>

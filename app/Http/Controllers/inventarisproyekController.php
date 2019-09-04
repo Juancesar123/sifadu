@@ -63,7 +63,7 @@ class inventarisproyekController extends AppBaseController
 
         $inventarisproyek = $this->inventarisproyekRepository->create($input);
 
-        Flash::success('Inventarisproyek saved successfully.');
+        Flash::success('Inventarisproyek berhasil ditambahkan.');
 
         return redirect(route('inventarisproyeks.index'));
     }
@@ -135,7 +135,7 @@ class inventarisproyekController extends AppBaseController
         ];
         $inventarisproyek = $this->inventarisproyekRepository->update($input, $id);
 
-        Flash::success('Inventarisproyek updated successfully.');
+        Flash::success('Inventarisproyek berhasil diperbarui.');
 
         return redirect(route('inventarisproyeks.index'));
     }

@@ -101,7 +101,7 @@ class BukuAgendaController extends Controller
 
             $this->bukuAgendaRepository->create($request->all());
 
-            return redirect(route('adumagenda'))->with('success', 'Buku agenda desa saved successfully');
+            return redirect(route('adumagenda'))->with('success', 'Buku agenda desa berhasil ditambahkan');
         } catch(\Exception $e) {
             Flash::error($e->getMessage());
 

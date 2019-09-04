@@ -58,7 +58,7 @@ class RumahSakitController extends AppBaseController
 
         $rumahsakit = $this->rumahsakitRepository->create($input);
 
-        Flash::success('Rumah Sakit saved successfully.');
+        Flash::success('Rumah Sakit berhasil ditambahkan.');
 
         return redirect(route('rumahsakit.index'));
     }
@@ -123,7 +123,7 @@ class RumahSakitController extends AppBaseController
 
         $rumahsakit = $this->rumahsakitRepository->update($request->all(), $id);
 
-        Flash::success('Rumah Sakit updated successfully.');
+        Flash::success('Rumah Sakit berhasil diperbarui.');
 
         return redirect(route('rumahsakit.index'));
     }

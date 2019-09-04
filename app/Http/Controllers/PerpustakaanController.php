@@ -58,7 +58,7 @@ class PerpustakaanController extends AppBaseController
 
         $perpustakaan = $this->perpustakaanRepository->create($input);
 
-        Flash::success('perpustakaan saved successfully.');
+        Flash::success('perpustakaan berhasil ditambahkan.');
 
         return redirect(route('perpustakaan.index'));
     }
@@ -123,7 +123,7 @@ class PerpustakaanController extends AppBaseController
 
         $perpustakaan = $this->perpustakaanRepository->update($request->all(), $id);
 
-        Flash::success('perpustakaan updated successfully.');
+        Flash::success('perpustakaan berhasil diperbarui.');
 
         return redirect(route('perpustakaan.index'));
     }

@@ -58,7 +58,7 @@ class MasjidController extends AppBaseController
 
         $masjid = $this->masjidRepository->create($input);
 
-        Flash::success('masjid saved successfully.');
+        Flash::success('masjid berhasil ditambahkan.');
 
         return redirect(route('masjid.index'));
     }
@@ -123,7 +123,7 @@ class MasjidController extends AppBaseController
 
         $masjid = $this->masjidRepository->update($request->all(), $id);
 
-        Flash::success('masjid updated successfully.');
+        Flash::success('masjid berhasil diperbarui.');
 
         return redirect(route('masjid.index'));
     }

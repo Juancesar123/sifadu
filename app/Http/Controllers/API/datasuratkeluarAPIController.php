@@ -112,7 +112,7 @@ class datasuratkeluarAPIController extends AppBaseController
 
         $datasuratkeluars = $this->datasuratkeluarRepository->create($input);
 
-        return $this->sendResponse($datasuratkeluars->toArray(), 'Datasuratkeluar saved successfully');
+        return $this->sendResponse($datasuratkeluars->toArray(), 'Datasuratkeluar berhasil ditambahkan');
     }
 
     /**
@@ -224,7 +224,7 @@ class datasuratkeluarAPIController extends AppBaseController
 
         $datasuratkeluar = $this->datasuratkeluarRepository->update($input, $id);
 
-        return $this->sendResponse($datasuratkeluar->toArray(), 'datasuratkeluar updated successfully');
+        return $this->sendResponse($datasuratkeluar->toArray(), 'datasuratkeluar berhasil diperbarui');
     }
 
     /**

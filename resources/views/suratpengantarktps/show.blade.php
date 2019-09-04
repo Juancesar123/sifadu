@@ -13,7 +13,7 @@
                     <div id="printarea">
                         @include('suratpengantarktps.show_fields')
                     </div>
-                    <a href="{!! route('suratpengantarktps.index') !!}" class="btn btn-default">Back</a>
+                    <a href="{!! route('suratpengantarktps.index') !!}" class="btn btn-default">Kembali</a>
                     <button class="btn btn-primary" id="cetak"><i class="fa fa-print"></i> Cetak</button>
                 </div>
             </div>

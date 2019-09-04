@@ -57,7 +57,7 @@ class suratketerangantidakmampuController extends AppBaseController
 
         $suratketerangantidakmampu = $this->suratketerangantidakmampuRepository->create($input);
 
-        Flash::success('Suratketerangantidakmampu saved successfully.');
+        Flash::success('Suratketerangantidakmampu berhasil ditambahkan.');
 
         return redirect(route('suratketerangantidakmampus.index'));
     }
@@ -122,7 +122,7 @@ class suratketerangantidakmampuController extends AppBaseController
 
         $suratketerangantidakmampu = $this->suratketerangantidakmampuRepository->update($request->all(), $id);
 
-        Flash::success('Suratketerangantidakmampu updated successfully.');
+        Flash::success('Suratketerangantidakmampu berhasil diperbarui.');
 
         return redirect(route('suratketerangantidakmampus.index'));
     }

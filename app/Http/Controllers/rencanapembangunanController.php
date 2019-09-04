@@ -67,7 +67,7 @@ class rencanapembangunanController extends AppBaseController
         ];
         $rencanapembangunan = $this->rencanapembangunanRepository->create($input);
 
-        Flash::success('Rencanapembangunan saved successfully.');
+        Flash::success('Rencanapembangunan berhasil ditambahkan.');
 
         return redirect(route('rencanapembangunans.index'));
     }
@@ -144,7 +144,7 @@ class rencanapembangunanController extends AppBaseController
         ];
         $rencanapembangunan = $this->rencanapembangunanRepository->update($input, $id);
 
-        Flash::success('Rencanapembangunan updated successfully.');
+        Flash::success('Rencanapembangunan berhasil diperbarui.');
 
         return redirect(route('rencanapembangunans.index'));
     }

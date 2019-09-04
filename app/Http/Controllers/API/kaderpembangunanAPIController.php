@@ -112,7 +112,7 @@ class kaderpembangunanAPIController extends AppBaseController
 
         $kaderpembangunans = $this->kaderpembangunanRepository->create($input);
 
-        return $this->sendResponse($kaderpembangunans->toArray(), 'Kaderpembangunan saved successfully');
+        return $this->sendResponse($kaderpembangunans->toArray(), 'Kaderpembangunan berhasil ditambahkan');
     }
 
     /**
@@ -224,7 +224,7 @@ class kaderpembangunanAPIController extends AppBaseController
 
         $kaderpembangunan = $this->kaderpembangunanRepository->update($input, $id);
 
-        return $this->sendResponse($kaderpembangunan->toArray(), 'kaderpembangunan updated successfully');
+        return $this->sendResponse($kaderpembangunan->toArray(), 'kaderpembangunan berhasil diperbarui');
     }
 
     /**

@@ -59,7 +59,7 @@ class kemiskinanController extends AppBaseController
 
         $kemiskinan = $this->kemiskinanRepository->create($input);
 
-        Flash::success('kemiskinan saved successfully.');
+        Flash::success('kemiskinan berhasil ditambahkan.');
 
         return redirect(route('kemiskinan.index'));
     }
@@ -124,7 +124,7 @@ class kemiskinanController extends AppBaseController
 
         $kemiskinan = $this->kemiskinanRepository->update($request->all(), $id);
 
-        Flash::success('kemiskinan updated successfully.');
+        Flash::success('kemiskinan berhasil diperbarui.');
 
         return redirect(route('kemiskinan.index'));
     }

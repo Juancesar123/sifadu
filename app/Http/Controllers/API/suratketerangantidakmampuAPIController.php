@@ -112,7 +112,7 @@ class suratketerangantidakmampuAPIController extends AppBaseController
 
         $suratketerangantidakmampus = $this->suratketerangantidakmampuRepository->create($input);
 
-        return $this->sendResponse($suratketerangantidakmampus->toArray(), 'Suratketerangantidakmampu saved successfully');
+        return $this->sendResponse($suratketerangantidakmampus->toArray(), 'Suratketerangantidakmampu berhasil ditambahkan');
     }
 
     /**
@@ -224,7 +224,7 @@ class suratketerangantidakmampuAPIController extends AppBaseController
 
         $suratketerangantidakmampu = $this->suratketerangantidakmampuRepository->update($input, $id);
 
-        return $this->sendResponse($suratketerangantidakmampu->toArray(), 'suratketerangantidakmampu updated successfully');
+        return $this->sendResponse($suratketerangantidakmampu->toArray(), 'suratketerangantidakmampu berhasil diperbarui');
     }
 
     /**

@@ -56,7 +56,7 @@ class datawarungController extends AppBaseController
 
         $datawarung = $this->datawarungRepository->create($input);
 
-        Flash::success('Data warung saved successfully.');
+        Flash::success('Data warung berhasil ditambahkan.');
 
         return redirect(route('datawarung.index'));
     }
@@ -121,7 +121,7 @@ class datawarungController extends AppBaseController
 
         $datawarung = $this->datawarungRepository->update($request->all(), $id);
 
-        Flash::success('Data warung updated successfully.');
+        Flash::success('Data warung berhasil diperbarui.');
 
         return redirect(route('datawarung.index'));
     }

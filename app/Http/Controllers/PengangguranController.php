@@ -58,7 +58,7 @@ class PengangguranController extends AppBaseController
 
         $pengangguran = $this->pengangguranRepository->create($input);
 
-        Flash::success('pengangguran saved successfully.');
+        Flash::success('pengangguran berhasil ditambahkan.');
 
         return redirect(route('pengangguran.index'));
     }
@@ -123,7 +123,7 @@ class PengangguranController extends AppBaseController
 
         $pengangguran = $this->pengangguranRepository->update($request->all(), $id);
 
-        Flash::success('pengangguran updated successfully.');
+        Flash::success('pengangguran berhasil diperbarui.');
 
         return redirect(route('pengangguran.index'));
     }

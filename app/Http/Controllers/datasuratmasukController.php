@@ -56,7 +56,7 @@ class datasuratmasukController extends AppBaseController
 
         $datasuratmasuk = $this->datasuratmasukRepository->create($input);
 
-        Flash::success('Datasuratmasuk saved successfully.');
+        Flash::success('Datasuratmasuk berhasil ditambahkan.');
 
         return redirect(route('datasuratmasuks.index'));
     }
@@ -90,15 +90,15 @@ class datasuratmasukController extends AppBaseController
      */
     public function edit($id)
     {
-        $datasuratmasuk = $this->datasuratmasukRepository->findWithoutFail($id);
+        $data = $this->datasuratmasukRepository->findWithoutFail($id);
 
-        if (empty($datasuratmasuk)) {
+        if (empty($data)) {
             Flash::error('Datasuratmasuk not found');
 
             return redirect(route('datasuratmasuks.index'));
         }
 
-        return view('datasuratmasuks.edit')->with('datasuratmasuk', $datasuratmasuk);
+        return view('datasuratmasuks.edit')->with('data', $data);
     }
 
     /**
@@ -121,7 +121,7 @@ class datasuratmasukController extends AppBaseController
 
         $datasuratmasuk = $this->datasuratmasukRepository->update($request->all(), $id);
 
-        Flash::success('Datasuratmasuk updated successfully.');
+        Flash::success('Datasuratmasuk berhasil diperbarui.');
 
         return redirect(route('datasuratmasuks.index'));
     }

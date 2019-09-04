@@ -6,7 +6,7 @@
             Surat Keterangan SKCK
         </h1>
         <h1 class="pull-right">
-            <a href="{!! route('suratketeranganskcks.index') !!}" class="btn btn-default"><i class="fa fa-arrow-left"></i> Back</a>
+            <a href="{!! route('suratketeranganskcks.index') !!}" class="btn btn-default"><i class="fa fa-arrow-left"></i> Kembali</a>
             <button onClick="MyWindow=window.open('{{ route('suratketeranganskcks.print', $suratketeranganskck->id) }}','MyWindow',width=215,height=330); return false;" class="btn btn-primary"><i class="fa fa-print"></i> Cetak</button>
         </h1>
     </section>

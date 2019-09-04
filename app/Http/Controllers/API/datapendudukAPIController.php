@@ -112,7 +112,7 @@ class datapendudukAPIController extends AppBaseController
 
         $datapenduduks = $this->datapendudukRepository->create($input);
 
-        return $this->sendResponse($datapenduduks->toArray(), 'Datapenduduk saved successfully');
+        return $this->sendResponse($datapenduduks->toArray(), 'Datapenduduk berhasil ditambahkan');
     }
 
     /**
@@ -224,7 +224,7 @@ class datapendudukAPIController extends AppBaseController
 
         $datapenduduk = $this->datapendudukRepository->update($input, $id);
 
-        return $this->sendResponse($datapenduduk->toArray(), 'datapenduduk updated successfully');
+        return $this->sendResponse($datapenduduk->toArray(), 'datapenduduk berhasil diperbarui');
     }
 
     /**

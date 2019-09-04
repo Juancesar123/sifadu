@@ -56,7 +56,7 @@ class DaftarPemilihTetapController extends AppBaseController
 
         $daftarPemilihTetap = $this->daftarPemilihTetapRepository->create($input);
 
-        Flash::success('Daftar Pemilih Tetap saved successfully.');
+        Flash::success('Daftar Pemilih Tetap berhasil ditambahkan.');
 
         return redirect(route('daftarPemilihTetaps.index'));
     }
@@ -121,7 +121,7 @@ class DaftarPemilihTetapController extends AppBaseController
 
         $daftarPemilihTetap = $this->daftarPemilihTetapRepository->update($request->all(), $id);
 
-        Flash::success('Daftar Pemilih Tetap updated successfully.');
+        Flash::success('Daftar Pemilih Tetap berhasil diperbarui.');
 
         return redirect(route('daftarPemilihTetaps.index'));
     }

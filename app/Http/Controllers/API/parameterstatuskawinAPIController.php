@@ -112,7 +112,7 @@ class parameterstatuskawinAPIController extends AppBaseController
 
         $parameterstatuskawins = $this->parameterstatuskawinRepository->create($input);
 
-        return $this->sendResponse($parameterstatuskawins->toArray(), 'Parameterstatuskawin saved successfully');
+        return $this->sendResponse($parameterstatuskawins->toArray(), 'Parameterstatuskawin berhasil ditambahkan');
     }
 
     /**
@@ -224,7 +224,7 @@ class parameterstatuskawinAPIController extends AppBaseController
 
         $parameterstatuskawin = $this->parameterstatuskawinRepository->update($input, $id);
 
-        return $this->sendResponse($parameterstatuskawin->toArray(), 'parameterstatuskawin updated successfully');
+        return $this->sendResponse($parameterstatuskawin->toArray(), 'parameterstatuskawin berhasil diperbarui');
     }
 
     /**

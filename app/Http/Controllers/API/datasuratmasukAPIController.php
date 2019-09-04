@@ -112,7 +112,7 @@ class datasuratmasukAPIController extends AppBaseController
 
         $datasuratmasuks = $this->datasuratmasukRepository->create($input);
 
-        return $this->sendResponse($datasuratmasuks->toArray(), 'Datasuratmasuk saved successfully');
+        return $this->sendResponse($datasuratmasuks->toArray(), 'Datasuratmasuk berhasil ditambahkan');
     }
 
     /**
@@ -224,7 +224,7 @@ class datasuratmasukAPIController extends AppBaseController
 
         $datasuratmasuk = $this->datasuratmasukRepository->update($input, $id);
 
-        return $this->sendResponse($datasuratmasuk->toArray(), 'datasuratmasuk updated successfully');
+        return $this->sendResponse($datasuratmasuk->toArray(), 'datasuratmasuk berhasil diperbarui');
     }
 
     /**

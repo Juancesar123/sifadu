@@ -58,7 +58,7 @@ class PerikananController extends AppBaseController
 
         $perikanan->input_perikanan_koordinate($input);
         $perikanan->save();
-        Flash::success('Perikanan saved successfully.');
+        Flash::success('Perikanan berhasil ditambahkan.');
 
         return redirect(route('perikanans.index'));
     }
@@ -126,7 +126,7 @@ class PerikananController extends AppBaseController
 
         $perikanan = $this->perikananRepository->update($request->all(), $id);
 
-        Flash::success('Perikanan updated successfully.');
+        Flash::success('Perikanan berhasil diperbarui.');
 
         return redirect(route('perikanans.index'));
     }

@@ -58,7 +58,7 @@ class BencanaAlamController extends AppBaseController
 
         $bencanaalam->input_koordinate($input);
         $bencanaalam->save();
-        Flash::success('bencana alam saved successfully.');
+        Flash::success('bencana alam berhasil ditambahkan.');
 
         return redirect(route('bencanaalam.index'));
     }
@@ -126,7 +126,7 @@ class BencanaAlamController extends AppBaseController
 
         $bencanaalam = $this->bencanaalamRepository->update($request->all(), $id);
 
-        Flash::success('bencana alam updated successfully.');
+        Flash::success('bencana alam berhasil diperbarui.');
 
         return redirect(route('bencanaalam.index'));
     }

@@ -50,7 +50,7 @@ class SettingController extends AppBaseController
         $input = $request->all();
         $settings = $this->SettingRepository->create($input);
 
-        Flash::success('Setting saved successfully.');
+        Flash::success('Setting berhasil ditambahkan.');
 
         return redirect()->route('setting.index');
     }

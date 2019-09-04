@@ -112,7 +112,7 @@ class pajaktanahAPIController extends AppBaseController
 
         $pajaktanahs = $this->pajaktanahRepository->create($input);
 
-        return $this->sendResponse($pajaktanahs->toArray(), 'Pajaktanah saved successfully');
+        return $this->sendResponse($pajaktanahs->toArray(), 'Pajaktanah berhasil ditambahkan');
     }
 
     /**
@@ -224,7 +224,7 @@ class pajaktanahAPIController extends AppBaseController
 
         $pajaktanah = $this->pajaktanahRepository->update($input, $id);
 
-        return $this->sendResponse($pajaktanah->toArray(), 'pajaktanah updated successfully');
+        return $this->sendResponse($pajaktanah->toArray(), 'pajaktanah berhasil diperbarui');
     }
 
     /**

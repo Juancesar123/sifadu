@@ -112,7 +112,7 @@ class inventarisproyekAPIController extends AppBaseController
 
         $inventarisproyeks = $this->inventarisproyekRepository->create($input);
 
-        return $this->sendResponse($inventarisproyeks->toArray(), 'Inventarisproyek saved successfully');
+        return $this->sendResponse($inventarisproyeks->toArray(), 'Inventarisproyek berhasil ditambahkan');
     }
 
     /**
@@ -224,7 +224,7 @@ class inventarisproyekAPIController extends AppBaseController
 
         $inventarisproyek = $this->inventarisproyekRepository->update($input, $id);
 
-        return $this->sendResponse($inventarisproyek->toArray(), 'inventarisproyek updated successfully');
+        return $this->sendResponse($inventarisproyek->toArray(), 'inventarisproyek berhasil diperbarui');
     }
 
     /**

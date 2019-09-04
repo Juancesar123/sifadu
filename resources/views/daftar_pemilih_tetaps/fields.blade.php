@@ -1,7 +1,7 @@
 <!-- No Ktp Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('no_KTP', 'No Ktp:') !!}
-    {!! Form::number('no_KTP', null, ['class' => 'form-control', 'required']) !!}
+    {!! Form::text('no_KTP', null, ['class' => 'form-control', 'maxlength'=>16, 'minlength'=>16, 'required']) !!}
 </div>
 
 <!-- Nama Field -->
@@ -24,6 +24,16 @@
 
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
-    {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-    <a href="{!! route('daftarPemilihTetaps.index') !!}" class="btn btn-default">Cancel</a>
+    {!! Form::submit('Simpan', ['class' => 'btn btn-primary']) !!}
+    <a href="{!! route('daftarPemilihTetaps.index') !!}" class="btn btn-default">Batalkan</a>
 </div>
+
+@section('scripts')
+<script>
+$(document).ready(function() {
+    $('#no_KTP').keyup(function() {
+      $(this).val($(this).val().replace(/[^\d.-]/g, ''))
+    })
+});
+</script>
+@endsection

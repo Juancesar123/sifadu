@@ -58,7 +58,7 @@ class PTController extends AppBaseController
 
         $pt = $this->ptRepository->create($input);
 
-        Flash::success('perguruan tinggi saved successfully.');
+        Flash::success('perguruan tinggi berhasil ditambahkan.');
 
         return redirect(route('pt.index'));
     }
@@ -123,7 +123,7 @@ class PTController extends AppBaseController
 
         $pt = $this->ptRepository->update($request->all(), $id);
 
-        Flash::success('perguruan tinggi updated successfully.');
+        Flash::success('perguruan tinggi berhasil diperbarui.');
 
         return redirect(route('pt.index'));
     }

@@ -58,7 +58,7 @@ class MusholaController extends AppBaseController
 
         $mushola = $this->musholaRepository->create($input);
 
-        Flash::success('mushola saved successfully.');
+        Flash::success('mushola berhasil ditambahkan.');
 
         return redirect(route('mushola.index'));
     }
@@ -123,7 +123,7 @@ class MusholaController extends AppBaseController
 
         $mushola = $this->musholaRepository->update($request->all(), $id);
 
-        Flash::success('mushola updated successfully.');
+        Flash::success('mushola berhasil diperbarui.');
 
         return redirect(route('mushola.index'));
     }

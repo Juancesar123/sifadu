@@ -59,7 +59,7 @@
                     </div>
                     <div class="form-group col-sm-4">
                         {!! Form::label('abi_tanggal_hapus', 'Tanggal Penghapusan') !!}
-                        {!! Form::date('abi_tanggal_hapus', null, ['class' => 'form-control']) !!}
+                        {!! Form::date('abi_tanggal_hapus', isset($data->abi_tanggal_hapus) ? $data->abi_tanggal_hapus : null, ['class' => 'form-control']) !!}
                     </div>
                     <div class="form-group col-sm-4">
                         {!! Form::label('abi_akhir_baik', 'Jumlah Kondisi Baik di Akhir Tahun') !!}
@@ -76,8 +76,8 @@
 
                     <!-- Submit Field -->
                     <div class="form-group col-sm-12">
-                        {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-                        <a href="{!! route('aduminventaris') !!}" class="btn btn-default">Cancel</a>
+                        {!! Form::submit('Simpan', ['class' => 'btn btn-primary']) !!}
+                        <a href="{!! route('aduminventaris') !!}" class="btn btn-default">Batalkan</a>
                     </div>
                 {!! Form::close() !!}
                 </div>

@@ -56,7 +56,7 @@ class parameterjeniskelaminController extends AppBaseController
 
         $parameterjeniskelamin = $this->parameterjeniskelaminRepository->create($input);
 
-        Flash::success('Parameterjeniskelamin saved successfully.');
+        Flash::success('Parameterjeniskelamin berhasil ditambahkan.');
 
         return redirect(route('parameterjeniskelamins.index'));
     }
@@ -121,7 +121,7 @@ class parameterjeniskelaminController extends AppBaseController
 
         $parameterjeniskelamin = $this->parameterjeniskelaminRepository->update($request->all(), $id);
 
-        Flash::success('Parameterjeniskelamin updated successfully.');
+        Flash::success('Parameterjeniskelamin berhasil diperbarui.');
 
         return redirect(route('parameterjeniskelamins.index'));
     }

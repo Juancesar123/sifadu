@@ -56,7 +56,7 @@ class dataekspedisiController extends AppBaseController
 
         $dataekspedisi = $this->dataekspedisiRepository->create($input);
 
-        Flash::success('Dataekspedisi saved successfully.');
+        Flash::success('Dataekspedisi berhasil ditambahkan.');
 
         return redirect(route('dataekspedisis.index'));
     }
@@ -121,7 +121,7 @@ class dataekspedisiController extends AppBaseController
 
         $dataekspedisi = $this->dataekspedisiRepository->update($request->all(), $id);
 
-        Flash::success('Dataekspedisi updated successfully.');
+        Flash::success('Dataekspedisi berhasil diperbarui.');
 
         return redirect(route('dataekspedisis.index'));
     }

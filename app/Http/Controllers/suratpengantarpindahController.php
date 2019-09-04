@@ -43,7 +43,7 @@ class suratpengantarpindahController extends Controller
 
         $suratpengantarpindah = $this->suratpengantarpindahRepository->create($input);
 
-        Flash::success('Suratpengantarpindah saved successfully.');
+        Flash::success('Suratpengantarpindah berhasil ditambahkan.');
 
         return redirect(route('suratpindah.index'));
     }
@@ -86,7 +86,7 @@ class suratpengantarpindahController extends Controller
 
         $suratpengantarpindah = $this->suratpengantarpindahRepository->update($request->all(), $id);
 
-        Flash::success('Suratpengantarpindah updated successfully.');
+        Flash::success('Suratpengantarpindah berhasil diperbarui.');
 
         return redirect(route('suratpindah.index'));
     }

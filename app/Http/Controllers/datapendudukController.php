@@ -98,7 +98,7 @@ class datapendudukController extends AppBaseController
 
         $datapenduduk = $this->datapendudukRepository->create($input);
 
-        Flash::success('Data penduduk saved successfully.');
+        Flash::success('Data penduduk berhasil ditambahkan.');
 
         return redirect(route('datapenduduks.index'));
     }
@@ -165,7 +165,7 @@ class datapendudukController extends AppBaseController
 
         $datapenduduk = $this->datapendudukRepository->update($request->all(), $id);
 
-        Flash::success('Datapenduduk updated successfully.');
+        Flash::success('Datapenduduk berhasil diperbarui.');
 
         return redirect(route('datapenduduks.index'));
     }

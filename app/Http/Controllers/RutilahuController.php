@@ -56,7 +56,7 @@ class RutilahuController extends AppBaseController
 
         $rutilahu = $this->rutilahuRepository->create($input);
 
-        Flash::success('Rutilahu saved successfully.');
+        Flash::success('Rutilahu berhasil ditambahkan.');
 
         return redirect(route('rutilahus.index'));
     }
@@ -121,7 +121,7 @@ class RutilahuController extends AppBaseController
 
         $rutilahu = $this->rutilahuRepository->update($request->all(), $id);
 
-        Flash::success('Rutilahu updated successfully.');
+        Flash::success('Rutilahu berhasil diperbarui.');
 
         return redirect(route('rutilahus.index'));
     }

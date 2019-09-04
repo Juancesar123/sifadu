@@ -56,7 +56,7 @@ class datasuratkeluarController extends AppBaseController
 
         $datasuratkeluar = $this->datasuratkeluarRepository->create($input);
 
-        Flash::success('Datasuratkeluar saved successfully.');
+        Flash::success('Datasuratkeluar berhasil ditambahkan.');
 
         return redirect(route('datasuratkeluars.index'));
     }
@@ -121,7 +121,7 @@ class datasuratkeluarController extends AppBaseController
 
         $datasuratkeluar = $this->datasuratkeluarRepository->update($request->all(), $id);
 
-        Flash::success('Datasuratkeluar updated successfully.');
+        Flash::success('Datasuratkeluar berhasil diperbarui.');
 
         return redirect(route('datasuratkeluars.index'));
     }

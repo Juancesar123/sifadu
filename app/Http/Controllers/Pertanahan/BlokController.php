@@ -40,7 +40,7 @@ class BlokController extends AppBaseController
 
         $blok = $this->blokRepository->create($input);
 
-        Flash::success('Blok saved successfully.');
+        Flash::success('Blok berhasil ditambahkan.');
 
         return redirect(route('pertanahan.blok'));
     }
@@ -83,7 +83,7 @@ class BlokController extends AppBaseController
 
         $blok = $this->blokRepository->update($request->all(), $id);
 
-        Flash::success('Blok updated successfully.');
+        Flash::success('Blok berhasil diperbarui.');
 
         return redirect(route('pertanahan.blok'));
     }

@@ -83,7 +83,7 @@ class pajaktanahController extends AppBaseController
 
         $pajaktanah = $this->pajaktanahRepository->create($input);
 
-        Flash::success('Pajaktanah saved successfully.');
+        Flash::success('Pajaktanah berhasil ditambahkan.');
 
         return redirect(route('pajaktanahs.index'));
     }
@@ -148,7 +148,7 @@ class pajaktanahController extends AppBaseController
 
         $pajaktanah = $this->pajaktanahRepository->update($request->all(), $id);
 
-        Flash::success('Pajaktanah updated successfully.');
+        Flash::success('Pajaktanah berhasil diperbarui.');
 
         return redirect(route('pajaktanahs.index'));
     }

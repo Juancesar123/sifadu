@@ -58,7 +58,7 @@ class SMAController extends AppBaseController
 
         $sma = $this->smaRepository->create($input);
 
-        Flash::success('sma saved successfully.');
+        Flash::success('sma berhasil ditambahkan.');
 
         return redirect(route('sma.index'));
     }
@@ -123,7 +123,7 @@ class SMAController extends AppBaseController
 
         $sma = $this->smaRepository->update($request->all(), $id);
 
-        Flash::success('sma updated successfully.');
+        Flash::success('sma berhasil diperbarui.');
 
         return redirect(route('sma.index'));
     }

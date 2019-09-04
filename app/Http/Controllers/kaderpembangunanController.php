@@ -56,7 +56,7 @@ class kaderpembangunanController extends AppBaseController
 
         $kaderpembangunan = $this->kaderpembangunanRepository->create($input);
 
-        Flash::success('Kaderpembangunan saved successfully.');
+        Flash::success('Kaderpembangunan berhasil ditambahkan.');
 
         return redirect(route('kaderpembangunans.index'));
     }
@@ -121,7 +121,7 @@ class kaderpembangunanController extends AppBaseController
 
         $kaderpembangunan = $this->kaderpembangunanRepository->update($request->all(), $id);
 
-        Flash::success('Kaderpembangunan updated successfully.');
+        Flash::success('Kaderpembangunan berhasil diperbarui.');
 
         return redirect(route('kaderpembangunans.index'));
     }

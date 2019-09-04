@@ -112,7 +112,7 @@ class pendudukpindahAPIController extends AppBaseController
 
         $pendudukpindahs = $this->pendudukpindahRepository->create($input);
 
-        return $this->sendResponse($pendudukpindahs->toArray(), 'Pendudukpindah saved successfully');
+        return $this->sendResponse($pendudukpindahs->toArray(), 'Pendudukpindah berhasil ditambahkan');
     }
 
     /**
@@ -224,7 +224,7 @@ class pendudukpindahAPIController extends AppBaseController
 
         $pendudukpindah = $this->pendudukpindahRepository->update($input, $id);
 
-        return $this->sendResponse($pendudukpindah->toArray(), 'pendudukpindah updated successfully');
+        return $this->sendResponse($pendudukpindah->toArray(), 'pendudukpindah berhasil diperbarui');
     }
 
     /**

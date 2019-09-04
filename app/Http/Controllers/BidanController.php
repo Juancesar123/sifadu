@@ -58,7 +58,7 @@ class BidanController extends AppBaseController
 
         $bidan = $this->bidanRepository->create($input);
 
-        Flash::success('bidan saved successfully.');
+        Flash::success('bidan berhasil ditambahkan.');
 
         return redirect(route('bidan.index'));
     }
@@ -123,7 +123,7 @@ class BidanController extends AppBaseController
 
         $bidan = $this->bidanRepository->update($request->all(), $id);
 
-        Flash::success('bidan updated successfully.');
+        Flash::success('bidan berhasil diperbarui.');
 
         return redirect(route('bidan.index'));
     }

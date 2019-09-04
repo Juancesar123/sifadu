@@ -112,7 +112,7 @@ class suratketeranganpenguasaantanahAPIController extends AppBaseController
 
         $suratketeranganpenguasaantanahs = $this->suratketeranganpenguasaantanahRepository->create($input);
 
-        return $this->sendResponse($suratketeranganpenguasaantanahs->toArray(), 'Suratketeranganpenguasaantanah saved successfully');
+        return $this->sendResponse($suratketeranganpenguasaantanahs->toArray(), 'Suratketeranganpenguasaantanah berhasil ditambahkan');
     }
 
     /**
@@ -224,7 +224,7 @@ class suratketeranganpenguasaantanahAPIController extends AppBaseController
 
         $suratketeranganpenguasaantanah = $this->suratketeranganpenguasaantanahRepository->update($input, $id);
 
-        return $this->sendResponse($suratketeranganpenguasaantanah->toArray(), 'suratketeranganpenguasaantanah updated successfully');
+        return $this->sendResponse($suratketeranganpenguasaantanah->toArray(), 'suratketeranganpenguasaantanah berhasil diperbarui');
     }
 
     /**

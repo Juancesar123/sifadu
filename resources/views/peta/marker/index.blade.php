@@ -28,8 +28,8 @@
     <section class="content-header">
         <h1 class="pull-left">Peta Sarana & Prasarana</h1>
         <h1 class="pull-right">
-            <a id="createMarker" class="btn btn-primary pull-right" style="margin-top: -10px;margin-bottom: 5px" href="#">Add New</a>
-            <a class="btn btn-primary pull-right" style="margin-top: -10px;margin-bottom: 5px;margin-right:5px" href="{{url('petadesa')}}">Back</a>
+            <a id="createMarker" class="btn btn-primary pull-right" style="margin-top: -10px;margin-bottom: 5px" href="#">Tambah Baru</a>
+            <a class="btn btn-primary pull-right" style="margin-top: -10px;margin-bottom: 5px;margin-right:5px" href="{{url('petadesa')}}">Kembali</a>
         </h1>
     </section>
     <div class="content">

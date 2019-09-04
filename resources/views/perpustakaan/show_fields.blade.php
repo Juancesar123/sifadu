@@ -9,7 +9,7 @@
 </div>
 
 <div class="form-group">
-    {!! Form::label('penanggungjawab', 'Penanggungjawab :') !!}
+    {!! Form::label('penanggungjawab', 'Penanggung jawab :') !!}
     <p>{!! $perpustakaan->penanggungjawab !!}</p>
 </div>
 
@@ -29,11 +29,11 @@
 </div>
 
 <div class="form-group">
-    {!! Form::label('created_at', 'Created At:') !!}
+    {!! Form::label('created_at', 'Dibuat pada:') !!}
     <p>{!! $perpustakaan->created_at !!}</p>
 </div>
 
 <div class="form-group">
-    {!! Form::label('updated_at', 'Updated At:') !!}
+    {!! Form::label('updated_at', 'Diperbarui pada:') !!}
     <p>{!! $perpustakaan->updated_at !!}</p>
 </div>

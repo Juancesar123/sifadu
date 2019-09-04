@@ -58,7 +58,7 @@ class PAUDController extends AppBaseController
 
         $paud = $this->paudRepository->create($input);
 
-        Flash::success('paud saved successfully.');
+        Flash::success('paud berhasil ditambahkan.');
 
         return redirect(route('paud.index'));
     }
@@ -123,7 +123,7 @@ class PAUDController extends AppBaseController
 
         $paud = $this->paudRepository->update($request->all(), $id);
 
-        Flash::success('paud updated successfully.');
+        Flash::success('paud berhasil diperbarui.');
 
         return redirect(route('paud.index'));
     }

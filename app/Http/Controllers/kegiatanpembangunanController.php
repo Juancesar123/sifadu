@@ -72,7 +72,7 @@ class kegiatanpembangunanController extends AppBaseController
 
         $kegiatanpembangunan = $this->kegiatanpembangunanRepository->create($input);
 
-        Flash::success('Kegiatanpembangunan saved successfully.');
+        Flash::success('Kegiatanpembangunan berhasil ditambahkan.');
 
         return redirect(route('kegiatanpembangunans.index'));
     }
@@ -154,7 +154,7 @@ class kegiatanpembangunanController extends AppBaseController
 
         $kegiatanpembangunan = $this->kegiatanpembangunanRepository->update($input, $id);
 
-        Flash::success('Kegiatanpembangunan updated successfully.');
+        Flash::success('Kegiatanpembangunan berhasil diperbarui.');
 
         return redirect(route('kegiatanpembangunans.index'));
     }

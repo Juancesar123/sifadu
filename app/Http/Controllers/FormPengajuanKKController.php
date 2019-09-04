@@ -71,7 +71,7 @@ class FormPengajuanKKController extends AppBaseController
             $data->status = '1';
             $data->save();
 
-            Flash::success('FormPengajuanKK saved successfully.');
+            Flash::success('FormPengajuanKK berhasil ditambahkan.');
             return redirect()->route('detailkk.create', ['nomor_surat' => $input->nomor_surat]);
             
         } else {
@@ -184,7 +184,7 @@ class FormPengajuanKKController extends AppBaseController
         //     return redirect()->route('formpengajuankks.index');
         // }
 
-        // Flash::success('form pengajuan kk updated successfully.');
+        // Flash::success('form pengajuan kk berhasil diperbarui.');
         return redirect()->route('formpengajuankk.index');
     }
 

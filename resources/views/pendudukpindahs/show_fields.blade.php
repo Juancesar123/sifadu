@@ -30,13 +30,13 @@
 
 <!-- Created At Field -->
 <div class="form-group">
-    {!! Form::label('created_at', 'Created At:') !!}
+    {!! Form::label('created_at', 'Dibuat pada:') !!}
     <p>{!! $pendudukpindah->created_at !!}</p>
 </div>
 
 <!-- Updated At Field -->
 <div class="form-group">
-    {!! Form::label('updated_at', 'Updated At:') !!}
+    {!! Form::label('updated_at', 'Diperbarui pada:') !!}
     <p>{!! $pendudukpindah->updated_at !!}</p>
 </div>
 

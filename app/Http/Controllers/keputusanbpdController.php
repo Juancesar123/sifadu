@@ -56,7 +56,7 @@ class keputusanbpdController extends AppBaseController
 
         $keputusanbpd = $this->keputusanbpdRepository->create($input);
 
-        Flash::success('Keputusanbpd saved successfully.');
+        Flash::success('Keputusanbpd berhasil ditambahkan.');
 
         return redirect(route('keputusanbpds.index'));
     }
@@ -121,7 +121,7 @@ class keputusanbpdController extends AppBaseController
 
         $keputusanbpd = $this->keputusanbpdRepository->update($request->all(), $id);
 
-        Flash::success('Keputusanbpd updated successfully.');
+        Flash::success('Keputusanbpd berhasil diperbarui.');
 
         return redirect(route('keputusanbpds.index'));
     }

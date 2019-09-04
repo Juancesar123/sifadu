@@ -58,7 +58,7 @@ class suratpengantarktpController extends AppBaseController
 
         $suratpengantarktp = $this->suratpengantarktpRepository->create($input);
 
-        Flash::success('Suratpengantarktp saved successfully.');
+        Flash::success('Suratpengantarktp berhasil ditambahkan.');
 
         return redirect(route('suratpengantarktps.index'));
     }
@@ -129,7 +129,7 @@ class suratpengantarktpController extends AppBaseController
 
         $suratpengantarktp = $this->suratpengantarktpRepository->update($request->all(), $id);
 
-        Flash::success('Suratpengantarktp updated successfully.');
+        Flash::success('Suratpengantarktp berhasil diperbarui.');
 
         return redirect(route('suratpengantarktps.index'));
     }

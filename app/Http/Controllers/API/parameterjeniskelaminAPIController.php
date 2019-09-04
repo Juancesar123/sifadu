@@ -112,7 +112,7 @@ class parameterjeniskelaminAPIController extends AppBaseController
 
         $parameterjeniskelamins = $this->parameterjeniskelaminRepository->create($input);
 
-        return $this->sendResponse($parameterjeniskelamins->toArray(), 'Parameterjeniskelamin saved successfully');
+        return $this->sendResponse($parameterjeniskelamins->toArray(), 'Parameterjeniskelamin berhasil ditambahkan');
     }
 
     /**
@@ -224,7 +224,7 @@ class parameterjeniskelaminAPIController extends AppBaseController
 
         $parameterjeniskelamin = $this->parameterjeniskelaminRepository->update($input, $id);
 
-        return $this->sendResponse($parameterjeniskelamin->toArray(), 'parameterjeniskelamin updated successfully');
+        return $this->sendResponse($parameterjeniskelamin->toArray(), 'parameterjeniskelamin berhasil diperbarui');
     }
 
     /**

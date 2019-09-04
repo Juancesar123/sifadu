@@ -57,7 +57,7 @@ class suratketeranganpenguasaantanahController extends AppBaseController
 
         $suratketeranganpenguasaantanah = $this->suratketeranganpenguasaantanahRepository->create($input);
 
-        Flash::success('Suratketeranganpenguasaantanah saved successfully.');
+        Flash::success('Suratketeranganpenguasaantanah berhasil ditambahkan.');
 
         return redirect(route('suratketeranganpenguasaantanahs.index'));
     }
@@ -122,7 +122,7 @@ class suratketeranganpenguasaantanahController extends AppBaseController
 
         $suratketeranganpenguasaantanah = $this->suratketeranganpenguasaantanahRepository->update($request->all(), $id);
 
-        Flash::success('Suratketeranganpenguasaantanah updated successfully.');
+        Flash::success('Suratketeranganpenguasaantanah berhasil diperbarui.');
 
         return redirect(route('suratketeranganpenguasaantanahs.index'));
     }
