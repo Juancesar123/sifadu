@@ -1,0 +1,220 @@
+    /**
+     * Author:Dodi
+     * Tampilan : Surat Pengantar Pindah
+     */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#header {
+    text-align: center;
+}
+
+.code {
+    width: 60px;
+    height: 18px;
+    font-weight: bold;
+    border: 1px solid;
+    position: absolute;
+    margin-left: 660px;
+    text-align: center;
+}
+
+.caption {
+    margin-top: -8px;
+}
+
+.caption-kepindahan {
+    margin-top: 800px;
+}
+
+p {
+    margin-top: -20px;
+}
+
+img {
+    float: left;
+    padding: 0;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+}
+
+.row {
+    width: 100%;
+    padding: 3px;
+    position: relative;
+    margin-top: 5px;
+}
+
+.row-kepindahan {
+    width: 100%;
+    padding: 3px;
+    position: relative;
+    margin-top: 1px;
+}
+
+.col {
+    display: inline-block;
+}
+
+.number {
+    width: 2%;
+}
+
+.number-5 {
+    width: 2%;
+    margin-top: -17px;
+}
+
+.label {
+    width: 30%;
+}
+
+.label-daerah {
+    width: 23%;
+    text-align: right;
+}
+
+.label-daerah-kec {
+    width: 19%;
+    text-align: right;
+}
+
+.label-daerah-second {
+    width: 15%;
+    text-align: left;
+    position: absolute;
+    right: 250px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid;
+    width: 14px;
+}
+
+.data {
+    position: absolute;
+    left: 180px;
+    top: 0px;
+    border: 1px solid;
+    width: 370px;
+    height: 15px;
+    margin-top: -2px;
+    font-size: 12px;
+}
+
+.data-pindah {
+    position: absolute;
+    left: 180px;
+    top: 0px;
+    border: 1px solid;
+    width: 370px;
+    height: auto;
+    margin-top: -2px;
+    font-size: 12px;
+}
+
+.data-daerah {
+    position: absolute;
+    left: 180px;
+    top: 0px;
+    border: 1px solid;
+    width: 163px;
+    margin-top: -2px;
+    font-size: 12px;
+}
+
+.data-daerah-second {
+    position: absolute;
+    right: 114px;
+    top: 1px;
+    border: 1px solid;
+    width: 163px;
+    margin-top: -2px;
+    font-size: 12px;
+}
+
+.nokk {
+    position: absolute;
+    left: 182px;
+    top: 0px;
+    text-align: center;
+}
+
+.RT {
+    position: absolute;
+    right: 150px;
+    top: -1px;
+    text-align: center;
+}
+
+#kodepos {
+    position: absolute;
+    left: 183px;
+    text-align: center;
+}
+
+#telepon {
+    position: absolute;
+    right: 339px;
+    text-align: center;
+}
+
+.value {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border: 1px solid;
+}
+
+.data-value {
+    position: absolute;
+    left: 180px;
+    top: -6px;
+}
+
+.ul {
+    position: absolute;
+    left: 180px;
+    top: -17px;
+    font-size: 13px;
+}
+
+.ul-second {
+    margin-top: -15px;
+}
+
+ul {
+    list-style-type: none;
+    width: 100%;
+}
+
+ul li {
+    display: inline-block;
+    width: 90px;
+}
+
+.ul-2 {
+    position: absolute;
+    left: 180px;
+    top: -17px;
+    font-size: 13px;
+}
+
+.ul-2 li {
+    display: inline-block;
+    width: 130px;
+}
+
+.footer {
+    width: 100%;
+    font-size: 11.23px;
+    margin-top: 9px;
+
+}
