@@ -38,13 +38,13 @@
         }
         .fs-12 {
             font-size: 12pt !important;
-        } 
+        }
         .fs-10 {
             font-size: 10pt !important;
-        } 
+        }
         .fs-8 {
             font-size: 8pt !important;
-        } 
+        }
     </style>
     <style>
         .box tr td {
@@ -63,7 +63,7 @@
         <b>Perhatian :</b><br>
         <i>
             1. Harus di isi dengan HURUP CETAK dan menggunakan TINTA HITAM.<br>
-            2. Untuk kolom pilihan, harap beri tansa silang (X) pada kolom pilihan.<br>																				
+            2. Untuk kolom pilihan, harap beri tansa silang (X) pada kolom pilihan.<br>
             3. Setelah formulir diisi dan ditandatangani, harap diserahkan kembali ke kantor desa/kelurahan.<br>
         </i>
     </div>
@@ -166,7 +166,7 @@
             <td style="width:40%;">
                 <table class="w-100 box">
                     <tr>
-                        <td>CISARUA</td>
+                        <td>{{ env('DESA_NAME') }}</td>
                     </tr>
                 </table>
             </td>
@@ -345,7 +345,7 @@
                 <div class="fs-8">
                     Catatan : <br>
                     <i>
-                        * Membawa Pas Foto Berwarana terbaru 4x6 ( 2 Lembar ) <br>             
+                        * Membawa Pas Foto Berwarana terbaru 4x6 ( 2 Lembar ) <br>
                         * Bagi KTP yang hilang harap membawa surat kehilangan dari kepolisian <br>
                         * Untuk perbaikan Status harap membawa Foto Copy Surat Nikah <br>
                     </i>
@@ -356,7 +356,7 @@
                     <tr rowspan="3">
                         <td class="fs-12">
                             Mengetahui, <br>
-                            <b>Kepala Desa Cisarua</b>
+                            <b>Kepala Desa {{ env('DESA_NAME') }}</b>
                         </td>
                     </tr>
                     <tr><td>&nbsp;</td></tr>

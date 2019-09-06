@@ -21,7 +21,7 @@
         <p>Jl. Raya Rambay No. 70 Cisaat Telp. (0266) 211075 Sukabumi</p>
         <hr id="header1">
         <hr id="header2">
-    
+
     <h4><b>KETERANGAN PINDAH DATANG WNI ANTAR KAB/KOTA/PROVINSI</b></h4>
     </div>
 
@@ -69,7 +69,7 @@
 
     <div class="row">
         <div class="col label-daerah">a.Desa/Kelurahan</div>
-        <input type="text" class="data-daerah" value="CISARUA">
+        <input type="text" class="data-daerah" value="{{ env('DESA_NAME') }}">
         <div class="col label-daerah-second">c.Kab/Kota</div>
         <input type="text" class="data-daerah-second" value="SUKABUMI">
     </div>
@@ -279,7 +279,7 @@
             </ul>
             </div>
     </div>
-     
+
     <div class="row">
         <div class="col number">7.</div>
         <div class="col label">Rencana Tgl Pindah</div>
@@ -291,7 +291,7 @@
         ?>
         <td><?php echo $split[0] ?></td>
         <td><?php echo $split[1] ?></td>
-        <td style="border:none">&nbsp;</td>         
+        <td style="border:none">&nbsp;</td>
         <td><?php echo $split[2] ?></td>
         <td><?php echo $split[3] ?></td>
         <td style="border:none">&nbsp;</td>
@@ -493,7 +493,7 @@
             </div>
             <div style="width:23%;float:left;margin-left:13px">
                 <label>Dikeluarkan Oleh: <br>
-                KEPALA DESA CISARUA <br>
+                KEPALA DESA {{ env('DESA_NAME') }} <br>
                 No.475/....Tgl.19 januari 2018</label>
                 <br>
                 <br>

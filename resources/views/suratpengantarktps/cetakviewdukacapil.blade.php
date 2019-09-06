@@ -9,17 +9,17 @@
                        Pemerintah Kabupaten Sukabumi
                        <p style="font-size:30px;font-weight:bold">
                             DINAS KEPENDUDUKAN DAN CATATAN SIPIL
-                       </p>	
+                       </p>
                        <P style="font-size:12px;font-weight:normal">
                            Jalan Raya Rambai No. 70 Cisaat Telp.(0266) 211075 sukabumi
-                       </P>  
-                       					
+                       </P>
+
                     </div>
                 </td>
             </tr>
             <tr>
                <td colspan="2" >
-                   <hr style="border-style:double;border-width: 2px; width:100%">  	
+                   <hr style="border-style:double;border-width: 2px; width:100%">
                 </td>
             </tr>
             <tr style="padding-left: 30px;">
@@ -45,52 +45,52 @@
                 </td>
                 <td>
                     <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                       
+
                     </div>
                     <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                       
+
                     </div>
                     <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                       
+
                     </div>
                     <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                        
+
                     </div>
                     <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                    
+
                     </div>
                     <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                        
+
                     </div>
                     <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                        
+
                     </div>
                     <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                        
+
                     </div>
                     <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                       
+
                     </div>
                     <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                        
+
                     </div>
                     <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                        
+
                     </div>
                     <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                        
+
                     </div>
                     <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                    
+
                     </div>
                     <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                        
+
                     </div>
                     <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                        
+
                     </div>
                     <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                        
+
                     </div>
                 </td>
             </tr>
@@ -102,7 +102,7 @@
                 </td>
                 <td>
                     <div style="width:80%; border-width: 1px; border-style:solid; height:30px;float:left">
-                        
+
                     </div>
                 </td>
             </tr>
@@ -114,7 +114,7 @@
                     <div style="font-size: 15px">
                         3. Alamat:
                     </div>
-                    
+
                 </td>
                 <td  style="
                 text-align: left;
@@ -125,11 +125,11 @@
                 white-space: nowrap;
                 ">
                     <div style="width:90%; border-width: 1px; border-style:solid; height:30px;float:left">
-                        
+
                     </div>
                 </td>
                 <td style="
-                text-align: left;padding-bottom: 20px ; 
+                text-align: left;padding-bottom: 20px ;
                 width: 4%;
                 overflow: hidden;
                 display: inline-block;
@@ -139,24 +139,24 @@
                     </div>
                 </td>
                 <td style="
-                text-align: left;padding-bottom: 20px; 
+                text-align: left;padding-bottom: 20px;
                 width: 20%;
                 overflow: hidden;
                 display: inline-block;
                 white-space: nowrap;
                 ">
                     <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                    
+
                     </div>
                     <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                
+
                     </div>
                     <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                
+
                     </div>
                 </td>
                 <td style="
-                text-align: left;padding-bottom: 20px ; 
+                text-align: left;padding-bottom: 20px ;
                 width: 4%;
                 overflow: hidden;
                 display: inline-block;
@@ -166,20 +166,20 @@
                     </div>
                 </td>
                 <td style="
-                text-align: left;padding-bottom: 20px; 
+                text-align: left;padding-bottom: 20px;
                 width: 20%;
                 overflow: hidden;
                 display: inline-block;
                 white-space: nowrap;
                 ">
                     <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                    
+
                     </div>
                     <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                
+
                     </div>
                     <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                
+
                     </div>
                 </td>
             </tr>
@@ -192,7 +192,7 @@
                         <div style="font-size: 15px">
                             a. Desa/Kelurahan:
                         </div>
-                        
+
                     </td>
                     <td  style="
                     text-align: left;
@@ -203,11 +203,11 @@
                     white-space: nowrap;
                     ">
                         <div style="width:90%; border-width: 1px; border-style:solid; height:30px;float:left">
-                            
+
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px ; 
+                    text-align: left;padding-bottom: 20px ;
                     width: 15%;
                     overflow: hidden;
                     display: inline-block;
@@ -217,14 +217,14 @@
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px; 
+                    text-align: left;padding-bottom: 20px;
                     width: 30%;
                     overflow: hidden;
                     display: inline-block;
                     white-space: nowrap;
                     ">
                         <div style="width:100%; border-width: 1px; border-style:solid; height:30px;float:left">
-                        
+
                         </div>
                     </td>
                 </tr>
@@ -237,7 +237,7 @@
                         <div style="font-size: 15px">
                             b. Kecamatan:
                         </div>
-                        
+
                     </td>
                     <td  style="
                     text-align: left;
@@ -248,11 +248,11 @@
                     white-space: nowrap;
                     ">
                         <div style="width:90%; border-width: 1px; border-style:solid; height:30px;float:left">
-                            
+
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px ; 
+                    text-align: left;padding-bottom: 20px ;
                     width: 15%;
                     overflow: hidden;
                     display: inline-block;
@@ -262,14 +262,14 @@
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px; 
+                    text-align: left;padding-bottom: 20px;
                     width: 30%;
                     overflow: hidden;
                     display: inline-block;
                     white-space: nowrap;
                     ">
                         <div style="width:100%; border-width: 1px; border-style:solid; height:30px;float:left">
-                        
+
                         </div>
                     </td>
                 </tr>
@@ -282,7 +282,7 @@
                         <div style="font-size: 15px">
                             e. Kode Pos:
                         </div>
-                        
+
                     </td>
                     <td  style="
                     text-align: left;
@@ -293,23 +293,23 @@
                     white-space: nowrap;
                     ">
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                            
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                        
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                        
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                        
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                        
+
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px ; 
+                    text-align: left;padding-bottom: 20px ;
                     width: 20%;
                     overflow: hidden;
                     display: inline-block;
@@ -319,47 +319,47 @@
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px; 
+                    text-align: left;padding-bottom: 20px;
                     width: 40%;
                     overflow: hidden;
                     display: inline-block;
                     white-space: nowrap;
                     ">
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                        
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                    
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                    
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                    
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                    
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                    
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                    
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                    
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                    
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                    
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                    
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                    
+
                         </div>
                     </td>
                 </tr>
@@ -379,7 +379,7 @@
                         <div style="font-size: 15px">
                             1. Alasan Pindah:
                         </div>
-                        
+
                     </td>
                     <td  style="
                     text-align: left;
@@ -394,7 +394,7 @@
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px ; 
+                    text-align: left;padding-bottom: 20px ;
                     width: 20%;
                     overflow: hidden;
                     display: inline-block;
@@ -404,7 +404,7 @@
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px; 
+                    text-align: left;padding-bottom: 20px;
                     width: 20%;
                     overflow: hidden;
                     display: inline-block;
@@ -415,7 +415,7 @@
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px; 
+                    text-align: left;padding-bottom: 20px;
                     width: 20%;
                     overflow: hidden;
                     display: inline-block;
@@ -426,7 +426,7 @@
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px; 
+                    text-align: left;padding-bottom: 20px;
                     width: 30%;
                     overflow: hidden;
                     display: inline-block;
@@ -451,10 +451,10 @@
                     display: inline-block;
                     white-space: nowrap;
                     ">
-                       
+
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px ; 
+                    text-align: left;padding-bottom: 20px ;
                     width: 20%;
                     overflow: hidden;
                     display: inline-block;
@@ -464,7 +464,7 @@
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px; 
+                    text-align: left;padding-bottom: 20px;
                     width: 20%;
                     overflow: hidden;
                     display: inline-block;
@@ -475,7 +475,7 @@
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px; 
+                    text-align: left;padding-bottom: 20px;
                     width: 20%;
                     overflow: hidden;
                     display: inline-block;
@@ -494,7 +494,7 @@
                         <div style="font-size: 15px">
                             2. Alamat Tujuan Pindah:
                         </div>
-                        
+
                     </td>
                     <td  style="
                     text-align: left;
@@ -505,11 +505,11 @@
                     white-space: nowrap;
                     ">
                         <div style="width:90%; border-width: 1px; border-style:solid; height:30px;float:left">
-                            
+
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px ; 
+                    text-align: left;padding-bottom: 20px ;
                     width: 4%;
                     overflow: hidden;
                     display: inline-block;
@@ -519,24 +519,24 @@
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px; 
+                    text-align: left;padding-bottom: 20px;
                     width: 20%;
                     overflow: hidden;
                     display: inline-block;
                     white-space: nowrap;
                     ">
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                        
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                    
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                    
+
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px ; 
+                    text-align: left;padding-bottom: 20px ;
                     width: 4%;
                     overflow: hidden;
                     display: inline-block;
@@ -546,20 +546,20 @@
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px; 
+                    text-align: left;padding-bottom: 20px;
                     width: 20%;
                     overflow: hidden;
                     display: inline-block;
                     white-space: nowrap;
                     ">
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                        
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                    
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                    
+
                         </div>
                     </td>
                 </tr>
@@ -572,7 +572,7 @@
                         <div style="font-size: 15px">
                             a. Desa/Kelurahan:
                         </div>
-                        
+
                     </td>
                     <td  style="
                     text-align: left;
@@ -583,11 +583,11 @@
                     white-space: nowrap;
                     ">
                         <div style="width:90%; border-width: 1px; border-style:solid; height:30px;float:left">
-                            
+
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px ; 
+                    text-align: left;padding-bottom: 20px ;
                     width: 15%;
                     overflow: hidden;
                     display: inline-block;
@@ -597,14 +597,14 @@
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px; 
+                    text-align: left;padding-bottom: 20px;
                     width: 30%;
                     overflow: hidden;
                     display: inline-block;
                     white-space: nowrap;
                     ">
                         <div style="width:100%; border-width: 1px; border-style:solid; height:30px;float:left">
-                        
+
                         </div>
                     </td>
                 </tr>
@@ -617,7 +617,7 @@
                         <div style="font-size: 15px">
                             b. Kecamatan:
                         </div>
-                        
+
                     </td>
                     <td  style="
                     text-align: left;
@@ -628,11 +628,11 @@
                     white-space: nowrap;
                     ">
                         <div style="width:90%; border-width: 1px; border-style:solid; height:30px;float:left">
-                            
+
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px ; 
+                    text-align: left;padding-bottom: 20px ;
                     width: 15%;
                     overflow: hidden;
                     display: inline-block;
@@ -642,14 +642,14 @@
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px; 
+                    text-align: left;padding-bottom: 20px;
                     width: 30%;
                     overflow: hidden;
                     display: inline-block;
                     white-space: nowrap;
                     ">
                         <div style="width:100%; border-width: 1px; border-style:solid; height:30px;float:left">
-                        
+
                         </div>
                     </td>
                 </tr>
@@ -662,7 +662,7 @@
                         <div style="font-size: 15px">
                             e. Kode Pos:
                         </div>
-                        
+
                     </td>
                     <td  style="
                     text-align: left;
@@ -673,23 +673,23 @@
                     white-space: nowrap;
                     ">
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                            
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                        
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                        
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                        
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                        
+
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px ; 
+                    text-align: left;padding-bottom: 20px ;
                     width: 20%;
                     overflow: hidden;
                     display: inline-block;
@@ -699,47 +699,47 @@
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px; 
+                    text-align: left;padding-bottom: 20px;
                     width: 40%;
                     overflow: hidden;
                     display: inline-block;
                     white-space: nowrap;
                     ">
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                        
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                    
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                    
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                    
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                    
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                    
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                    
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                    
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                    
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                    
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                    
+
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-                    
+
                         </div>
                     </td>
                 </tr>
@@ -751,7 +751,7 @@
                         <div style="font-size: 15px">
                             3. Klasifikasi Pindah:
                         </div>
-                        
+
                     </td>
                     <td  style="
                     text-align: left;
@@ -766,7 +766,7 @@
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px ; 
+                    text-align: left;padding-bottom: 20px ;
                     width: 35%;
                     overflow: hidden;
                     display: inline-block;
@@ -776,7 +776,7 @@
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px; 
+                    text-align: left;padding-bottom: 20px;
                     width: 25%;
                     overflow: hidden;
                     display: inline-block;
@@ -787,7 +787,7 @@
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px; 
+                    text-align: left;padding-bottom: 20px;
                     width: 30%;
                     overflow: hidden;
                     display: inline-block;
@@ -812,10 +812,10 @@
                     display: inline-block;
                     white-space: nowrap;
                     ">
-                       
+
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px ; 
+                    text-align: left;padding-bottom: 20px ;
                     width: 35%;
                     overflow: hidden;
                     display: inline-block;
@@ -825,7 +825,7 @@
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px; 
+                    text-align: left;padding-bottom: 20px;
                     width: 25%;
                     overflow: hidden;
                     display: inline-block;
@@ -844,7 +844,7 @@
                         <div style="font-size: 15px">
                             4. Jenis Kepindahan:
                         </div>
-                        
+
                     </td>
                     <td  style="
                     text-align: left;
@@ -859,7 +859,7 @@
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px ; 
+                    text-align: left;padding-bottom: 20px ;
                     width: 55%;
                     overflow: hidden;
                     display: inline-block;
@@ -869,7 +869,7 @@
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px; 
+                    text-align: left;padding-bottom: 20px;
                     width: 35%;
                     overflow: hidden;
                     display: inline-block;
@@ -894,10 +894,10 @@
                     display: inline-block;
                     white-space: nowrap;
                     ">
-                       
+
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px ; 
+                    text-align: left;padding-bottom: 20px ;
                     width: 55%;
                     overflow: hidden;
                     display: inline-block;
@@ -907,7 +907,7 @@
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px; 
+                    text-align: left;padding-bottom: 20px;
                     width: 25%;
                     overflow: hidden;
                     display: inline-block;
@@ -926,7 +926,7 @@
                         <div style="font-size: 15px">
                             5. Status No KK bagi yang tidak pindah :
                         </div>
-                        
+
                     </td>
                     <td  style="
                     text-align: left;
@@ -941,7 +941,7 @@
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px ; 
+                    text-align: left;padding-bottom: 20px ;
                     width: 30%;
                     overflow: hidden;
                     display: inline-block;
@@ -951,7 +951,7 @@
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px; 
+                    text-align: left;padding-bottom: 20px;
                     width: 50%;
                     overflow: hidden;
                     display: inline-block;
@@ -976,10 +976,10 @@
                     display: inline-block;
                     white-space: nowrap;
                     ">
-                       
+
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px ; 
+                    text-align: left;padding-bottom: 20px ;
                     width: 30%;
                     overflow: hidden;
                     display: inline-block;
@@ -989,7 +989,7 @@
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px; 
+                    text-align: left;padding-bottom: 20px;
                     width: 25%;
                     overflow: hidden;
                     display: inline-block;
@@ -1008,7 +1008,7 @@
                         <div style="font-size: 15px">
                             6. Status No KK bagi yang pindah :
                         </div>
-                        
+
                     </td>
                     <td  style="
                     text-align: left;
@@ -1023,7 +1023,7 @@
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px ; 
+                    text-align: left;padding-bottom: 20px ;
                     width: 20%;
                     overflow: hidden;
                     display: inline-block;
@@ -1033,7 +1033,7 @@
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px; 
+                    text-align: left;padding-bottom: 20px;
                     width: 25%;
                     overflow: hidden;
                     display: inline-block;
@@ -1044,7 +1044,7 @@
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px; 
+                    text-align: left;padding-bottom: 20px;
                     width: 45%;
                     overflow: hidden;
                     display: inline-block;
@@ -1063,7 +1063,7 @@
                         <div style="font-size: 15px">
                             7. Rencana Tgl pindah :
                         </div>
-                        
+
                     </td>
                     <td  style="
                     text-align: left;
@@ -1081,7 +1081,7 @@
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px ; 
+                    text-align: left;padding-bottom: 20px ;
                     width: 20%;
                     overflow: hidden;
                     display: inline-block;
@@ -1094,7 +1094,7 @@
                         </div>
                     </td>
                     <td style="
-                    text-align: left;padding-bottom: 20px; 
+                    text-align: left;padding-bottom: 20px;
                     width: 25%;
                     overflow: hidden;
                     display: inline-block;
@@ -1116,7 +1116,7 @@
                         <div style="font-size: 15px">
                             8. Keluarga yang pindah :
                         </div>
-                        
+
                     </td>
                 </tr>
                 <tr>
@@ -1130,640 +1130,640 @@
                     <tbody>
                         <tr>
                             <td style="width: 4%">
-                               1 
+                               1
                             </td>
                             <td width="30px">
-                                
+
                             </td>
                             <td width="30px">
-                        
+
                             </td>
                             <td width="30px">
-                    
+
                             </td>
                             <td width="30px">
-                
+
                             </td>
                             <td width="30px">
-                        
+
                             </td>
                             <td width="30px">
-                        
+
                             </td>
                             <td width="30px">
-                    
+
                             </td>
                             <td width="30px">
-                
+
                             </td>
                             <td width="30px">
-                    
+
                             </td>
                             <td width="30px">
-                        
+
                             </td>
                             <td width="30px">
-                    
+
                             </td>
                             <td width="30px">
-                
+
                             </td>
                             <td width="30px">
-                
+
                             </td>
                             <td width="30px">
-                        
+
                             </td>
                             <td width="30px">
-                    
+
                             </td>
                             <td width="30px">
-                
+
                             </td>
                             <td style="width:30%">
-                            
+
                             </td>
                             <td width="30px">
-                               
+
                             </td>
                             <td width="30px">
-                            </td>    
+                            </td>
                         </tr>
                         <tr>
                             <td style="width: 4%">
                                 2
                             </td>
                             <td width="30px">
-                                
+
                             </td>
                             <td width="30px">
-                        
+
                             </td>
                             <td width="30px">
-                    
+
                             </td>
                             <td width="30px">
-                
+
                             </td>
                             <td width="30px">
-                        
+
                             </td>
                             <td width="30px">
-                        
+
                             </td>
                             <td width="30px">
-                    
+
                             </td>
                             <td width="30px">
-                
+
                             </td>
                             <td width="30px">
-                    
+
                             </td>
                             <td width="30px">
-                        
+
                             </td>
                             <td width="30px">
-                    
+
                             </td>
                             <td width="30px">
-                
+
                             </td>
                             <td width="30px">
-                
+
                             </td>
                             <td width="30px">
-                        
+
                             </td>
                             <td width="30px">
-                    
+
                             </td>
                             <td width="30px">
-                
+
                             </td>
                             <td style="width:30%">
-                            
+
                             </td>
                             <td width="30px">
-                                
+
                             </td>
                             <td width="30px">
-                            </td>    
+                            </td>
                         </tr>
                         <tr>
                             <td style="width: 4%">
-                                3 
+                                3
                             </td>
                             <td width="30px">
-                                
+
                             </td>
                             <td width="30px">
-                        
+
                             </td>
                             <td width="30px">
-                    
+
                             </td>
                             <td width="30px">
-                
+
                             </td>
                             <td width="30px">
-                        
+
                             </td>
                             <td width="30px">
-                        
+
                             </td>
                             <td width="30px">
-                    
+
                             </td>
                             <td width="30px">
-                
+
                             </td>
                             <td width="30px">
-                    
+
                             </td>
                             <td width="30px">
-                        
+
                             </td>
                             <td width="30px">
-                    
+
                             </td>
                             <td width="30px">
-                
+
                             </td>
                             <td width="30px">
-                
+
                             </td>
                             <td width="30px">
-                        
+
                             </td>
                             <td width="30px">
-                    
+
                             </td>
                             <td width="30px">
-                
+
                             </td>
                             <td style="width:30%">
-                            
+
                             </td>
                             <td width="30px">
-                                
+
                             </td>
                             <td width="30px">
-                            </td>    
+                            </td>
                         </tr>
                             <tr>
                                 <td style="width: 4%">
-                                    4 
+                                    4
                                 </td>
                                 <td width="30px">
-                                    
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td style="width:30%">
-                                
+
                                 </td>
                                 <td width="30px">
-                                    
+
                                 </td>
                                 <td width="30px">
-                                </td>    
+                                </td>
                             </tr>
                             <tr>
                                 <td style="width: 4%">
                                     5
                                 </td>
                                 <td width="30px">
-                                    
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td style="width:30%">
-                                
+
                                 </td>
                                 <td width="30px">
-                                    
+
                                 </td>
                                 <td width="30px">
-                                </td>    
+                                </td>
                             </tr>
                             <tr>
                                 <td style="width: 4%">
-                                    6 
+                                    6
                                 </td>
                                 <td width="30px">
-                                    
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td style="width:30%">
-                                
+
                                 </td>
                                 <td width="30px">
-                                    
+
                                 </td>
                                 <td width="30px">
-                                </td>    
+                                </td>
                             </tr>
                             <tr>
                                 <td style="width: 4%">
                                     7
                                 </td>
                                 <td width="30px">
-                                    
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td style="width:30%">
-                                
+
                                 </td>
                                 <td width="30px">
-                                    
+
                                 </td>
                                 <td width="30px">
-                                </td>    
+                                </td>
                             </tr>
                             <tr>
                                 <td style="width: 4%">
-                                    8 
+                                    8
                                 </td>
                                 <td width="30px">
-                                    
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td style="width:30%">
-                                
+
                                 </td>
                                 <td width="30px">
-                                    
+
                                 </td>
                                 <td width="30px">
-                                </td>    
+                                </td>
                             </tr>
                             <tr>
                                 <td style="width: 4%">
-                                    9 
+                                    9
                                 </td>
                                 <td width="30px">
-                                    
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td style="width:30%">
-                                
+
                                 </td>
                                 <td width="30px">
-                                    
+
                                 </td>
                                 <td width="30px">
-                                </td>    
+                                </td>
                             </tr>
                             <tr>
                                 <td style="width: 4%">
                                     10
                                 </td>
                                 <td width="30px">
-                                    
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td width="30px">
-                            
+
                                 </td>
                                 <td width="30px">
-                        
+
                                 </td>
                                 <td width="30px">
-                    
+
                                 </td>
                                 <td style="width:30%">
-                                
+
                                 </td>
                                 <td width="30px">
-                                    
+
                                 </td>
                                 <td width="30px">
-                                </td>    
-                            </tr>                                                                                                                                                                                                            
+                                </td>
+                            </tr>
                     </tbody>
                 </table>
                 </tr>
-                
+
         </tbody>
     </table>
     <br>
-    <div style=" 
-    text-align: left;padding-bottom: 20px ; 
+    <div style="
+    text-align: left;padding-bottom: 20px ;
     width: 25%;
     float:left;">
-        Diketahui Oleh: 
+        Diketahui Oleh:
         <p>Kepala Dinas Dafduk</p>
         <p>ub. Kasi.................</p>
         <p>No. .............. tgl .........20......</p>
         <br>
         <br>
         (..........................)
-        
+
         <p>Nip</p>
     </div>
     <div style="
-    text-align: left;padding-bottom: 20px ; 
+    text-align: left;padding-bottom: 20px ;
     width: 25%;
     float:left">
-        Diketahui Oleh: 
+        Diketahui Oleh:
         <p>Camat ..........</p>
         <p>No. .............. tgl .........20......</p>
         <br>
@@ -1774,7 +1774,7 @@
         <p>Nip</p>
     </div>
     <div style="
-    text-align: left;padding-bottom: 20px ; 
+    text-align: left;padding-bottom: 20px ;
     width: 25%;
     float:left">
         Pemohon
@@ -1792,16 +1792,16 @@
         <p>Nip</p>
     </div>
     <div style="
-    text-align: left;padding-bottom: 20px ; 
+    text-align: left;padding-bottom: 20px ;
     width: 25%;
     float:left">
-        Dikeluarkan Oleh: 
-        <p>Kepala Desa Cisarua</p>
+        Dikeluarkan Oleh:
+        <p>Kepala Desa {{ env('DESA_NAME') }}</p>
         <p>No.475/...../Tgl.06 Agustus 2018</p>
         <br>
         <br>
         <br>
-        
+
         (..........................)
         <p>Nip</p>
     </div>

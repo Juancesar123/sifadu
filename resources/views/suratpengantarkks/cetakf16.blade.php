@@ -13,7 +13,7 @@
     text-align: left;
     margin-left: 100px;
     }
-    
+
     .label-daerah-kec {
         width: 10%;
         text-align: left;
@@ -128,11 +128,11 @@
         <input type="text" style="width:440px;border:1px solid;" value="NAGRAK">
         <br>
         <div class="col number">*)</div>
-        <input type="text" style="width:440px;border:1px solid;" value="CISARUA">
+        <input type="text" style="width:440px;border:1px solid;" value="{{ env('DESA_NAME') }}">
     </div>
     <div class="row" style="margin-top:-4px">
         <div class="col label" style="font-size:11px">DUSUN/DUKUH/KAMPUNG</div>
-        <input type="text" style="width:538px;margin-left:-40px;border:1px solid;" value="CISARUA">
+        <input type="text" style="width:538px;margin-left:-40px;border:1px solid;" value="{{ env('DESA_NAME') }}">
     </div>
 
     <!-- DATA DAERAH ASAL -->
@@ -199,7 +199,7 @@
 
     <div class="row">
         <div class="col label-daerah">a.Desa</div>
-        <input type="text" class="data-daerah" value="CISARUA">
+        <input type="text" class="data-daerah" value="{{ env('DESA_NAME') }}">
         <div class="col label-daerah-second">c.Kabupaten</div>
         <input type="text" class="data-daerah-second" value="SUKABUMI">
     </div>
@@ -284,7 +284,7 @@
 
     <div class="row">
         <div class="col label-daerah">a.Desa</div>
-        <input type="text" class="data-daerah" value="CISARUA">
+        <input type="text" class="data-daerah" value="{{ env('DESA_NAME') }}">
         <div class="col label-daerah-second">c.Kabupaten</div>
         <input type="text" class="data-daerah-second" value="SUKABUMI">
     </div>
@@ -342,7 +342,7 @@
             </ul>
             </div>
     </div>
-    
+
     <div class="row">
         <div class="col number">10.</div>
         <div class="col label">Jumlah Anggota Keluarga</div>
@@ -356,7 +356,7 @@
         <td><?php echo $split[1] ?></td>
         </tr></table>
     </div>
-        
+
     <div class="row">
         <div class="col number">11.</div>
         <div class="col">DAFTAR ANGGOTA KELUARGA PEMOHON (hanya diisi anggota keluarga saja)</div>
@@ -463,7 +463,7 @@
                 <td><?php echo $split[$a] ?></td>
                 <?php $a++; }?>
             </tr>
-            
+
             <tr>
                     <?php
                     $string = '04';
@@ -685,7 +685,7 @@
     <!-- FOOTER -->
     <div class="footer">
             <div style="text-align: right;font-size: 12px;">
-                <label>Cisarua,09 Maret 2015</label>
+                <label>{{ env('DESA_NAME') }},09 Maret 2015</label>
             </div>
             <label style="font-size: 12px;"><center>Mengetahui,</center></label>
             <div style="width:23%;float:left;">
@@ -706,7 +706,7 @@
                 (......................) <br>
             </div>
             <div style="width:23%;float:left;margin-left:13px">
-                <label><center>Kepala Desa Cisarua</center></label>
+                <label><center>Kepala Desa {{ env('DESA_NAME') }}</center></label>
                 <br>
                 <br>
                 <br>
@@ -764,7 +764,7 @@
                 (......................) <br>
             </div>
             <div style="width:23%;float:right;margin-left:13px;text-align:center;">
-                <label>Cisarua,08 Januari 2018 <br>Pemohon</label>
+                <label>{{ env('DESA_NAME') }},08 Januari 2018 <br>Pemohon</label>
                 <br>
                 <br>
                 <br>

@@ -35,7 +35,7 @@
 <body class="hold-transition login-page">
 <div class="login-box">
     <div class="login-logo">
-        <a href="{{ url('/home') }}"><img src="http://desacisarua.com/wp-content/uploads/2018/12/logoutamalogin1.png"></a>
+        <a href="{{ url('/home') }}"><img src="http://desa{{ env('DESA_NAME') }}.com/wp-content/uploads/2018/12/logoutamalogin1.png"></a>
     </div>
 
     <!-- /.login-logo -->

@@ -8,7 +8,7 @@
             <tr>
                 <td style="text-align: center;padding-top: 20px">
                     <div style="font-size: 20px;font-weight: bold">
-                        KEPALA DESA CISARUA		    						</div>
+                        KEPALA DESA {{ env('DESA_NAME') }}		    						</div>
                 </td>
             </tr>
             <tr>
@@ -84,7 +84,7 @@
             <tr style="padding-left: 30px;">
                 <td style="text-align: left;padding-bottom: 20px">
                     <div style="font-size: 15px">
-                        Orang  tersebut diatas, adalah benar <strong>Warga Tidak Mampu</strong> dan berdomisili di Desa CISARUA Kecamatan NAGRAK Kabupaten SUKABUMI DUSUN I.
+                        Orang  tersebut diatas, adalah benar <strong>Warga Tidak Mampu</strong> dan berdomisili di Desa {{ env('DESA_NAME') }} Kecamatan NAGRAK Kabupaten SUKABUMI DUSUN I.
                     </div>
                 </td>
             </tr>
@@ -99,8 +99,8 @@
                 <td style="text-align: center;padding-bottom: 20px">
                     <div style="font-size: 15px;margin-left: 50%">
                         <p>Karang Mulya</p>
-    
-                        KEPALA DESA CISARUA										<br>
+
+                        KEPALA DESA {{ env('DESA_NAME') }}										<br>
                         <br>
                         <br>
                         <br>

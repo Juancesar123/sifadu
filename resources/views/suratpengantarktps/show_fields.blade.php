@@ -3,7 +3,7 @@
         <tr>
             <td style="text-align:left;padding-top: 20px">
                 <div style="font-size: 20px;font-weight: bold">
-                    FORMULIR PERMOHONAN PEREKAMAN KARTU TANDA PENDUDUK ELEKTRONIK (KTP-EL) 	    						
+                    FORMULIR PERMOHONAN PEREKAMAN KARTU TANDA PENDUDUK ELEKTRONIK (KTP-EL)
                 </div>
             </td>
         </tr>
@@ -37,7 +37,7 @@
                     <div style="font-size: 15px;">
                            <strong> PEMERINTAH PROVINSI</strong>
                     </div>
-                    
+
                 </td>
                 <td  style="
                 text-align: left;
@@ -55,7 +55,7 @@
                     </div>
                 </td>
                 <td style="
-                text-align: left;padding-bottom: 20px ; 
+                text-align: left;padding-bottom: 20px ;
                 width: 20%;
                 overflow: hidden;
                 display: inline-block;
@@ -77,7 +77,7 @@
                     <div style="font-size: 15px;">
                             <strong> PEMERINTAH KABUPATEN/KOTA</strong>
                     </div>
-                    
+
                 </td>
                 <td  style="
                 text-align: left;
@@ -95,7 +95,7 @@
                     </div>
                 </td>
                 <td style="
-                text-align: left;padding-bottom: 20px ; 
+                text-align: left;padding-bottom: 20px ;
                 width: 20%;
                 overflow: hidden;
                 display: inline-block;
@@ -117,7 +117,7 @@
                     <div style="font-size: 15px;">
                             <strong> Kecamatan</strong>
                     </div>
-                    
+
                 </td>
                 <td  style="
                 text-align: left;
@@ -135,7 +135,7 @@
                     </div>
                 </td>
                 <td style="
-                text-align: left;padding-bottom: 20px ; 
+                text-align: left;padding-bottom: 20px ;
                 width: 20%;
                 overflow: hidden;
                 display: inline-block;
@@ -157,7 +157,7 @@
                     <div style="font-size: 15px;">
                             <strong> Desa/Kelurahan</strong>
                     </div>
-                    
+
                 </td>
                 <td  style="
                 text-align: left;
@@ -181,16 +181,16 @@
                     </div>
                 </td>
                 <td style="
-                text-align: left;padding-bottom: 20px ; 
+                text-align: left;padding-bottom: 20px ;
                 width: 20%;
                 overflow: hidden;
                 display: inline-block;
                 white-space: nowrap;">
                     <div style="font-size:15px;font-weight:bold;width:90%; border-width: 1px; border-style:solid; height:30px;float:left">
-                        Cisarua
+                        {{ env('DESA_NAME') }}
                     </div>
                 </td>
-            </tr>    
+            </tr>
             <tr style="padding-left: 30px; height:10px">
                 <td style="
                 text-align: left;
@@ -203,7 +203,7 @@
                     <div style="font-size: 15px;">
                             <strong> Permohonan KTP</strong>
                     </div>
-                    
+
                 </td>
                 <td  style="
                 text-align: left;
@@ -280,7 +280,7 @@
                     <div style="font-size: 15px;">
                             1. Nama Lengkap
                     </div>
-                    
+
                 </td>
                 <td  style="
                 text-align: left;
@@ -293,8 +293,8 @@
                         2
                     </div>
                 </td>
-                
-            </tr>    
+
+            </tr>
             <tr style="padding-left: 30px; height:10px">
                 <td style="
                 text-align: left;
@@ -309,7 +309,7 @@
                     <div style="font-size: 15px;">
                             2. No. KK
                     </div>
-                    
+
                 </td>
                 <td  style="
                 text-align: left;
@@ -319,7 +319,7 @@
                 white-space: nowrap;
                 ">
                     <div style="font-size:15px;font-weight:bold;width:500px;height:25px; border-width: 1px; border-style:solid;float:left">
-                        
+
                     </div>
                 </td>
             </tr>
@@ -337,7 +337,7 @@
                     <div style="font-size: 15px;">
                             3. NIK
                     </div>
-                    
+
                 </td>
                 <td  style="
                 text-align: left;
@@ -347,7 +347,7 @@
                 white-space: nowrap;
                 ">
                     <div style="font-size:15px;font-weight:bold;width:500px;height:25px; border-width: 1px; border-style:solid;float:left">
-                        
+
                     </div>
                 </td>
             </tr>
@@ -365,7 +365,7 @@
                     <div style="font-size: 15px;">
                             4. Alamat
                     </div>
-                    
+
                 </td>
                 <td  style="
                 text-align: left;
@@ -375,7 +375,7 @@
                 white-space: nowrap;
                 ">
                     <div style="font-size:15px;font-weight:bold;width:500px;height:25px; border-width: 1px; border-style:solid;float:left">
-                        
+
                     </div>
                 </td>
             </tr>
@@ -388,7 +388,7 @@
                 white-space: nowrap;
                 margin-right:50px;
                     ">
-                  
+
                 </td>
                 <td  style="
                 text-align: left;
@@ -398,10 +398,10 @@
                 white-space: nowrap;
                 ">
                     <div style="font-size:15px;font-weight:bold;width:800px;height:25px; border-width: 1px; border-style:solid;float:left">
-                        
+
                     </div>
                 </td>
-            </tr>   
+            </tr>
             <tr style="padding-left: 30px; height:10px">
                 <td style="
                 text-align: left;
@@ -411,7 +411,7 @@
                 white-space: nowrap;
                 margin-right:50px;
                     ">
-                    
+
                 </td>
                 <td  style="
                 text-align: left;
@@ -432,13 +432,13 @@
                 white-space: nowrap;
                 ">
                     <div style="font-size:15px;font-weight:bold;width:30px;height:25px; border-width: 1px; border-style:solid;float:left">
-                        
+
                     </div>
                     <div style="font-size:15px;font-weight:bold;width:30px;height:25px; border-width: 1px; border-style:solid;float:left">
-                    
+
                     </div>
                     <div style="font-size:15px;font-weight:bold;width:30px;height:25px; border-width: 1px; border-style:solid;float:left">
-                    
+
                     </div>
                 </td>
                 <td  style="
@@ -460,13 +460,13 @@
                 white-space: nowrap;
                 ">
                     <div style="font-size:15px;font-weight:bold;width:30px;height:25px; border-width: 1px; border-style:solid;float:left">
-                        
+
                     </div>
                     <div style="font-size:15px;font-weight:bold;width:30px;height:25px; border-width: 1px; border-style:solid;float:left">
-                    
+
                     </div>
                     <div style="font-size:15px;font-weight:bold;width:30px;height:25px; border-width: 1px; border-style:solid;float:left">
-                    
+
                     </div>
                 </td>
                <td style="text-align: left;
@@ -487,21 +487,21 @@
                 white-space: nowrap;
                 ">
                     <div style="font-size:15px;font-weight:bold;width:30px;height:25px; border-width: 1px; border-style:solid;float:left">
-                        
+
                     </div>
                     <div style="font-size:15px;font-weight:bold;width:30px;height:25px; border-width: 1px; border-style:solid;float:left">
-                    
+
                     </div>
                     <div style="font-size:15px;font-weight:bold;width:30px;height:25px; border-width: 1px; border-style:solid;float:left">
-                    
+
                     </div>
                     <div style="font-size:15px;font-weight:bold;width:30px;height:25px; border-width: 1px; border-style:solid;float:left">
-                    
+
                     </div>
                     <div style="font-size:15px;font-weight:bold;width:30px;height:25px; border-width: 1px; border-style:solid;float:left">
-                    
+
                     </div>
                 </td>
-            </tr>       
+            </tr>
     </tbody>
 </table>

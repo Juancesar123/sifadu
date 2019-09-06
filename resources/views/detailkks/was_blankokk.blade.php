@@ -12,17 +12,17 @@
 	.tbheader .titikdua {width: 10px; text-align: center;}
 	.tbheader .kotak{width: 15px; text-align: center;}
 	.tbheader .biasa{text-align: left;}
-	/* body */	
+	/* body */
  	.tbbody{font-family:Arial, sans-serif;font-size:7px;width: 100%;}
 	.tbbody td{text-align: center;border:1px solid #999999;}
-	/* footer */	
+	/* footer */
 	.tbfooter{font-family:Arial, sans-serif;font-size:7px;width: 100%;}
 	.tbfooter td{text-align: center;}
  	/* pemisah */
  	div.nomor {
 		position: absolute;
 		right: 0;
-	} 
+	}
 	div.logo{
 		position: absolute;
 		left: 0;
@@ -37,7 +37,7 @@
 		width: 100%;
 		top: 50;
 		font-size: 13px;
-	}	
+	}
 	</style>
 	<div align="center" style="height:90px;">
 		<div class="logo"><img src="{{asset('img/2191f-lambang_kab_sukabumi.svg_-2-e1532000502726-232x300.png')}}" width="70" height="70"></div>
@@ -103,28 +103,28 @@
 							<td class="kotak">T</td>
 							@for ($i = 0; $i <= 2; $i++)
 								@if ($i < count($header['rt']))
-									<td class="kotak">{{$header['rt'][$i]}}</td>		
+									<td class="kotak">{{$header['rt'][$i]}}</td>
 								@else
 									<td class="kotak"></td>
 								@endif
-							@endfor							
+							@endfor
 							<td class="kotak">R</td>
 							<td class="kotak">W</td>
 							@for ($i = 0; $i <= 2; $i++)
 								@if ($i < count($header['rw']))
-									<td class="kotak">{{$header['rw'][$i]}}</td>		
+									<td class="kotak">{{$header['rw'][$i]}}</td>
 								@else
 									<td class="kotak"></td>
 								@endif
-							@endfor	
-							<td style="width:100">Jumlah Anggota Keluarga</td>														
+							@endfor
+							<td style="width:100">Jumlah Anggota Keluarga</td>
 							@for ($i = 0; $i <= 1; $i++)
 								@if ($i < count($header['jmlkeluarga']))
-									<td class="kotak">{{$header['jmlkeluarga'][$i]}}</td>		
+									<td class="kotak">{{$header['jmlkeluarga'][$i]}}</td>
 								@else
 									<td class="kotak"></td>
 								@endif
-							@endfor	
+							@endfor
 							<td style="width:25">Orang</td>
 							<td class="kotak"></td>
 							<td class="biasa">Kode Nama Kelurahan</td>
@@ -132,24 +132,24 @@
 							<td class="kotak">0</td>
 							<td class="kotak">0</td>
 							<td class="kotak">1</td>
-							<td class="biasa" style="width:15">CISARUA</td>
+							<td class="biasa" style="width:15">{{ env('DESA_NAME') }}</td>
 						</tr>
 						<tr>
 							<td class="biasa" style="padding-left: 20px;">Telepon</td>
 							<td class="titikdua">:</td>
 							@for ($i = 0; $i <= 20; $i++)
 								@if ($i < count($header['telepon']))
-									<td class="kotak">{{$header['telepon'][$i]}}</td>		
+									<td class="kotak">{{$header['telepon'][$i]}}</td>
 								@else
 									<td class="kotak"></td>
 								@endif
 							@endfor
-							<td class="biasa">Nama Dusun</td>	
+							<td class="biasa">Nama Dusun</td>
 							<td class="titikdua">:</td>
 							<td class="kotak"></td>
-							<td class="kotak"></td>		
-							<td class="kotak"></td>	
-							<td class="kotak"></td>					
+							<td class="kotak"></td>
+							<td class="kotak"></td>
+							<td class="kotak"></td>
 						</tr>
 						<tr><td class="biasa" colspan="29"><strong>DATA KELUARGA</strong></td></tr>
 					</tbody>
@@ -200,9 +200,9 @@
 									<td></td>
 									<td></td>
 									<td></td>
-								</tr>						
+								</tr>
 							@endfor
-						@endif			
+						@endif
 					</tbody>
 				</table>
 				<div style="height: 5px;"></div>
@@ -263,7 +263,7 @@
 										<td class="biasa">{{$rows->status_kawin}}</td>
 									@else
 										<td class="biasa"></td>
-									@endif 						
+									@endif
 								@else
 									<td class="biasa"></td>
 								@endif
@@ -277,10 +277,10 @@
 									@for ($x = 0; $x < 29; $x++)
 									<td></td>
 									@endfor
-								</tr>						
+								</tr>
 							@endfor
-						@endif			
-					</tbody>		
+						@endif
+					</tbody>
 				</table>
 				<div style="height: 5px;"></div>
 				<table class="tbbody">
@@ -304,11 +304,11 @@
 								<td colspan="3" style="text-align: center;">23</td>
 								<td colspan="3" style="text-align: center;">24</td>
 								<td colspan="3" style="text-align: center;">25</td>
-								<td colspan="3" style="text-align: center;">26</td>		
+								<td colspan="3" style="text-align: center;">26</td>
 								<td style="text-align: center;">27</td>
 								<td style="text-align: center;">28</td>
 								<td style="text-align: center;">29</td>
-								<td style="text-align: center;">30</td>						
+								<td style="text-align: center;">30</td>
 							</tr>
 						@else
 						<tr>
@@ -329,11 +329,11 @@
 								<td style="text-align: center;">23</td>
 								<td style="text-align: center;">24</td>
 								<td style="text-align: center;">25</td>
-								<td style="text-align: center;">26</td>		
+								<td style="text-align: center;">26</td>
 								<td style="text-align: center;">27</td>
 								<td style="text-align: center;">28</td>
 								<td style="text-align: center;">29</td>
-								<td style="text-align: center;">30</td>						
+								<td style="text-align: center;">30</td>
 							</tr>
 						@endif
 						@foreach ($kk as $indexKey => $rows)
@@ -357,7 +357,7 @@
 										<td class="biasa">{{$rows->nama_lengkap_ayah}}</td>
 									@else
 										<td class="biasa"></td>
-									@endif 
+									@endif
 								@endfor
 							@else
 								@for ($i = 0; $i < 9; $i++)
@@ -374,27 +374,27 @@
 										@for ($x = 0; $x < 19; $x++)
 										<td></td>
 										@endfor
-									</tr>														
+									</tr>
 								@else
 									<tr>
 										<td>{{$i}}</td>
 										@for ($x = 0; $x < 9; $x++)
 										<td></td>
 										@endfor
-									</tr>														
+									</tr>
 								@endif
 							@endfor
-						@endif			
-					</tbody>		
+						@endif
+					</tbody>
 				</table>
 		<table class="tbfooter">
 			<tbody>
 				<tr>
 					<td style="text-align: left">Nama Ketua RT :</td>
 					<td style="width:400px;"></td>
-					<td>Petugas/Register <br> Desa Cisarua</td>
-					<td>Mengetahui, <br> Sekretaris Desa Cisarua</td>
-					<td>Cisarua, {{$tglcetak}} <br> Kepala Keluarga</td>
+					<td>Petugas/Register <br> Desa {{ env('DESA_NAME') }}</td>
+					<td>Mengetahui, <br> Sekretaris Desa {{ env('DESA_NAME') }}</td>
+					<td>{{ env('DESA_NAME') }}, {{$tglcetak}} <br> Kepala Keluarga</td>
 				</tr>
 				<tr>
 					<td style="text-align: left">Nama Ketua RW :</td>
@@ -403,7 +403,7 @@
 				<tr>
 					<td class="biasa" style="text-align: left; font-size: 10px; font-weight: bold;">NO REG.747.4/{{$header['nomor']}}/Pemdes/2018</td>
 				</tr>
-				@endif				
+				@endif
 				<tr>
 					<td colspan="2" style="text-align: left; font-size: 10px; padding-top: 10px;">
 						Pernyataan : <br> Demikian formulir ini saya / kami isi dengan sesungguhnya apabila keterangan tersebut tidak sesuai dengan <br>
@@ -420,7 +420,7 @@
 					</td>
 					<td>
 						WAWAN
-					</td>					
+					</td>
 				</tr>
 			</tbody>
 		</table>

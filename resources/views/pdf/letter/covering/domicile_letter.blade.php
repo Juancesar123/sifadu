@@ -13,7 +13,7 @@
               <tr>
                   <td style="text-align: center;padding-top: 20px">
                       <div style="font-size: 20px;font-weight: bold">
-                          KEPALA DESA CISARUA		    						</div>
+                          KEPALA DESA {{ env('DESA_NAME') }}		    						</div>
                   </td>
               </tr>
               <tr>
@@ -89,7 +89,7 @@
               <tr style="padding-left: 30px;">
                   <td style="text-align: left;padding-bottom: 20px">
                       <div style="font-size: 15px">
-                          Orang  tersebut diatas, adalah benar <strong>Warga Kami dan berdomisili</strong>  di Desa CISARUA Kecamatan NAGRAK Kabupaten SUKABUMI DUSUN II.
+                          Orang  tersebut diatas, adalah benar <strong>Warga Kami dan berdomisili</strong>  di Desa {{ env('DESA_NAME') }} Kecamatan NAGRAK Kabupaten SUKABUMI DUSUN II.
                       </div>
                   </td>
               </tr>
@@ -106,7 +106,7 @@
                       <td style="text-align:left; padding-top:100px; padding-bottom:30px;">
                           <div style="font-size: 15px;">
                               <p>Karang Mulya</p>
-                              <p style="margin-bottom:100px;">KEPALA DESA CISARUA</p><br>
+                              <p style="margin-bottom:100px;">KEPALA DESA {{ env('DESA_NAME') }}</p><br>
                               <br>
                               <br>
                               <br>
@@ -122,7 +122,7 @@
                       <td style="text-align:center; padding-top:100px; padding-bottom:30px;">
                           <div style="font-size: 15px;">
                               <p>Karang Mulya</p>
-                              <p style="margin-bottom:100px;">KEPALA DESA CISARUA</p><br>
+                              <p style="margin-bottom:100px;">KEPALA DESA {{ env('DESA_NAME') }}</p><br>
                               <br>
                               <br>
                               <br>
@@ -138,7 +138,7 @@
                       <td style="text-align:right; padding-top:100px; padding-bottom:30px;">
                           <div style="font-size: 15px;">
                               <p>Karang Mulya</p>
-                              <p style="margin-bottom:100px;">KEPALA DESA CISARUA</p><br>
+                              <p style="margin-bottom:100px;">KEPALA DESA {{ env('DESA_NAME') }}</p><br>
                               <br>
                               <br>
                               <br>

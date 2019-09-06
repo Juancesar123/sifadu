@@ -38,13 +38,13 @@
         }
         .fs-12 {
             font-size: 12pt !important;
-        } 
+        }
         .fs-10 {
             font-size: 10pt !important;
-        } 
+        }
         .fs-8 {
             font-size: 8pt !important;
-        } 
+        }
     </style>
     <style>
         .box tr td {
@@ -65,15 +65,15 @@
                         Pemerintah Kabupaten Sukabumi
                         <p style="font-size:16px;font-weight:bold">
                             DINAS KEPENDUDUKAN DAN CATATAN SIPIL
-                        </p>	
+                        </p>
                         <P style="font-size:12px;font-weight:normal">
                             Jalan Raya Rambai No. 70 Cisaat Telp.(0266) 211075 sukabumi
-                        </P>  
-                        
+                        </P>
+
                                 <div colspan="2" >
-                                    <hr style="border-style:double;border-width: 2px; width:100%">  	
+                                    <hr style="border-style:double;border-width: 2px; width:100%">
                                 </div>
-                           
+
                     </div>
                     <div class="form-group">
                             <h5><u><b>SURAT PENGANTAR MOHON SKCK</b></u></h5>
@@ -81,7 +81,7 @@
                         </div>
                 </div>
             </div>
-   
+
     <table class="w-100">
         <tr>
             <td style="width:80%;">
@@ -130,8 +130,8 @@
                     <tr>
                         <td>
                             @if($coveringLetter->datapenduduk->jenis_kelamin === '1')
-                                LAKI-LAKI 
-                            @else 
+                                LAKI-LAKI
+                            @else
                                 PEREMPUAN
                             @endif
                         </td>
@@ -366,7 +366,7 @@
                             </tr>
                     <tr>
                       <td>
-                          <b>{{ $coveringLetter->datapenduduk->nama_lengkap }}</b>  
+                          <b>{{ $coveringLetter->datapenduduk->nama_lengkap }}</b>
                         </td>
                     </tr>
                 </table>
@@ -378,7 +378,7 @@
                             Pada Tanggal, {{ date_format(date_create($coveringLetter->created_at), "d M Y")}}
                         </td>
                     </tr>
-                    <tr><td>Kepala Desa Cisarua</td></tr>
+                    <tr><td>Kepala Desa {{ env('DESA_NAME') }}</td></tr>
                     <tr>
                         <td>&nbsp;</td>
                     </tr>
@@ -397,6 +397,6 @@
             </td>
         </tr>
     </table>
- 
+
 </body>
 </html>

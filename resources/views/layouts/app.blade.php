@@ -48,7 +48,7 @@
 
             <!-- Logo -->
             <a href="{{ url('/home') }}" class="logo">
-                {{-- <img src="http://desacisarua.com/wp-content/uploads/2018/12/logosifadu3.png"> --}}
+                {{-- <img src="http://desa{{ env('DESA_NAME') }}.com/wp-content/uploads/2018/12/logosifadu3.png"> --}}
                 <img src="{{asset('img/2191f-lambang_kab_sukabumi.svg_-2-e1532000502726-232x300.png')}}" height=40 width=40>
             </a>
 

@@ -7,18 +7,18 @@
             Pemerintah Kabupaten Sukabumi
             <p style="font-size:30px;font-weight:bold">
                 DINAS KEPENDUDUKAN DAN CATATAN SIPIL
-            </p>	
+            </p>
             <P style="font-size:12px;font-weight:normal">
                 Jalan Raya Rambai No. 70 Cisaat Telp.(0266) 211075 sukabumi
-            </P>  
-            
+            </P>
+
         </div>
     </div>
 </div>
 <div class="text-center">
     <div>
         <td colspan="2" >
-            <hr style="border-style:double;border-width: 2px; width:100%">  	
+            <hr style="border-style:double;border-width: 2px; width:100%">
         </td>
     </div>
     <div class="form-group">
@@ -31,17 +31,17 @@
         <p>Dengan ini menerangkan bahwa :</p>
     </div>
     <div class="col-md-2" style="margin-left:40px">
-        <p>Nama Lengkap</p> 
-        <p>Jenis Kelamin</p> 
-        <p>Agama</p> 
-        <p>Status</p> 
-        <p>No KTP / NIK</p> 
-        <p>Tempat Tgl Lahir</p> 
-        <p>Pekerjaan</p> 
-        <p>Alamat</p> 
+        <p>Nama Lengkap</p>
+        <p>Jenis Kelamin</p>
+        <p>Agama</p>
+        <p>Status</p>
+        <p>No KTP / NIK</p>
+        <p>Tempat Tgl Lahir</p>
+        <p>Pekerjaan</p>
+        <p>Alamat</p>
         <p>Keperluan</p>
-        <p>Keterangan Lain</p> 
-        <p>Berlaku mulai</p>  
+        <p>Keterangan Lain</p>
+        <p>Berlaku mulai</p>
     </div>
     <div class="col-md-1">
         <p>:</p>
@@ -82,14 +82,14 @@
         <br />
         <br>
         <p>{{ $suratketeranganskck->datapenduduk->nama_lengkap }}</p>
-        
+
     </div>
     <div class="col-md-6">
         <p>Pada tanggal     : {{ date_format($suratketeranganskck->created_at, "d M Y") }}</p>
-        <p>Kepala Desa Cisarua</p>
+        <p>Kepala Desa {{ env('DESA_NAME') }}</p>
         <br />
         <br>
         <p>SUTARNO</p>
     </div>
-    
+
 </div>
