@@ -64,11 +64,11 @@ class KeteranganPenghasilanDataTable extends DataTable
 	protected function getColumns()
 	{
 		return [
-			'daftar_sarana',
-			'penanggungjawab',
-			'lokasi',
-			'kondisi',
-			'sumber_daya_manusia'
+			// 'daftar_sarana',
+			// 'penanggungjawab',
+			// 'lokasi',
+			// 'kondisi',
+			// 'sumber_daya_manusia'
 		];
 	}
 
@@ -79,6 +79,6 @@ class KeteranganPenghasilanDataTable extends DataTable
 	 */
 	protected function filename()
 	{
-		return 'bidandatatable_' . time();
+		return 'KeteranganPenghasilan_datatable_' . time();
 	}
 }
