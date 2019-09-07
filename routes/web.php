@@ -180,8 +180,10 @@ Route::group(['prefix' => "letter/", "namespace" => "Letter"], function () {
     Route::group(['prefix' => "covering/", "namespace" => "Covering"], function () {
         Route::get("identity-card/{id}", "IdentityCardController@index")->name("letter.covering.identity_card");
         Route::get("family-card/{id}", "FamilyCardController@index")->name("letter.covering.family_card");
-        Route::get("kelahiran/{id}", "KeteranganKelahiranController@index");
-        Route::get("sk-menikah/{id}", "SKMenikahController@index");
+        Route::get("keterangan-kelahiran/{id}", "KeteranganKelahiranController@cetak");
+        Route::get("usaha-baru/{id}", "UsahaBaruController@cetak");
+        Route::get("surat-keterangan-menikah/{id}", "SKMenikahController@cetak");
+        Route::get("keterangan-penghasilan/{id}", "KeteranganPenghasilanController@cetak");
         Route::get("sktm/{id}", "SKTMController@index")->name("letter.covering.sktm");
         Route::get("domicile-letter/{id}", "DomicileLetterController@index")->name("letter.covering.domicile-letter");
         Route::get("descwork-letter/{id}", "DescWorkController@index")->name("letter.covering.descwork-letter");
@@ -341,6 +343,11 @@ NOTE : SKCK
 */
 Route::resource('suratketeranganskcks', 'suratketeranganskckController');
 Route::get('suratketeranganskcks/{id}/print',['as' => 'suratketeranganskcks.print', 'uses' => 'suratketeranganskckController@printSKCK']);
+
+Route::resource('keterangan-kelahiran', 'KeteranganKelahiranController');
+Route::resource('keterangan-penghasilan', 'KeteranganPenghasilanController');
+Route::resource('surat-keterangan-menikah', 'SKMenikahController');
+Route::resource('usaha-baru', 'Letter\Covering\UsahaBaruController');
 
 /*
 AUTHOR : @masaji

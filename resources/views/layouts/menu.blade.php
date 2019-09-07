@@ -10,7 +10,7 @@
         <li class="{{ Request::is('parameterjeniskelamins*') ? 'active' : '' }}">
             <a href="{!! route('parameterjeniskelamins.index') !!}"><i class="fa fa-circle-o"></i>Jenis Kelamin</a>
         </li>
-        
+
          <li class="{{ Request::is('setting*') ? 'active' : '' }}">
             <a href="{!! route('setting.index') !!}"><i class="fa fa-circle-o"></i>Setting Table</a>
         </li>
@@ -164,12 +164,24 @@
         <li class="{{ Request::is('suratpindah*') ? 'active' : '' }}">
             <a href="{!! route('suratpindah.index') !!}"><i class="fa fa-circle-o"></i> Pengantar Pindah</a>
         </li>
-        
+
         <li class="{{ Request::is('suratketerangantidakmampus*') ? 'active' : '' }}">
             <a href="{!! route('suratketerangantidakmampus.index') !!}"><i class="fa fa-circle-o"></i> Keterangan Tidak Mampu</a>
         </li>
         <li class="{{ Request::is('suratketerangandomisilis*') ? 'active' : '' }}">
             <a href="{!! route('suratketerangandomisilis.index') !!}"><i class="fa fa-circle-o"></i> Keterangan Domisili</a>
+        </li>
+        <li class="{{ Request::is('keterangan-kelahiran*') ? 'active' : '' }}">
+            <a href="{!! route('keterangan-kelahiran.index') !!}"><i class="fa fa-circle-o"></i> Keterangan Kelahiran</a>
+        </li>
+        <li class="{{ Request::is('surat-keterangan-menikah*') ? 'active' : '' }}">
+            <a href="{!! route('surat-keterangan-menikah.index') !!}"><i class="fa fa-circle-o"></i> Keterangan Menikah</a>
+        </li>
+        <li class="{{ Request::is('keterangan-penghasilan*') ? 'active' : '' }}">
+            <a href="{!! route('keterangan-penghasilan.index') !!}"><i class="fa fa-circle-o"></i> Keterangan Penghasilan</a>
+        </li>
+        <li class="{{ Request::is('usaha-baru*') ? 'active' : '' }}">
+            <a href="{!! route('usaha-baru.index') !!}"><i class="fa fa-circle-o"></i> Usaha Baru</a>
         </li>
         <li class="{{ Request::is('suratketeranganskcks*') ? 'active' : '' }}">
             <a href="{!! route('suratketeranganskcks.index') !!}"><i class="fa fa-circle-o"></i> Keterangan SKCK</a>

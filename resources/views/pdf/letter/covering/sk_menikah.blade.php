@@ -73,7 +73,7 @@
 								<td style="text-align: left; vertical-align: top;width: 150px">Alamat</td>
 								<td>
 									: Kp. Cibodas  RT. 001/010<br>
-									&nbsp; Desa {{ env('DESA_NAME') }} Kecamatan Nagrak <br>
+									&nbsp; Desa Cimenteng Kecamatan Nagrak <br>
 									&nbsp; Kabupaten Sukabumi
 								</td>
 							</tr>
@@ -128,7 +128,7 @@
 			</tr>
 			<tr>
 				<td style="padding-left: 55%; text-align: center;">
-					{{ env('DESA_NAME') }}, 24 Nopember 2015
+					Cimenteng, 24 Nopember 2015
 					<br>
 					<br>
 					Pembantu PPN

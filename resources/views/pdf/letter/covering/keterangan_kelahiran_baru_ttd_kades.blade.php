@@ -45,7 +45,7 @@
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">b. </td>
 							<td style="width: 110px">Jabatan</td>
-							<td>: Kepala Desa {{ env('DESA_NAME') }}</td>
+							<td>: Kepala Desa Cimenteng</td>
 						</tr>
 					</table>
 					<br>
@@ -86,7 +86,7 @@
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="text-align: left; vertical-align: top; width: 110px">Alamat</td>
 							<td style="padding-right: 150px;">
-								: Kp. Warung Kawung  RT. 003/006   Desa {{ env('DESA_NAME') }} Kecamatan Nagrak  Kabupaten Sukabumi
+								: Kp. Warung Kawung  RT. 003/006   Desa Cimenteng Kecamatan Nagrak  Kabupaten Sukabumi
 							</td>
 						</tr>
 						<tr>
@@ -163,8 +163,8 @@
 						</tr>
 						<tr>
 							<td style="padding-top: 3em; text-align: center;">
-								Jl. R. Natapraja No.01 Desa {{ env('DESA_NAME') }} Kecamatan Nagrak Kabupaten Sukabumi <br>
-								No HP 081563496263 - 085864836300 e-mail : desa{{ env('DESA_NAME') }}@gmail.com Kode Pos 43356
+								Jl. R. Natapraja No.01 Desa Cimenteng Kecamatan Nagrak Kabupaten Sukabumi <br>
+								No HP 081563496263 - 085864836300 e-mail : desacimenteng@gmail.com Kode Pos 43356
 							</td>
 						</tr>
 					</table>
