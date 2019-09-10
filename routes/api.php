@@ -81,7 +81,3 @@ Route::resource('dusuns', 'dusunAPIController');
 Route::resource('agamas', 'agamaAPIController');
 
 Route::resource('pajaktanahs', 'pajaktanahAPIController');
-
-Route::resource('keterangan_penghasilans', 'KeteranganPenghasilanAPIController');
-
-Route::resource('keterangan_kelahirans', 'KeteranganKelahiranAPIController');
