@@ -60,17 +60,19 @@ class KeteranganKelahiran extends Model
     use SoftDeletes;
 
     public $table = 'keterangan_kelahirans';
-    
+
 
     protected $dates = ['deleted_at'];
 
 
     public $fillable = [
+    	'nik',
         'nomor_surat',
         'tanggal',
         'tempat',
         'jenis_kelamin',
-        'nama'
+        'nama',
+        'footer'
     ];
 
     /**
@@ -83,7 +85,8 @@ class KeteranganKelahiran extends Model
         'tanggal' => 'date',
         'tempat' => 'string',
         'jenis_kelamin' => 'string',
-        'nama' => 'string'
+        'nama' => 'string',
+        'footer'=>'string'
     ];
 
     /**
@@ -92,12 +95,11 @@ class KeteranganKelahiran extends Model
      * @var array
      */
     public static $rules = [
+    	'nik'	=>'required',
         'nomor_surat' => 'required',
         'tanggal' => 'required',
         'tempat' => 'required',
         'jenis_kelamin' => 'required',
-        'nama' => 'required'
+        'nama' => 'required',
     ];
-
-    
 }

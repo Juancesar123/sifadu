@@ -10,6 +10,7 @@ use App\Repositories\KeteranganKelahiranRepository;
 use Flash;
 use App\Http\Controllers\AppBaseController;
 use Response;
+use App\Models\datapenduduk as Penduduk;
 
 class KeteranganKelahiranController extends AppBaseController
 {
@@ -39,7 +40,8 @@ class KeteranganKelahiranController extends AppBaseController
      */
     public function create()
     {
-        return view('keterangan_kelahirans.create');
+        $data = Penduduk::all();
+        return view('keterangan_kelahirans.create', ['data'=>$data]);
     }
 
     /**
@@ -57,7 +59,7 @@ class KeteranganKelahiranController extends AppBaseController
 
         Flash::success('Keterangan Kelahiran saved successfully.');
 
-        return redirect(route('keteranganKelahirans.index'));
+        return redirect(route('keterangan-kelahiran.index'));
     }
 
     /**
@@ -74,7 +76,7 @@ class KeteranganKelahiranController extends AppBaseController
         if (empty($keteranganKelahiran)) {
             Flash::error('Keterangan Kelahiran not found');
 
-            return redirect(route('keteranganKelahirans.index'));
+            return redirect(route('keterangan-kelahiran.index'));
         }
 
         return view('keterangan_kelahirans.show')->with('keteranganKelahiran', $keteranganKelahiran);
@@ -89,6 +91,7 @@ class KeteranganKelahiranController extends AppBaseController
      */
     public function edit($id)
     {
+        $data = Penduduk::all();
         $keteranganKelahiran = $this->keteranganKelahiranRepository->findWithoutFail($id);
 
         if (empty($keteranganKelahiran)) {
@@ -97,7 +100,7 @@ class KeteranganKelahiranController extends AppBaseController
             return redirect(route('keteranganKelahirans.index'));
         }
 
-        return view('keterangan_kelahirans.edit')->with('keteranganKelahiran', $keteranganKelahiran);
+        return view('keterangan_kelahirans.edit', compact('data','keteranganKelahiran'));
     }
 
     /**
@@ -122,7 +125,7 @@ class KeteranganKelahiranController extends AppBaseController
 
         Flash::success('Keterangan Kelahiran updated successfully.');
 
-        return redirect(route('keteranganKelahirans.index'));
+        return redirect(route('keterangan-kelahiran.index'));
     }
 
     /**
@@ -139,13 +142,13 @@ class KeteranganKelahiranController extends AppBaseController
         if (empty($keteranganKelahiran)) {
             Flash::error('Keterangan Kelahiran not found');
 
-            return redirect(route('keteranganKelahirans.index'));
+            return redirect(route('keterangan-kelahiran.index'));
         }
 
         $this->keteranganKelahiranRepository->delete($id);
 
         Flash::success('Keterangan Kelahiran deleted successfully.');
 
-        return redirect(route('keteranganKelahirans.index'));
+        return redirect(route('keterangan-kelahiran.index'));
     }
 }

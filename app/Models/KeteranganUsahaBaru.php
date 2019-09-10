@@ -49,12 +49,13 @@ class KeteranganUsahaBaru extends Model
     use SoftDeletes;
 
     public $table = 'keterangan_usaha_barus';
-    
+
 
     protected $dates = ['deleted_at'];
 
 
     public $fillable = [
+        'nik',
         'nomor',
         'footer',
         'jenis_usaha',
@@ -79,6 +80,7 @@ class KeteranganUsahaBaru extends Model
      * @var array
      */
     public static $rules = [
+        'nik' => 'required',
         'nomor' => 'required',
         'footer' => 'required',
         'jenis_usaha' => 'required',
@@ -86,5 +88,5 @@ class KeteranganUsahaBaru extends Model
         'alamat_tempat' => 'required'
     ];
 
-    
+
 }

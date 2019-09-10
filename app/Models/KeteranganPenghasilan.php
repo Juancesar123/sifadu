@@ -44,12 +44,13 @@ class KeteranganPenghasilan extends Model
     use SoftDeletes;
 
     public $table = 'keterangan_penghasilans';
-    
+
 
     protected $dates = ['deleted_at'];
 
 
     public $fillable = [
+    	'nik',
         'nomor',
         'footer',
         'penghasilan'
@@ -71,10 +72,11 @@ class KeteranganPenghasilan extends Model
      * @var array
      */
     public static $rules = [
+    	'nik'=>'required',
         'nomor' => 'required',
         'footer' => 'required',
         'penghasilan' => 'required'
     ];
 
-    
+
 }

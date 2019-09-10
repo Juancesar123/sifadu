@@ -16,9 +16,9 @@
 
 <!-- Footer Cetak Data Field -->
 <div class="form-group col-sm-12 col-lg-12">
-        {!! Form::label('footer_cetak_data', 'Footer Cetak Data:') !!}
-        {!! Form::textarea('footer_cetak_data', null, ['class' => 'form-control']) !!}
-    </div>
+    {!! Form::label('footer_cetak_data', 'Footer Cetak Data:') !!}
+    {!! Form::textarea('footer_cetak_data', null, ['class' => 'form-control']) !!}
+</div>
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
     {!! Form::submit('Simpan', ['class' => 'btn btn-primary']) !!}

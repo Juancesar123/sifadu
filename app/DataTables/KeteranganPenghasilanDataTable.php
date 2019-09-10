@@ -64,6 +64,7 @@ class KeteranganPenghasilanDataTable extends DataTable
     protected function getColumns()
     {
         return [
+        	'nik',
             'nomor',
             'footer',
             'penghasilan'

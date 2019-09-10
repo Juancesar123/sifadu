@@ -10,6 +10,7 @@ use App\Repositories\KeteranganMenikahRepository;
 use Flash;
 use App\Http\Controllers\AppBaseController;
 use Response;
+use App\Models\datapenduduk as Penduduk;
 
 class KeteranganMenikahController extends AppBaseController
 {
@@ -39,7 +40,8 @@ class KeteranganMenikahController extends AppBaseController
      */
     public function create()
     {
-        return view('keterangan_menikahs.create');
+        $data = Penduduk::all();
+        return view('keterangan_menikahs.create', compact('data'));
     }
 
     /**
@@ -97,7 +99,8 @@ class KeteranganMenikahController extends AppBaseController
             return redirect(route('keteranganMenikahs.index'));
         }
 
-        return view('keterangan_menikahs.edit')->with('keteranganMenikah', $keteranganMenikah);
+        $data = Penduduk::all();
+        return view('keterangan_menikahs.edit', compact('data', 'keteranganMenikah'));
     }
 
     /**

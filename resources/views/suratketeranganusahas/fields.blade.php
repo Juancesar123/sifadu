@@ -1,7 +1,7 @@
 <!-- Nik Field -->
 <div class="form-group col-sm-6">
         {!! Form::label('nik_atau_nama', 'Nik:') !!}
-        <select class="form-control js-example-basic-single" name="nik">
+        <select class="form-control js-example-basic-single" name="nik" required="">
             @foreach($data as $key)
                 <option value="{{$key->id}}">{{$key->nik}} - {{$key->nama_lengkap}}</option>
             @endforeach

@@ -10,6 +10,7 @@ use App\Repositories\KeteranganPenghasilanRepository;
 use Flash;
 use App\Http\Controllers\AppBaseController;
 use Response;
+use App\Models\datapenduduk as Penduduk;
 
 class KeteranganPenghasilanController extends AppBaseController
 {
@@ -39,7 +40,8 @@ class KeteranganPenghasilanController extends AppBaseController
      */
     public function create()
     {
-        return view('keterangan_penghasilans.create');
+        $data = Penduduk::all();
+        return view('keterangan_penghasilans.create', compact('data'));
     }
 
     /**
@@ -97,7 +99,8 @@ class KeteranganPenghasilanController extends AppBaseController
             return redirect(route('keteranganPenghasilans.index'));
         }
 
-        return view('keterangan_penghasilans.edit')->with('keteranganPenghasilan', $keteranganPenghasilan);
+        $data = Penduduk::all();
+        return view('keterangan_penghasilans.edit', compact('data', 'keteranganPenghasilan'));
     }
 
     /**

@@ -12,7 +12,7 @@
 
             <div class="box-body">
                 <div class="row">
-                    {!! Form::open(['route' => 'keteranganKelahirans.store']) !!}
+                    {!! Form::open(['route' => 'keterangan-kelahiran.store']) !!}
 
                         @include('keterangan_kelahirans.fields')
 

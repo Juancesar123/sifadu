@@ -215,8 +215,9 @@ Request::is('suratpindah*') ||
 Request::is('suratketerangantidakmampus*') ||
 Request::is('suratketerangandomisilis*') ||
 Request::is('keterangan-kelahiran*') ||
-Request::is('keterangan-menikah*') ||
-Request::is('keterangan-usaha-baru*') ||
+Request::is('keteranganMenikahs*') ||
+Request::is('keteranganPenghasilans*') ||
+Request::is('keteranganUsahaBarus*') ||
 Request::is('suratketeranganskcks*') ||
 Request::is('suratketeranganusahas*') ||
 Request::is('suratketeranganpenguasaantanahs*') ||
@@ -253,14 +254,14 @@ Request::is('suratketeranganlainnyas*');
 		<li class="{{ Request::is('keterangan-kelahiran*') ? 'active' : '' }}">
 			<a href="{!! route('keterangan-kelahiran.index') !!}"><i class="fa fa-circle-o"></i> Keterangan Kelahiran</a>
 		</li>
-		<li class="{{ Request::is('keterangan-menikah*') ? 'active' : '' }}">
-			<a href="{!! route('keterangan-menikah.index') !!}"><i class="fa fa-circle-o"></i> Keterangan Menikah</a>
+		<li class="{{ Request::is('keteranganMenikahs*') ? 'active' : '' }}">
+			<a href="{!! route('keteranganMenikahs.index') !!}"><i class="fa fa-circle-o"></i> Keterangan Menikah</a>
 		</li>
-		<li class="{{ Request::is('keterangan-penghasilan*') ? 'active' : '' }}">
-			<a href="{!! route('keterangan-penghasilan.index') !!}"><i class="fa fa-circle-o"></i> Keterangan Penghasilan</a>
+		<li class="{{ Request::is('keteranganPenghasilan*') ? 'active' : '' }}">
+			<a href="{!! route('keteranganPenghasilans.index') !!}"><i class="fa fa-circle-o"></i> Keterangan Penghasilan</a>
 		</li>
-		<li class="{{ Request::is('keterangan-usaha-baru*') ? 'active' : '' }}">
-			<a href="{!! route('keterangan-usaha-baru.index') !!}"><i class="fa fa-circle-o"></i> Usaha Baru</a>
+		<li class="{{ Request::is('keteranganUsahaBarus*') ? 'active' : '' }}">
+			<a href="{!! route('keteranganUsahaBarus.index') !!}"><i class="fa fa-circle-o"></i> Keterangan Usaha Baru</a>
 		</li>
 		<li class="{{ Request::is('suratketeranganskcks*') ? 'active' : '' }}">
 			<a href="{!! route('suratketeranganskcks.index') !!}"><i class="fa fa-circle-o"></i> Keterangan SKCK</a>
@@ -596,23 +597,4 @@ Request::is('perpustakaan*');
 		opacity:0.6;
 	}
 </style>
-@endsection<li class="{{ Request::is('keteranganPenghasilans*') ? 'active' : '' }}">
-    <a href="{!! route('keteranganPenghasilans.index') !!}"><i class="fa fa-edit"></i><span>Keterangan Penghasilans</span></a>
-</li>
-
-<li class="{{ Request::is('keteranganKelahirans*') ? 'active' : '' }}">
-    <a href="{!! route('keteranganKelahirans.index') !!}"><i class="fa fa-edit"></i><span>Keterangan Kelahirans</span></a>
-</li>
-
-<li class="{{ Request::is('keteranganPenghasilans*') ? 'active' : '' }}">
-    <a href="{!! route('keteranganPenghasilans.index') !!}"><i class="fa fa-edit"></i><span>Keterangan Penghasilans</span></a>
-</li>
-
-<li class="{{ Request::is('keteranganMenikahs*') ? 'active' : '' }}">
-    <a href="{!! route('keteranganMenikahs.index') !!}"><i class="fa fa-edit"></i><span>Keterangan Menikahs</span></a>
-</li>
-
-<li class="{{ Request::is('keteranganUsahaBarus*') ? 'active' : '' }}">
-    <a href="{!! route('keteranganUsahaBarus.index') !!}"><i class="fa fa-edit"></i><span>Keterangan Usaha Barus</span></a>
-</li>
-
+@endsection

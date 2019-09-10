@@ -10,6 +10,7 @@ use App\Repositories\KeteranganUsahaBaruRepository;
 use Flash;
 use App\Http\Controllers\AppBaseController;
 use Response;
+use App\Models\datapenduduk as Penduduk;
 
 class KeteranganUsahaBaruController extends AppBaseController
 {
@@ -39,7 +40,8 @@ class KeteranganUsahaBaruController extends AppBaseController
      */
     public function create()
     {
-        return view('keterangan_usaha_barus.create');
+        $data = Penduduk::all();
+        return view('keterangan_usaha_barus.create', compact('data'));
     }
 
     /**
@@ -97,7 +99,8 @@ class KeteranganUsahaBaruController extends AppBaseController
             return redirect(route('keteranganUsahaBarus.index'));
         }
 
-        return view('keterangan_usaha_barus.edit')->with('keteranganUsahaBaru', $keteranganUsahaBaru);
+        $data = Penduduk::all();
+        return view('keterangan_usaha_barus.edit', compact('data', 'keteranganUsahaBaru'));
     }
 
     /**

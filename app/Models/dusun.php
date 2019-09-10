@@ -44,7 +44,7 @@ class dusun extends Model
     use SpatialTrait;
 
     public $table = 'dusuns';
-    
+
 
     protected $dates = ['deleted_at'];
 

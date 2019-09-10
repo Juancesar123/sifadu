@@ -64,11 +64,13 @@ class KeteranganKelahiranDataTable extends DataTable
     protected function getColumns()
     {
         return [
+        	'nik',
             'nomor_surat',
             'tanggal',
             'tempat',
             'jenis_kelamin',
-            'nama'
+            'nama',
+            'footer'
         ];
     }
 

@@ -345,9 +345,9 @@ Route::resource('suratketeranganskcks', 'suratketeranganskckController');
 Route::get('suratketeranganskcks/{id}/print',['as' => 'suratketeranganskcks.print', 'uses' => 'suratketeranganskckController@printSKCK']);
 
 Route::resource('keterangan-kelahiran', 'KeteranganKelahiranController');
-Route::resource('keterangan-penghasilan', 'KeteranganPenghasilanController');
-Route::resource('keterangan-menikah', 'SKMenikahController');
-Route::resource('keterangan-usaha-baru', 'UsahaBaruController');
+Route::resource('keteranganPenghasilans', 'KeteranganPenghasilanController');
+Route::resource('keteranganMenikahs', 'KeteranganMenikahController');
+Route::resource('keteranganUsahaBarus', 'KeteranganUsahaBaruController');
 
 /*
 AUTHOR : @masaji
@@ -364,13 +364,3 @@ VIEW :customDatas
 NOTE : custom data GIS
 */
 Route::resource('customDatas', 'CustomDataController');
-
-Route::resource('keteranganPenghasilans', 'KeteranganPenghasilanController');
-
-Route::resource('keteranganKelahirans', 'KeteranganKelahiranController');
-
-Route::resource('keteranganPenghasilans', 'KeteranganPenghasilanController');
-
-Route::resource('keteranganMenikahs', 'KeteranganMenikahController');
-
-Route::resource('keteranganUsahaBarus', 'KeteranganUsahaBaruController');
