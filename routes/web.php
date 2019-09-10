@@ -364,3 +364,7 @@ VIEW :customDatas
 NOTE : custom data GIS
 */
 Route::resource('customDatas', 'CustomDataController');
+
+Route::resource('keteranganPenghasilans', 'KeteranganPenghasilanController');
+
+Route::resource('keteranganKelahirans', 'KeteranganKelahiranController');
