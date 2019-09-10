@@ -174,14 +174,14 @@
         <li class="{{ Request::is('keterangan-kelahiran*') ? 'active' : '' }}">
             <a href="{!! route('keterangan-kelahiran.index') !!}"><i class="fa fa-circle-o"></i> Keterangan Kelahiran</a>
         </li>
-        <li class="{{ Request::is('surat-keterangan-menikah*') ? 'active' : '' }}">
-            <a href="{!! route('surat-keterangan-menikah.index') !!}"><i class="fa fa-circle-o"></i> Keterangan Menikah</a>
+        <li class="{{ Request::is('keterangan-menikah*') ? 'active' : '' }}">
+            <a href="{!! route('keterangan-menikah.index') !!}"><i class="fa fa-circle-o"></i> Keterangan Menikah</a>
         </li>
         <li class="{{ Request::is('keterangan-penghasilan*') ? 'active' : '' }}">
             <a href="{!! route('keterangan-penghasilan.index') !!}"><i class="fa fa-circle-o"></i> Keterangan Penghasilan</a>
         </li>
-        <li class="{{ Request::is('usaha-baru*') ? 'active' : '' }}">
-            <a href="{!! route('usaha-baru.index') !!}"><i class="fa fa-circle-o"></i> Usaha Baru</a>
+        <li class="{{ Request::is('keterangan-usaha-baru*') ? 'active' : '' }}">
+            <a href="{!! route('keterangan-usaha-baru.index') !!}"><i class="fa fa-circle-o"></i> Usaha Baru</a>
         </li>
         <li class="{{ Request::is('suratketeranganskcks*') ? 'active' : '' }}">
             <a href="{!! route('suratketeranganskcks.index') !!}"><i class="fa fa-circle-o"></i> Keterangan SKCK</a>

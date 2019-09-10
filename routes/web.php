@@ -181,11 +181,11 @@ Route::group(['prefix' => "letter/", "namespace" => "Letter"], function () {
         Route::get("identity-card/{id}", "IdentityCardController@index")->name("letter.covering.identity_card");
         Route::get("family-card/{id}", "FamilyCardController@index")->name("letter.covering.family_card");
         Route::get("keterangan-kelahiran/{id}", "KeteranganKelahiranController@cetak");
-        Route::get("usaha-baru/{id}", "UsahaBaruController@cetak");
-        Route::get("surat-keterangan-menikah/{id}", "SKMenikahController@cetak");
+        Route::get("keterangan-usaha-baru/{id}", "UsahaBaruController@cetak");
+        Route::get("keterangan-menikah/{id}", "SKMenikahController@cetak");
         Route::get("keterangan-penghasilan/{id}", "KeteranganPenghasilanController@cetak");
-        Route::get("sktm/{id}", "SKTMController@index")->name("letter.covering.sktm");
-        Route::get("domicile-letter/{id}", "DomicileLetterController@index")->name("letter.covering.domicile-letter");
+        Route::get("sktm/{id}", "SKTMController@cetak")->name("letter.covering.sktm");
+        Route::get("domicile-letter/{id}", "DomicileLetterController@cetak")->name("letter.covering.domicile-letter");
         Route::get("descwork-letter/{id}", "DescWorkController@index")->name("letter.covering.descwork-letter");
         Route::get("authorityarea-letter/{id}", "AuthorityAreaController@index")->name("letter.covering.authorityarea-letter");
         Route::get("etc-letter/{id}", "EtcController@index")->name("letter.covering.etc-letter");
@@ -346,8 +346,8 @@ Route::get('suratketeranganskcks/{id}/print',['as' => 'suratketeranganskcks.prin
 
 Route::resource('keterangan-kelahiran', 'KeteranganKelahiranController');
 Route::resource('keterangan-penghasilan', 'KeteranganPenghasilanController');
-Route::resource('surat-keterangan-menikah', 'SKMenikahController');
-Route::resource('usaha-baru', 'Letter\Covering\UsahaBaruController');
+Route::resource('keterangan-menikah', 'SKMenikahController');
+Route::resource('keterangan-usaha-baru', 'UsahaBaruController');
 
 /*
 AUTHOR : @masaji

@@ -69,7 +69,7 @@
 
     <div class="row">
         <div class="col label-daerah">a.Desa/Kelurahan</div>
-        <input type="text" class="data-daerah" value="{{ env('DESA_NAME') }}">
+        <input type="text" class="data-daerah" value="{{ strtoupper(env('DESA_NAME')) }}">
         <div class="col label-daerah-second">c.Kab/Kota</div>
         <input type="text" class="data-daerah-second" value="SUKABUMI">
     </div>

@@ -118,11 +118,11 @@
         <input type="text" style="width:440px;border:1px solid;" value="NAGRAK">
         <br>
         <div class="col number">*)</div>
-        <input type="text" style="width:440px;border:1px solid;" value="{{ env('DESA_NAME') }}">
+        <input type="text" style="width:440px;border:1px solid;" value="{{ strtoupper(env('DESA_NAME')) }}">
     </div>
     <div class="row" style="margin-top:-4px">
         <div class="col label" style="font-size:11px">DUSUN/DUKUH/KAMPUNG</div>
-        <input type="text" style="width:538px;margin-left:-40px;border:1px solid;" value="{{ env('DESA_NAME') }}">
+        <input type="text" style="width:538px;margin-left:-40px;border:1px solid;" value="{{ strtoupper(env('DESA_NAME')) }}">
     </div>
 
     <div class="header-wni">
@@ -173,12 +173,12 @@
     </div>
     <div class="row">
         <div class="col label-daerah">Dusun/Dukuh/Kampung</div>
-        <input type="text" class="data-daerah" value="{{ env('DESA_NAME') }}" style="width:530px;">
+        <input type="text" class="data-daerah" value="{{ strtoupper(env('DESA_NAME')) }}" style="width:530px;">
     </div>
 
     <div class="row">
         <div class="col label-daerah">a.Desa/Kelurahan</div>
-        <input type="text" class="data-daerah" value="{{ env('DESA_NAME') }}">
+        <input type="text" class="data-daerah" value="{{ strtoupper(env('DESA_NAME')) }}">
         <div class="col label-daerah-second">c.Kab/Kota</div>
         <input type="text" class="data-daerah-second" value="SUKABUMI">
     </div>
@@ -327,7 +327,7 @@
         <div class="row">
         <div class="col number">6.</div>
         <div class="col label">Alamat</div>
-        <input type="text" class="data-pindah" value="KP.{{ env('DESA_NAME') }} GIRANG">
+        <input type="text" class="data-pindah" value="KP.{{ strtoupper(env('DESA_NAME')) }} GIRANG">
         <table class="RT">
             <tr>
                 <td style="border:none">RT</td>
@@ -343,7 +343,7 @@
     </div>
     <div class="row">
         <div class="col label-daerah">Dusun/Dukuh/Kampung</div>
-        <input type="text" class="data-daerah" value="{{ env('DESA_NAME') }}" style="width:530px;">
+        <input type="text" class="data-daerah" value="{{ strtoupper(env('DESA_NAME')) }}" style="width:530px;">
     </div>
     <div class="row">
         <div class="col label-daerah">a.Desa/Kelurahan</div>
@@ -495,7 +495,7 @@
                 (......................) <br>
             </div>
             <div style="width:23%;float:right;margin-left:13px;text-align:center;">
-                <label>{{ env('DESA_NAME') }},08 Januari 2018 <br>Pemohon</label>
+                <label>{{ strtoupper(env('DESA_NAME')) }},08 Januari 2018 <br>Pemohon</label>
                 <br>
                 <br>
                 <br>

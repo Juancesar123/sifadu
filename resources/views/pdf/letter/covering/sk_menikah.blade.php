@@ -203,7 +203,7 @@
 							<tr>
 								<td rowspan="7" style="text-align: right; vertical-align: top; width: 50px">3. </td>
 								<td style="width: 150px">Nama Lengkap</td>
-								<td>: .............................................................................
+								<td>: ..................................................................................
 							</tr>
 							<tr>
 								<td style="width: 150px">Bin</td>
@@ -228,9 +228,9 @@
 							<tr>
 								<td style="text-align: left; vertical-align: top;width: 150px">Alamat</td>
 								<td>
-									: .........................................................................................
+									: ..................................................................................
 									<br>
-									&nbsp; .........................................................................................
+									&nbsp; ..................................................................................
 								</td>
 							</tr>
 							<tr>
@@ -261,20 +261,20 @@
 							<tr>
 								<td style="text-align: left; vertical-align: top;width: 150px">Alamat</td>
 								<td>
-									: .........................................................................................
+									: ..................................................................................
 									<br>
-									&nbsp; .........................................................................................
+									&nbsp; ..................................................................................
 								</td>
 							</tr>
 						</tbody>
 					</table>
 					<br>
 					Nama tersebut telah menikah pada hari ............... tanggal ......
-					Bulan .............. tahun ........, dihadapan saksi-saksi sebagai berikut :
+					Bulan ........................ tahun ........, dihadapan saksi-saksi sebagai berikut :
 					<br>
 					<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. ............................. <br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. .............................
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. ........................................... <br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. ...........................................
 					<br>
 					<br>
 					<p>Sehubungan persyaratan administrasinya belum lengkap maka sementara buku nikah belum bisa diproses.</p>

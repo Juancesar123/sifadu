@@ -13,66 +13,46 @@ class SkckController extends Controller
 
 {
 
-    /** @var  suratketeranganskckRepository */
-    private $suratketeranganskckRepository;
+	/** @var  suratketeranganskckRepository */
+	private $suratketeranganskckRepository;
 
-    public function __construct(suratketeranganskckRepository $suratketeranganskckRepo)
-    {
-        $this->suratketeranganskckRepository = $suratketeranganskckRepo;
-    }
-
-
-    public function index($id) {
-
-        $coveringLetter = suratketeranganskck::findOrFail($id);
-        $citizen        = datapenduduk::findOrFail($coveringLetter->nik);
-        $suratketeranganskck = $this->suratketeranganskckRepository->findWithoutFail($id);
-
-        $letter_number = $suratketeranganskck->nomor_surat;
-        $name    = $citizen->nama_lengkap;
-        $birth = $citizen->tempat_lahir . ', ' .$citizen->tanggal_lahir;
-        $gender_id = $citizen->jenis_kelamin;
-        if ($gender_id == 1) {
-          $gender = "Laki-laki";
-        } else {
-          $gender = "Perempuan";
-        }
-        $nationality = "WNI";
-        $religion = $citizen->agama;
-        $nik = $citizen->nik;
-        $job = $citizen->pekerjaan;
-
-        $data = compact([
-            'letter_number',
-            'name',
-            "birth",
-            "gender",
-            "nationality",
-            "religion",
-            "nik",
-            "job",
-        ]);
+	public function __construct(suratketeranganskckRepository $suratketeranganskckRepo)
+	{
+		$this->suratketeranganskckRepository = $suratketeranganskckRepo;
+	}
 
 
-        $pdf = PDF::loadView('pdf.letter.covering.skck', $data, [], [
-            'format'        => 'folio',
-            'margin_left'   => 10,
-            'margin_right'  => 10,
-            'margin_top'    => 10,
-            'margin_bottom' => 0,
-        ]);
+	public function index($id) {
 
-        // return ;
-        // ob_clean();
-        $pdf = $pdf->output();
-        return response($pdf, 200,
-        [
-            'Content-Type'        => 'application/pdf',
-            'Content-Length'      =>  strlen($pdf),
-            'Content-Disposition' => 'inline; filename="Surat Pengantar SKCK.pdf"',
-            'Cache-Control'       => 'private, max-age=0, must-revalidate',
-            'Pragma'              => 'public'
-        ]
-    );
-    }
+		$coveringLetter = suratketeranganskck::findOrFail($id);
+		$citizen        = datapenduduk::findOrFail($coveringLetter->nik);
+
+
+		$data = compact([
+			'coveringLetter',
+			'citizen',
+		]);
+
+
+		$pdf = PDF::loadView('pdf.letter.covering.skck', $data, [], [
+			'format'        => 'folio',
+			'margin_left'   => 10,
+			'margin_right'  => 10,
+			'margin_top'    => 10,
+			'margin_bottom' => 0,
+		]);
+
+		// return ;
+		// ob_clean();
+		$pdf = $pdf->output();
+		return response($pdf, 200,
+			[
+				'Content-Type'        => 'application/pdf',
+				'Content-Length'      =>  strlen($pdf),
+				'Content-Disposition' => 'inline; filename="Surat Pengantar SKCK.pdf"',
+				'Cache-Control'       => 'private, max-age=0, must-revalidate',
+				'Pragma'              => 'public'
+			]
+		);
+	}
 }

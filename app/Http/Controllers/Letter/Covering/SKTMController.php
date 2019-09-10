@@ -22,13 +22,16 @@ class SKTMController extends Controller
 	}
 
 
-	public function index($id) {
+	public function cetak($id) {
 
 		$coveringLetter	= suratketerangantidakmampu::findOrFail($id);
 		$citizen		= datapenduduk::findOrFail($coveringLetter->nik);
-		$suratketerangantidakmampu = $this->suratketerangantidakmampuRepository->findWithoutFail($id);
-		// dd($coveringLetter, $citizen, $suratketerangantidakmampu);
-		$letter_number = $suratketerangantidakmampu->nomor_surat;
+		// dd(
+		// 	json_decode($coveringLetter),
+		// 	json_decode($citizen),
+		// );
+		$letter_number = $coveringLetter->nomor_surat;
+		$footer_cetak_data = $coveringLetter->footer_cetak_data;
 		$name    = $citizen->nama_lengkap;
 		$alamat    = $citizen->alamat;
 		$dibuat_pada    = $coveringLetter->created_at;
@@ -55,6 +58,7 @@ class SKTMController extends Controller
 			"religion",
 			"nik",
 			"job",
+			'footer_cetak_data'
 		]);
 
 
