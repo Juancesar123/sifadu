@@ -85,3 +85,5 @@ Route::resource('pajaktanahs', 'pajaktanahAPIController');
 Route::resource('keterangan_penghasilans', 'KeteranganPenghasilanAPIController');
 
 Route::resource('keterangan_kelahirans', 'KeteranganKelahiranAPIController');
+
+Route::resource('keterangan_penghasilans', 'KeteranganPenghasilanAPIController');

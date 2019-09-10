@@ -368,3 +368,5 @@ Route::resource('customDatas', 'CustomDataController');
 Route::resource('keteranganPenghasilans', 'KeteranganPenghasilanController');
 
 Route::resource('keteranganKelahirans', 'KeteranganKelahiranController');
+
+Route::resource('keteranganPenghasilans', 'KeteranganPenghasilanController');
