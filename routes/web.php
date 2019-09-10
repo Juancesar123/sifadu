@@ -187,7 +187,7 @@ Route::group(['prefix' => "letter/", "namespace" => "Letter"], function () {
         Route::get("sktm/{id}", "SKTMController@cetak")->name("letter.covering.sktm");
         Route::get("domicile-letter/{id}", "DomicileLetterController@cetak")->name("letter.covering.domicile-letter");
         Route::get("descwork-letter/{id}", "DescWorkController@index")->name("letter.covering.descwork-letter");
-        Route::get("authorityarea-letter/{id}", "AuthorityAreaController@index")->name("letter.covering.authorityarea-letter");
+        Route::get("authorityarea-letter/{id}", "AuthorityAreaController@cetak")->name("letter.covering.authorityarea-letter");
         Route::get("etc-letter/{id}", "EtcController@index")->name("letter.covering.etc-letter");
         Route::get("skck-letter/{id}", "SkckController@index")->name("letter.covering.skck-letter");
     });

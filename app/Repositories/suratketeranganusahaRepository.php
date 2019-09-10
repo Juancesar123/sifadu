@@ -22,6 +22,7 @@ class suratketeranganusahaRepository extends BaseRepository
     protected $fieldSearchable = [
         'nik',
         'nomor_surat',
+        'jenis_usaha',
         'footer_cetak_data'
     ];
 

@@ -49,7 +49,7 @@ class suratketeranganusaha extends Model
     use SoftDeletes;
 
     public $table = 'suratketeranganusahas';
-    
+
 
     protected $dates = ['deleted_at'];
 
@@ -57,6 +57,7 @@ class suratketeranganusaha extends Model
     public $fillable = [
         'nik',
         'nomor_surat',
+        'jenis_usaha',
         'footer_cetak_data'
     ];
 
@@ -68,6 +69,7 @@ class suratketeranganusaha extends Model
     protected $casts = [
         'nik' => 'string',
         'nomor_surat' => 'string',
+        'jenis_usaha' => 'string',
         'footer_cetak_data' => 'string'
     ];
 
@@ -79,8 +81,9 @@ class suratketeranganusaha extends Model
     public static $rules = [
         'nik' => 'required',
         'nomor_surat' => 'required',
+        'jenis_usaha' => 'required',
         'footer_cetak_data' => 'required'
     ];
 
-    
+
 }

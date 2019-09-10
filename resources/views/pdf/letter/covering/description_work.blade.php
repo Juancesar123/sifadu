@@ -100,7 +100,7 @@
 								</tr>
 								<tr>
 									<td style="text-align: left; vertical-align: top; width: 150px;">Keterangan</td>
-									<td>: Orang tersebut benar-benar mempunyai usaha dengan jenis usaha: -warung sembako- </td>
+									<td>: Orang tersebut benar-benar mempunyai usaha dengan jenis usaha <b>{{ $coveringLetter->jenis_usaha }}</b> </td>
 								</tr>
 								<tr>
 									<td style="width: 150px;">Warga Negara</td>

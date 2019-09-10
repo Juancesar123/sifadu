@@ -78,6 +78,7 @@ class suratketeranganusahaDataTable extends DataTable
                 'defaultContent'    => ''
             ],
             'nomor_surat',
+            'jenis_usaha',
             'footer_cetak_data'
         ];
     }

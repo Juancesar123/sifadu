@@ -10,10 +10,12 @@ use App\Repositories\KeteranganPenghasilanRepository;
 use Flash;
 use App\Http\Controllers\AppBaseController;
 use Response;
+use PDF;
 
 class KeteranganPenghasilanController extends AppBaseController
 {
 	public function cetak($id) {
+		// dd(false);
 		$data = compact([
 			// 'letter_number',
 		]);

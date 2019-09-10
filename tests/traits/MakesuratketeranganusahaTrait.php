@@ -44,6 +44,7 @@ trait MakesuratketeranganusahaTrait
         return array_merge([
             'nik' => $fake->word,
             'nomor_surat' => $fake->word,
+            'jenis_usaha'=>$fake->word,
             'footer_cetak_data' => $fake->word,
             'created_at' => $fake->word,
             'updated_at' => $fake->word
