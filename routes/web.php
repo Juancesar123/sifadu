@@ -370,3 +370,5 @@ Route::resource('keteranganPenghasilans', 'KeteranganPenghasilanController');
 Route::resource('keteranganKelahirans', 'KeteranganKelahiranController');
 
 Route::resource('keteranganPenghasilans', 'KeteranganPenghasilanController');
+
+Route::resource('keteranganMenikahs', 'KeteranganMenikahController');
