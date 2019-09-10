@@ -612,3 +612,7 @@ Request::is('perpustakaan*');
     <a href="{!! route('keteranganMenikahs.index') !!}"><i class="fa fa-edit"></i><span>Keterangan Menikahs</span></a>
 </li>
 
+<li class="{{ Request::is('keteranganUsahaBarus*') ? 'active' : '' }}">
+    <a href="{!! route('keteranganUsahaBarus.index') !!}"><i class="fa fa-edit"></i><span>Keterangan Usaha Barus</span></a>
+</li>
+
