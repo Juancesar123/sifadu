@@ -2,7 +2,7 @@
 <html>
 <head></head>
 <body>
-	<table style="font-size: 13px; width:100%">
+	{{-- <table style="font-size: 13px; width:100%">
 		<tbody>
 			<tr>
 				<td style="text-align: center;padding-bottom: 30px">
@@ -12,20 +12,20 @@
 			<tr>
 				<td style="text-align: center;">
 					<div style="font-size: 12px;font-weight: bold">
-						KEPALA DESA CIMENTENG
+						KEPALA DESA {{ strtoupper($desa->profil_nama) }}
 					</div>
 				</td>
 			</tr>
 			<tr>
 				<td style="text-align: center">
 					<div style="font-size: 12px">
-						<strong>KECAMATAN NAGRAK KABUPATEN SUKABUMI</strong>
+						<strong>KECAMATAN {{ strtoupper($desa->profil_kecamatan) }} KABUPATEN {{ strtoupper($desa->profil_nama) }}</strong>
 						<br>
 						<br>
 						<b><u style="font-size: 15px">SURAT KETERANGAN DOMISILI USAHA</u></b>
 						<br>
 						<span style="font-size: 12px; padding-top:10px;">
-							Nomor : 470 /&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ Pemdes /2016
+							Nomor : {{ $coveringLetter->nomor }}
 						</span>
 						<br>
 						<br>
@@ -51,7 +51,7 @@
 							<tr>
 								<td style="text-align: right; vertical-align: top">b. </td>
 								<td style="width: 80px">Jabatan</td>
-								<td>: Kepala Desa Cimenteng</td>
+								<td>: Kepala Desa {{ $desa->profil_nama }}</td>
 							</tr>
 						</tbody>
 					</table>
@@ -63,22 +63,22 @@
 							<tr>
 								<td style="text-align: right; vertical-align: top; width: 3.5em">&nbsp;&nbsp; </td>
 								<td style="width: 180px">Nama</td>
-								<td style="vertical-align: top; text-align: left; text-transform: uppercase;">: </td>
+								<td style="vertical-align: top; text-align: left; text-transform: uppercase;">: {{ $citizen->nama_lengkap }}</td>
 							</tr>
 							<tr>
 								<td style="text-align: right; vertical-align: top">&nbsp;&nbsp; </td>
 								<td style="width: 180px">NIK</td>
-								<td style="vertical-align: top; text-align: left;">: 3202120205650005</td>
+								<td style="vertical-align: top; text-align: left;">: {{ $citizen->nik }}</td>
 							</tr>
 							<tr>
 								<td style="text-align: right; vertical-align: top">&nbsp;&nbsp; </td>
 								<td style="width: 180px">Jenis Kelamin</td>
-								<td style="vertical-align: top; text-align: left;">: Laki-Laki</td>
+								<td style="vertical-align: top; text-align: left;">: {{ $citizen->jenis_kelamin ? 'Laki-laki' : 'Perempuan' }}</td>
 							</tr>
 							<tr>
 								<td style="text-align: right; vertical-align: top">&nbsp;&nbsp; </td>
 								<td style="width: 180px">Tempat Tgl/lahir</td>
-								<td style="vertical-align: top; text-align: left;">: Payakumbuh, 02-05-1965</td>
+								<td style="vertical-align: top; text-align: left;">: {{ $citizen->tempat_lahir }}, {{ $citizen->tanggal_lahir }}</td>
 							</tr>
 							<tr>
 								<td style="text-align: right; vertical-align: top">&nbsp;&nbsp; </td>
@@ -88,25 +88,23 @@
 							<tr>
 								<td style="text-align: right; vertical-align: top">&nbsp;&nbsp; </td>
 								<td style="width: 180px">Agama</td>
-								<td style="vertical-align: top; text-align: left;">: Islam</td>
+								<td style="vertical-align: top; text-align: left;">: {{ $citizen->agama }}</td>
 							</tr>
 							<tr>
 								<td style="text-align: right; vertical-align: top">&nbsp;&nbsp; </td>
 								<td style="width: 180px">Pekerjaan</td>
-								<td style="vertical-align: top; text-align: left;">: Wiraswasta</td>
+								<td style="vertical-align: top; text-align: left;">: {{ $citizen->jenis_pekerjaan }}</td>
 							</tr>
 							<tr>
 								<td style="text-align: right; vertical-align: top">&nbsp;&nbsp; </td>
 								<td style="width: 180px">Status Perkawinan</td>
-								<td style="vertical-align: top; text-align: left;">: Kawin</td>
+								<td style="vertical-align: top; text-align: left;">: {{ $citizen->status_kawin }}</td>
 							</tr>
 							<tr>
 								<td style="text-align: right; vertical-align: top">&nbsp;&nbsp; </td>
 								<td style="width: 180px">Alamat</td>
 								<td style="vertical-align: top; text-align: left;">
-									: BTN Taman Lestari RT. 003/011
-									Desa Cisarua Kecamatan Nagrak
-									Kabupaten Sukabumi
+									: {{ $citizen->alamat }}
 								</td>
 							</tr>
 						</tbody>
@@ -117,12 +115,12 @@
 							<td style="text-align: justify;">
 								<p>
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									Nama tersebut diatas adalah salah seorang warga Desa Cisarua Kecamatan Nagrak Kabupaten
-									Sukabumi yang berdomisili sebagaimana alamat tersebut diatas. Dan menurut pengakuan yang
+									Nama tersebut diatas adalah salah seorang warga Desa {{ $desa->profil_nama }} Kecamatan {{ $desa->profil_kecamatan }} Kabupaten
+									{{ $desa->profil_kabupaten }} yang berdomisili sebagaimana alamat tersebut diatas. Dan menurut pengakuan yang
 									bersangkutan Pada Hari minggu 17 Juli 2016 Sekitar Pukul 21.00 WIB telah terjadi Pencurian 1 (satu)
 									unit Sepeda Motor Honda Beat Type ACH1M21B04 A/T warna Hitam Tahun 2014, No. Pol : F-4414-
-									QT bertempat di BTN Taman Lestari RT. 003/011 Desa Cisarua Kecamatan Nagrak Kabupaten
-									Sukabumi.
+									QT bertempat di BTN Taman Lestari RT. 003/011 Desa {{ $desa->profil_nama }} Kecamatan {{ $desa->profil_kecamatan }} Kabupaten
+									{{ $desa->profil_kabupaten }}.
 								</p>
 								<br>
 								<p>
@@ -136,12 +134,12 @@
 					<table style="width: 100%">
 						<tr>
 							<td style="padding-left: 50%;">
-								Dikeluarkan di: Cimenteng
+								Dikeluarkan di: {{ $desa->profil_nama }}
 								<br>
-								<u>Pada tanggal : 11 Agustus 2016</u>
+								<u>Pada tanggal : {{ date('d F Y') }}</u>
 								<br>
 								<br>
-								<b>KEPALA DESA CIMENTENG</b>
+								<b>KEPALA DESA {{ strtoupper($desa->profil_nama) }}</b>
 								<br>
 								<br>
 								<br>
@@ -153,15 +151,15 @@
 						</tr>
 						<tr>
 							<td style="padding-top: 7em; text-align: center;">
-								Jl. R. Natapraja No.01 Desa Cimenteng Kecamatan Nagrak Kabupaten Sukabumi <br>
-								No HP 081563496263 - 085864836300 e-mail : <a href="mailto:desacimenteng@gmail.com" style="color: inherit;"><i><u>desacimenteng@gmail.com</u></i></a> Kode Pos 43356
+								Jl. R. Natapraja No.01 Desa {{ $desa->profil_nama }} Kecamatan {{ $desa->profil_kecamatan }} Kabupaten {{ $desa->profil_kabupaten }} <br>
+								No HP 081563496263 - 085864836300 e-mail : <a href="mailto:desacimenteng@gmail.com" style="color: inherit;"><i><u>desacimenteng@gmail.com</u></i></a> Kode Pos 43182
 							</td>
 						</tr>
 					</table>
 				</td>
 			</tr>
 		</tbody>
-	</table>
+	</table> --}}
 	<table style="padding: 0 50px; width:100%" cellpadding="2" cellspacing="0">
 		<tbody>
 			<tr>
@@ -170,18 +168,18 @@
 				</td>
 				<td style="text-align: center; border-bottom: 5px solid black;">
 					<div style="font-size: 24px;font-weight: bold">
-						PEMERINTAH DESA CIMENTENG
+						PEMERINTAH DESA {{ strtoupper($desa->profil_nama) }}
 						<p style="font-size:20px;font-weight:bold">
-							KECAMATAN NAGRAK KABUPATEN SUKABUMI
+							KECAMATAN {{ strtoupper($desa->profil_kecamatan) }} KABUPATEN {{ strtoupper($desa->profil_kabupaten) }}
 						</p>
 						<p style="font-size:16px;font-weight:bold">
 							SEKRETARIAT DESA
 						</p>
 						<p style="font-size: 14; font-weight: bold;">
-							NO. 32.02.12.2004
+							{{ $coveringLetter->nomor }}
 						</p>
 						<P style="font-size:13px;font-weight:normal">
-							Jl. R. Natapraja No.01 e-mail : <a href="mailto:desacisarua@gmail.com">desacisarua@gmail.com</a> Kode Pos 43356
+							{{ $desa->alamat }} e-mail : <a href="mailto:desa{{ strtolower($desa->profil_nama) }}@gmail.com">desa{{ strtolower($desa->profil_nama) }}@gmail.com</a> Kode Pos {{ $desa->profil_kode_pos }}
 						</P>
 					</div>
 				</td>
@@ -192,7 +190,7 @@
 						SURAT KETERANGAN PENGHASILAN
 					</div>
 					<div style="font-weight: normal;font-size: 14px;">
-						Nomor: 470/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ Pemdes /2016
+						Nomor: {{ $coveringLetter->nomor }}
 					</div>
 				</td>
 			</tr>
@@ -205,52 +203,59 @@
 				<td style="text-align: justify;">
 					<p>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						Yang bertanda tangan di bawah ini Sekretaris Desa Cisarua Kecamatan Nagrak Kabupaten Sukabumi, menerangkan bahwa :
+						Yang bertanda tangan di bawah ini Sekretaris Desa {{ $desa->profil_nama }} Kecamatan {{ $desa->profil_kecamatan }} Kabupaten {{ $desa->profil_kabupaten }}, menerangkan bahwa :
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td style="text-align: left;padding: 20px 0">
-					<table style="width: 100%">
+					<table style="width: 100%;">
 						<tbody>
 							<tr>
-								<td style="padding-left: 30px; width: 180px">Nama</td>
-								<td style="text-transform: uppercase;">: kosasih</td>
+								<td style="text-align: right; vertical-align: top; width: 3.5em">&nbsp;&nbsp; </td>
+								<td style="width: 180px">Nama</td>
+								<td style="vertical-align: top; text-align: left; text-transform: uppercase;">: {{ $citizen->nama_lengkap }}</td>
 							</tr>
 							<tr>
-								<td style="padding-left: 30px; width: 180px">NIK</td>
-								<td>: 3202120101650062</td>
+								<td style="text-align: right; vertical-align: top">&nbsp;&nbsp; </td>
+								<td style="width: 180px">NIK</td>
+								<td style="vertical-align: top; text-align: left;">: {{ $citizen->nik }}</td>
 							</tr>
 							<tr>
-								<td style="padding-left: 30px; width: 180px">Jenis Kelamin</td>
-								<td>: Laki-Laki</td>
+								<td style="text-align: right; vertical-align: top">&nbsp;&nbsp; </td>
+								<td style="width: 180px">Jenis Kelamin</td>
+								<td style="vertical-align: top; text-align: left;">: {{ $citizen->jenis_kelamin ? 'Laki-laki' : 'Perempuan' }}</td>
 							</tr>
 							<tr>
-								<td style="padding-left: 30px; width: 180px">Tempat Tgl/lahir</td>
-								<td>: Sukabumi, 01-01-1965</td>
+								<td style="text-align: right; vertical-align: top">&nbsp;&nbsp; </td>
+								<td style="width: 180px">Tempat Tgl/lahir</td>
+								<td style="vertical-align: top; text-align: left;">: {{ $citizen->tempat_lahir }}, {{ $citizen->tanggal_lahir }}</td>
 							</tr>
 							<tr>
-								<td style="padding-left: 30px; width: 180px">Warga Negara</td>
-								<td>: Indonesia</td>
+								<td style="text-align: right; vertical-align: top">&nbsp;&nbsp; </td>
+								<td style="width: 180px">Warga Negara</td>
+								<td style="vertical-align: top; text-align: left;">: Indonesia</td>
 							</tr>
 							<tr>
-								<td style="padding-left: 30px; width: 180px">Agama</td>
-								<td>: Islam</td>
+								<td style="text-align: right; vertical-align: top">&nbsp;&nbsp; </td>
+								<td style="width: 180px">Agama</td>
+								<td style="vertical-align: top; text-align: left;">: {{ $citizen->agama }}</td>
 							</tr>
 							<tr>
-								<td style="padding-left: 30px; width: 180px">Pekerjaan</td>
-								<td>: Buruh Harian Lepas</td>
+								<td style="text-align: right; vertical-align: top">&nbsp;&nbsp; </td>
+								<td style="width: 180px">Pekerjaan</td>
+								<td style="vertical-align: top; text-align: left;">: {{ $citizen->jenis_pekerjaan }}</td>
 							</tr>
 							<tr>
-								<td style="padding-left: 30px; width: 180px">Status Perkawinan</td>
-								<td>: Kawin</td>
+								<td style="text-align: right; vertical-align: top">&nbsp;&nbsp; </td>
+								<td style="width: 180px">Status Perkawinan</td>
+								<td style="vertical-align: top; text-align: left;">: {{ $citizen->status_kawin }}</td>
 							</tr>
 							<tr>
-								<td style="padding-left: 30px; width: 180px">Alamat</td>
-								<td>
-									: Kp. Cicangkore RT. 002/004 <br>
-									Desa Cisarua Kecamatan Nagrak <br>
-									Kabupaten Sukabumi
+								<td style="text-align: right; vertical-align: top">&nbsp;&nbsp; </td>
+								<td style="width: 180px">Alamat</td>
+								<td style="vertical-align: top; text-align: left;">
+									: {{ $citizen->alamat }}
 								</td>
 							</tr>
 						</tbody>
@@ -259,7 +264,7 @@
 						<td style="text-align: justify;">
 							<p>
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								Nama tersebut diatas adalah salah seorang warga Desa Cisarua Kecamatan Nagrak Kabupaten Sukabumi yang berdomisili sebagaimana alamat tersebut diatas. Dan menurut pengakuan yang bersangkutan Penghasilan dari Hasil Usahanya ± Rp.1.500.000,-/Bulan.
+								Nama tersebut diatas adalah salah seorang warga Desa {{ $desa->profil_nama }} Kecamatan {{ $desa->profil_kecamatan }} Kabupaten {{ $desa->profil_kabupaten }} yang berdomisili sebagaimana alamat tersebut diatas. Dan menurut pengakuan yang bersangkutan Penghasilan dari Hasil Usahanya ± Rp.{{ number_format($coveringLetter->penghasilan,0, ',','.') }},-/Bulan.
 							</p>
 							<br>
 							<p>
@@ -276,33 +281,21 @@
 				</td>
 			</tr>
 			<tr>
-				<td style="padding-left: 55%; text-align: center;">
-					Dikeluarkan di : Cimenteng
+				<td style="padding-left: 50%; text-align: center;">
+					Dikeluarkan di : {{ $desa->profil_nama }}
 					<br>
-					<u>Pada tanggaL : 01 Juli 2016</u>
-					<br>
-					<br>
-					<b>SEKRETARIS DESA CISARUA</b>
+					<u>Pada tanggaL : {{ date('d F Y') }}</u>
 					<br>
 					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
+					<b>SEKRETARIS DESA {{ strtoupper($desa->profil_nama) }}</b>
+					<br><br><br><br><br><br><br><br>
 					<b style="text-transform: uppercase;">YAN VICTOR M</b>
+				</td>
+			</tr>
+			<tr>
+				<td style="height: 300px; text-align: justify;vertical-align: top;">
 					<br><br>
-					<br><br>
-					<br><br>
-					<br><br>
-					<br><br>
-					<br><br>
-					<br><br>
-					<br><br>
-					<br><br>
-					<br><br>
-					<br><br>
-					<br><br>
+					<p>{{ $coveringLetter->footer }}</p>
 				</td>
 			</tr>
 		</tbody>
@@ -317,21 +310,21 @@
 			<tr>
 				<td style="text-align: center;">
 					<div style="font-size: 13px;font-weight: bold">
-						KEPALA DESA CIMENTENG
+						KEPALA DESA {{ strtoupper($desa->profil_nama) }}
 					</div>
 				</td>
 			</tr>
 			<tr>
 				<td style="text-align: center">
 					<div style="font-size: 13px">
-						<strong>KECAMATAN NAGRAK KABUPATEN SUKABUMI</strong>
+						<strong>KECAMATAN {{ strtoupper($desa->profil_kecamatan) }} KABUPATEN {{ strtoupper($desa->profil_nama) }}</strong>
 						<br>
 						<br>
 						<br>
 						<b><u style="font-size: 16px">SURAT KETERANGAN</u></b>
 						<br>
 						<span style="font-size: 12px; padding-top:10px;">
-							Nomor : 470 /&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ Pemdes /2018
+							Nomor : {{ $coveringLetter->nomor }}
 						</span>
 						<br>
 						<br>
@@ -359,7 +352,7 @@
 							<tr>
 								<td style="text-align: right; vertical-align: top; width: 50px">b. </td>
 								<td style="width: 150px">Jabatan</td>
-								<td>: Kepala Desa Cisarua</td>
+								<td>: Kepala Desa {{ $desa->profil_nama }}</td>
 							</tr>
 						</tbody>
 					</table>
@@ -404,8 +397,8 @@
 								<td style="text-align: left; vertical-align: top; width: 150px">Alamat</td>
 								<td>
 									: Kp. Pamuruyan RT. 001/001 <br>
-									Desa Cisarua Kecamatan Nagrak <br>
-									Kabupaten Sukabumi
+									Desa {{ $desa->profil_nama }} Kecamatan {{ $desa->profil_kecamatan }} <br>
+									Kabupaten {{ $desa->profil_kabupaten }}
 								</td>
 							</tr>
 						</tbody>
@@ -415,7 +408,7 @@
 							<td style="text-align: justify;">
 								<br>
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								Nama tersebut diatas adalah salah seorang warga Desa Cisarua Kecamatan Nagrak Kabupaten Sukabumi yang berdomisili sebagaimana alamat tersebut diatas. Dan menurut pengakuan yang bersangkutan Penghasilan dari Hasil Usahanya ± Rp.3.200.000,-/Bulan.
+								Nama tersebut diatas adalah salah seorang warga Desa {{ $desa->profil_nama }} Kecamatan {{ $desa->profil_kecamatan }} Kabupaten {{ $desa->profil_kabupaten }} yang berdomisili sebagaimana alamat tersebut diatas. Dan menurut pengakuan yang bersangkutan Penghasilan dari Hasil Usahanya ± Rp.{{ number_format($coveringLetter->penghasilan,0, ',','.') }},-/Bulan.
 								<br>
 								<br>
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -426,13 +419,13 @@
 				</td>
 			</tr>
 			<tr>
-				<td style="padding-left: 55%; text-align: center;">
-					Dikeluarkan di : Cimenteng
+				<td style="padding-left: 50%; text-align: center;">
+					Dikeluarkan di : {{ $desa->profil_nama }}
 					<br>
-					<u>Pada tanggaL : 01 Juli 2016</u>
+					<u>Pada tanggaL : {{ date('d F Y') }}</u>
 					<br>
 					<br>
-					<b>KEPALA DESA CIMENTENG</b>
+					<b>KEPALA DESA {{ strtoupper($desa->profil_nama) }}</b>
 					<br>
 					<br>
 					<br>
@@ -448,12 +441,15 @@
 				</td>
 			</tr>
 			<tr>
+				<td style="height: 150px; text-align: justify;vertical-align: top;">
+					<br><br>
+					<p>{{ $coveringLetter->footer }}</p>
+				</td>
+			</tr>
+			<tr>
 				<td style="text-align: center;">
-					<br><br>
-					<br><br>
-					<br><br>
-					Jl. R. Natapraja No.01 Desa Cisarua Kecamatan Nagrak Kabupaten Sukabumi <br>
-					No HP 081563496263 - 085864836300 e-mail : desacisarua@gmail.com Kode Pos 43356
+					{{ $desa->alamat }} Desa {{ $desa->profil_nama }} Kecamatan {{ $desa->profil_kecamatan }} Kabupaten {{ $desa->profil_kabupaten }} <br>
+					e-mail : <a href="mailto:desa{{ strtolower($desa->profil_nama) }}@gmail.com">desa{{ strtolower($desa->profil_nama) }}@gmail.com</a> Kode Pos {{ $desa->profil_kode_pos }}
 				</td>
 			</tr>
 		</tbody>

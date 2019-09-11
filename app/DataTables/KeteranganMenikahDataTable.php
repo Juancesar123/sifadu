@@ -29,7 +29,11 @@ class KeteranganMenikahDataTable extends DataTable
      */
     public function query(KeteranganMenikah $model)
     {
-        return $model->newQuery();
+        return $model->newQuery()
+        ->join('datapenduduks as ms', 'keterangan_menikahs.nik_mempelai_satu', '=', 'ms.id')
+        ->join('datapenduduks as md', 'keterangan_menikahs.nik_mempelai_dua', '=', 'md.id')
+        ->select('keterangan_menikahs.*', 'ms.nama_lengkap as ml', 'md.nama_lengkap as mp')
+        ;
     }
 
     /**
@@ -65,12 +69,25 @@ class KeteranganMenikahDataTable extends DataTable
     {
         return [
             'nomor',
-            'footer',
             'nik_mempelai_satu',
+            [
+                'name' => 'ms.nama_lengkap',
+                'data'  => 'ml',
+                'title' => 'Mempelai Laki-laki',
+                'defaultContent'    => ''
+            ],
             'nik_mempelai_dua',
+            [
+                'name' => 'md.nama_lengkap',
+                'data'  => 'mp',
+                'title' => 'Mempelai Perempuan',
+                'defaultContent'    => ''
+            ],
             'saksi_satu',
             'saksi_dua',
-            'pembantu_ppn'
+            'tanggal_menikah',
+            'pembantu_ppn',
+            'footer',
         ];
     }
 

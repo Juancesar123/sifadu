@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\suratpengantarktp;
 use App\Models\datapenduduk;
+use App\Models\Profil;
 use PDF;
 
 class IdentityCardController extends Controller
@@ -32,6 +33,8 @@ class IdentityCardController extends Controller
         $neighborhoodAssn = str_split($neighborhoodAssn);
         $citizenhoodAssn  = str_split($citizenhoodAssn);
 
+        $desa = Profil::findOrFail(1);
+
         $data = compact([
             'letterNumber',
             'datecreate',
@@ -41,6 +44,7 @@ class IdentityCardController extends Controller
             "address",
             "neighborhoodAssn",
             "citizenhoodAssn",
+            'desa'
         ]);
 
         $pdf = PDF::loadView('pdf.letter.covering.identity_card', $data, [], [

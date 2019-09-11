@@ -11,20 +11,20 @@
 			<tr>
 				<td style="text-align: center;">
 					<div style="font-size: 16px;font-weight: bold">
-						KEPALA DESA CIMENTENG
+						KEPALA DESA {{ strtoupper($desa->profil_nama) }}
 					</div>
 				</td>
 			</tr>
 			<tr>
 				<td style="text-align: center">
 					<div style="font-size: 16px">
-						<strong>KECAMATAN NAGRAK KABUPATEN SUKABUMI</strong>
+						<strong>KECAMATAN {{ strtoupper($desa->profil_kecamatan) }} KABUPATEN {{ strtoupper($desa->profil_kabupaten) }}</strong>
 						<br>
 						<br>
 						<b><u>SURAT KETERANGAN DOMISILI USAHA</u></b>
 						<br>
 						<span style="font-size: 15px; padding-top:10px;">
-							Nomor : 056 /&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ Pemdes /2017
+							Nomor : {{ $coveringLetter->nomor }}
 						</span>
 						<br>
 						<br>
@@ -34,7 +34,7 @@
 			</tr>
 		</tbody>
 	</table>
-	<table>
+	<table style="width: 100%">
 		<tbody>
 			<tr>
 				<td style="padding: 0 50px">
@@ -49,7 +49,7 @@
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">b. </td>
 							<td style="width: 150px">Jabatan</td>
-							<td>: Kepala Desa Cimenteng</td>
+							<td>: Kepala Desa {{ $desa->profil_nama }}</td>
 						</tr>
 					</table>
 					<br>
@@ -59,38 +59,36 @@
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="width: 150px">Nama Pemilik</td>
-							<td style="text-transform: uppercase;">: HALIM DJAYA DJAYAPRAWIRA</td>
+							<td style="text-transform: uppercase;">: {{ $citizen->nama_lengkap }}</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="width: 150px">T.T.L/Umur</td>
-							<td>: Medan, 24-01-1963</td>
+							<td>: {{ $citizen->tempat_lahir }}, {{ $citizen->tanggal_lahir }}</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="text-align: left; vertical-align: top; width: 150px">Alamat Pemilik</td>
 							<td style="padding-right: 100px;">
-								: Kp. Jl. Jambu no. 28 Desa/Kel Gondangdia
-								Kecamatan Menteng Kabupaten Jakarta Pusat Prov. DKI Jakarta
+								: {{ $citizen->alamat }}
 							</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="width: 150px">Jenis Usaha</td>
-							<td>: Koperasi</td>
+							<td>: {{ $coveringLetter->jenis_usaha }}</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="text-align: left; vertical-align: top; width: 150px">Tempat Usaha</td>
 							<td style="padding-right: 100px;">
-								: Kp. Pamuruyan RT. 002/001 Desa Cisarua
-								Kecamatan Nagrak Kabupaten Sukabumi.
+								: {{ $coveringLetter->alamat_tempat }}
 							</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="width: 150px">Luas Tempat Usaha</td>
-							<td>: </td>
+							<td>: {{ $coveringLetter->luas_tempat }}</td>
 						</tr>
 					</table>
 					<br>
@@ -98,8 +96,8 @@
 
 					<p>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						Usaha Penitipan Barang tersebut di atas benar berdomisili di Kp. Cisadaria RT. 003/002
-						Desa Cisarua Kecamatan Nagrak Kabupaten Sukabumi.
+						Usaha Penitipan Barang tersebut di atas benar berdomisili di {{ $coveringLetter->alamat_tempat }}
+						Desa {{ $desa->profil_nama }} Kecamatan {{ $desa->profil_kecamatan }} Kabupaten {{ $desa->profil_kabupaten }}.
 					</p>
 					<br>
 
@@ -111,46 +109,47 @@
 
 					<p>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						Izin Domisili Usaha ini berlaku sampai dengan : <u>23 Januari 2017</u>
+						Izin Domisili Usaha ini berlaku sampai dengan : <u>{{ date('d F Y', time() + (60*60*24*30) ) }}</u>
 					</p>
 					<br>
 					<br>
 					<br>
 					<br>
-
-					<table>
-						<tr>
-							<td style="padding-left: 50%; text-transform: uppercase;">
-								Dikeluarkan di: Cimenteng
-								<br>
-								<u>Pada tanggal : 03 Januari 2017</u>
-								<br>
-								<br>
-								<table>
-									<tr>
-										<td style="padding-left: 30px">
-											<b>KEPALA DESA CIMENTENG</b>
-											<br>
-											<br>
-											<br>
-											<br>
-											<br>
-											<b>KOSASIH</b>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						<tr>
-							<td style="padding-top: 7em; text-align: center;">
-								Jl. R. Natapraja No.01 Desa Cimenteng Kecamatan Nagrak Kabupaten Sukabumi <br>
-								No HP 081563496263 - 085864836300 e-mail : desacimenteng@gmail.com Kode Pos 43356
-							</td>
-						</tr>
-					</table>
 				</td>
 			</tr>
 		</tbody>
+	</table>
+	<table style="width: 100%">
+		<tr>
+			<td style="padding-left: 45%; text-transform: uppercase;">
+				Dikeluarkan di: {{ $desa->profil_nama }}
+				<br>
+				<u>Pada tanggal : {{ date('d F Y') }}</u>
+				<br>
+				<br>
+				<table style="width: 100%">
+					<tr>
+						<td style="padding-left: 30px">
+							<b>KEPALA DESA {{ strtoupper($desa->profil_nama) }}</b>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<b>KOSASIH</b>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding-top: 9em; text-align: center;">
+				{{ $desa->profil_alamat }} Desa {{ $desa->profil_nama }} Kecamatan {{ $desa->profil_kecamatan }} <br>
+				Kabupaten {{ $desa->profil_kabupaten }} e-mail : desa{{ strtolower($desa->profil_nama) }}@gmail.com Kode Pos {{ $desa->profil_kode_pos }}
+			</td>
+		</tr>
 	</table>
 	<table style="font-size: 13px; width:100%">
 		<tbody>
@@ -162,20 +161,20 @@
 			<tr>
 				<td style="text-align: center;">
 					<div style="font-size: 16px;font-weight: bold">
-						KEPALA DESA CIMENTENG
+						KEPALA DESA {{ strtoupper($desa->profil_nama) }}
 					</div>
 				</td>
 			</tr>
 			<tr>
 				<td style="text-align: center">
 					<div style="font-size: 16px">
-						<strong>KECAMATAN NAGRAK KABUPATEN SUKABUMI</strong>
+						<strong>KECAMATAN {{ strtoupper($desa->profil_kecamatan) }} KABUPATEN {{ strtoupper($desa->profil_kabupaten) }}</strong>
 						<br>
 						<br>
 						<b><u>SURAT KETERANGAN DOMISILI USAHA</u></b>
 						<br>
 						<span style="font-size: 15px; padding-top:10px;">
-							Nomor : 056/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/KDU/ Pemdes /2017
+							Nomor : {{ $coveringLetter->nomor }}
 						</span>
 						<br>
 						<br>
@@ -204,14 +203,13 @@
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">b. </td>
 							<td style="width: 150px">Jabatan</td>
-							<td>: Kepala Desa Cimenteng</td>
+							<td>: Kepala Desa {{ $desa->profil_nama }}</td>
 						</tr>
 						<tr>
 							<td colspan="3" style="text-align: justify;">
 								<br>
 								<p>Dengan ini menerangkan bahwa :</p>
-								<p>Berdasarkan Keterangan Ijin lingkungan yang di tandatangani warga dan diketahui Ketua RT.
-									002/001 Kp. Pamuruyan Desa Cisarua, Kecamatan Nagrak Kabupaten Sukabumi memberikan izin
+								<p>Berdasarkan Keterangan Ijin lingkungan yang di tandatangani warga dan diketahui Ketua {{ $coveringLetter->alamat_tempat }} Desa {{ $desa->profil_nama }}, Kecamatan {{ $desa->profil_kecamatan }} Kabupaten {{ $desa->profil_kabupaten }} memberikan izin
 									Domisili Usaha kepada:
 								</p>
 							</td>
@@ -222,31 +220,30 @@
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="width: 150px">Nama</td>
-							<td style="text-transform: uppercase;">: Koperasi</td>
+							<td style="text-transform: uppercase;">: {{ $coveringLetter->nama }}</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="width: 150px">Jenis Usaha/Kegiatan</td>
-							<td>: Ruko</td>
+							<td>: {{ $coveringLetter->jenis_usaha }}</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="text-align: left; vertical-align: top; width: 150px">Alamat Tempat Usaha</td>
 							<td style="padding-right: 100px;">
-								: Kp. Pamuruyan RT. 002/001 Desa Cisarua
-								Kecamatan Nagrak Kabupaten Sukabumi
+								: {{ $coveringLetter->alamat_tempat }}
 							</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="width: 150px">Luas tempat Usaha</td>
-							<td>: +/- 195 M2</td>
+							<td>: +/- {{ $coveringLetter->luas_tempat }} M2</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="text-align: left; vertical-align: top; width: 140px">Nama Pemilik</td>
 							<td style="padding-right: 100px;">
-								: HALIM DJAYA DJAYAPRAWIRA
+								: {{ $citizen->nama_lengkap }}
 							</td>
 						</tr>
 						<tr>
@@ -256,22 +253,15 @@
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
-							<td style="width: 150px">Umur</td>
-							<td>: 54</td>
-						</tr>
-						<tr>
-							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="text-align: left; vertical-align: top; width: 140px">Alamat</td>
 							<td>
-								: Jl. Jambu no. 28 Desa/Kel Gondangdia <br>
-								Kecamatan Menteng Kabupaten Jakarta Pusat <br>
-								Prov. DKI Jakarta
+								: {{ $coveringLetter->alamat_tempat }}
 							</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="width: 150px">No NPWP</td>
-							<td>: </td>
+							<td>: {{ $coveringLetter->no_npwp }}</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
@@ -281,13 +271,13 @@
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="width: 150px">SK Mentri Hukum & HAM</td>
-							<td>: -</td>
+							<td>: {{ $coveringLetter->sk_hukum_ham }}</td>
 						</tr>
 						<tr>
 							<td colspan="3" style="text-align: justify;">
 								<br>
 								<p>
-									Izin Domisili Usaha ini berlaku sampai dengan : <u>20 Juli 2018</u>
+									Izin Domisili Usaha ini berlaku sampai dengan : <u>{{ date('d F Y', time() + (60*60*24*30) ) }}</u>
 								</p>
 								<br>
 								<p>
@@ -302,12 +292,12 @@
 							<td colspan="3" style="padding-left: 50%; text-transform: uppercase;">
 								<br>
 								<br>
-								Dikeluarkan di: Cimenteng
+								Dikeluarkan di: {{ $desa->profil_nama }}
 								<br>
-								<u>Pada tanggal : 03 Januari 2017</u>
+								<u>Pada tanggal : {{ date('d F Y') }}</u>
 								<br>
 								<br>
-								<b>KEPALA DESA CIMENTENG</b>
+								<b>KEPALA DESA {{ strtoupper($desa->profil_nama) }}</b>
 								<br>
 								<br>
 								<br>
@@ -317,9 +307,9 @@
 							</td>
 						</tr>
 						<tr>
-							<td colspan="3" style="padding-top: 7em; text-align: center;">
-								Jl. R. Natapraja No.01 Desa Cimenteng Kecamatan Nagrak Kabupaten Sukabumi <br>
-								No HP 081563496263 - 085864836300 e-mail : desacimenteng@gmail.com Kode Pos 43356
+							<td colspan="3" style="padding-top: 9em; text-align: center;">
+								{{ $desa->profil_alamat }} Desa {{ $desa->profil_nama }} Kecamatan {{ $desa->profil_kecamatan }} <br>
+								Kabupaten {{ $desa->profil_kabupaten }} e-mail : desa{{ strtolower($desa->profil_nama) }}@gmail.com Kode Pos {{ $desa->profil_kode_pos }}
 							</td>
 						</tr>
 					</table>
@@ -337,20 +327,20 @@
 			<tr>
 				<td style="text-align: center;">
 					<div style="font-size: 16px;font-weight: bold">
-						KEPALA DESA CIMENTENG
+						KEPALA DESA {{ strtoupper($desa->profil_nama) }}
 					</div>
 				</td>
 			</tr>
 			<tr>
 				<td style="text-align: center">
 					<div style="font-size: 16px">
-						<strong>KECAMATAN NAGRAK KABUPATEN SUKABUMI</strong>
+						<strong>KECAMATAN {{ strtoupper($desa->profil_kecamatan) }} KABUPATEN {{ strtoupper($desa->profil_kabupaten) }}</strong>
 						<br>
 						<br>
 						<b><u>SURAT KETERANGAN DOMISILI USAHA</u></b>
 						<br>
 						<span style="font-size: 15px; padding-top:10px;">
-							Nomor : 056/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ Pemdes /2017
+							Nomor : {{ $coveringLetter->nomor }}
 						</span>
 						<br>
 						<br>
@@ -375,7 +365,7 @@
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">b. </td>
 							<td style="width: 150px">Jabatan</td>
-							<td>: Kepala Desa Cimenteng</td>
+							<td>: Kepala Desa {{ $desa->profil_nama }}</td>
 						</tr>
 					</table>
 					<br>
@@ -385,68 +375,66 @@
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="width: 150px">Nama Pemilik</td>
-							<td style="text-transform: uppercase;">: ADEN SUHENDANG FIRDAUS</td>
+							<td style="text-transform: uppercase;">: {{ $citizen->nama_lengkap }}</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="width: 150px">Tempat Tanggal lahir</td>
-							<td>: Sukabumi, 05-05-1981</td>
+							<td>: {{ $citizen->tempat_lahir }}, {{ $citizen->tanggal_lahir }}</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="text-align: left; vertical-align: top; width: 150px">NIK</td>
 							<td style="padding-right: 100px;">
-								: 3202120505810007
+								: {{ $citizen->nik }}
 							</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="text-align: left; vertical-align: top; width: 150px">Alamat</td>
 							<td>
-								: Kp. Cisadaria RT. 005/002 Desa Cisarua
-								 Kecamatan Nagrak Kabupaten Sukabumi
+								: {{ $citizen->alamat }}
 							</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="text-align: left; vertical-align: top; width: 150px">Nama Perusahaan</td>
 							<td style="padding-right: 100px;">
-								: CV. DIFTA TEHNIK
+								: {{ $coveringLetter->nama }}
 							</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="text-align: left; vertical-align: top; width: 150px">Jenis Usaha</td>
-							<td>: JASA SERVICE dan SUPLIER UMUM (ALAT TEHNIK)</td>
+							<td>: {{ $coveringLetter->jenis_usaha }}</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="text-align: left; vertical-align: top; width: 150px">Tempat Usaha</td>
 							<td>
-								: Kp. Cisadaria RT. 005/002 Desa Cisarua
-								 Kecamatan Nagrak Kabupaten Sukabumi
+								: {{ $coveringLetter->alamat_tempat }}
 							</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="text-align: left; vertical-align: top; width: 150px">Luas Tempat Usaha</td>
-							<td>: +/- 20 M2</td>
+							<td>: +/- {{ $coveringLetter->luas_tempat }} M2</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="text-align: left; vertical-align: top; width: 150px">Nomor NPWP</td>
-							<td>: 57.035.017.3-405.000</td>
+							<td>: {{ $coveringLetter->no_npwp }}</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="text-align: left; vertical-align: top; width: 150px">Nomor Badan Hukum</td>
-							<td>: -</td>
+							<td>: {{ $coveringLetter->badan_hukum }}</td>
 						</tr>
 						<tr>
 							<td colspan="3" style="text-align: justify;">
 								<br>
 								<p>
-									Izin Domisili Usaha ini berlaku sampai dengan : 09 Februari 2018
+									Izin Domisili Usaha ini berlaku sampai dengan : {{ date('d F Y', time() + (60*60*24*30) ) }}
 								</p>
 								<br>
 								<p>
@@ -462,15 +450,15 @@
 							<td colspan="3" style="padding-left: 50%; text-transform: uppercase;">
 								<br>
 								<br>
-								Dikeluarkan di: Cimenteng
+								Dikeluarkan di: {{ $desa->profil_nama }}
 								<br>
-								<u>Pada tanggal : 09 Januari 2017</u>
+								<u>Pada tanggal : {{ date('d F Y') }}</u>
 								<br>
 								<br>
 								<table>
 									<tr>
 										<td style="padding-left: 30px">
-											<b>KEPALA DESA CIMENTENG</b>
+											<b>KEPALA DESA {{ strtoupper($desa->profil_nama) }}</b>
 											<br>
 											<br>
 											<br>
@@ -483,9 +471,9 @@
 							</td>
 						</tr>
 						<tr>
-							<td colspan="3" style="padding-top: 4em; text-align: center;">
-								Jl. R. Natapraja No.01 Desa Cimenteng Kecamatan Nagrak Kabupaten Sukabumi <br>
-								No HP 081563496263 - 085864836300 e-mail : desacimenteng@gmail.com Kode Pos 43356
+							<td colspan="3" style="padding-top: 8em; text-align: center;">
+								{{ $desa->profil_alamat }} Desa {{ $desa->profil_nama }} Kecamatan {{ $desa->profil_kecamatan }} <br>
+								Kabupaten {{ $desa->profil_kabupaten }} e-mail : desa{{ strtolower($desa->profil_nama) }}@gmail.com Kode Pos {{ $desa->profil_kode_pos }}
 							</td>
 						</tr>
 					</table>
@@ -503,20 +491,20 @@
 			<tr>
 				<td style="text-align: center;">
 					<div style="font-size: 16px;font-weight: bold">
-						KEPALA DESA CIMENTENG
+						KEPALA DESA {{ $desa->profil_nama }}
 					</div>
 				</td>
 			</tr>
 			<tr>
 				<td style="text-align: center">
 					<div style="font-size: 16px">
-						<strong>KECAMATAN NAGRAK KABUPATEN SUKABUMI</strong>
+						<strong>KECAMATAN {{ strtoupper($desa->profil_kecamatan) }} KABUPATEN {{ strtoupper($desa->profil_kabupaten) }}</strong>
 						<br>
 						<br>
 						<b><u>SURAT KETERANGAN DOMISILI USAHA</u></b>
 						<br>
 						<span style="font-size: 15px; padding-top:10px;">
-							Nomor : 056/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ Pemdes /2017
+							Nomor : {{ $coveringLetter->nomor }}
 						</span>
 						<br>
 						<br>
@@ -526,7 +514,7 @@
 			</tr>
 		</tbody>
 	</table>
-	<table>
+	<table style="width: 100%">
 		<tbody>
 			<tr>
 				<td style="padding: 0 50px">
@@ -541,7 +529,7 @@
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">b. </td>
 							<td style="width: 150px">Jabatan</td>
-							<td>: Kepala Desa Cimenteng</td>
+							<td>: Kepala Desa {{ $desa->profil_nama }}</td>
 						</tr>
 					</table>
 					<br>
@@ -552,34 +540,33 @@
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="width: 150px">Nama Lembaga</td>
 							<td style="font-weight: bold; text-transform: uppercase;">
-								: LEMBAGA PEMBERDAYAAN MASYARAKAT DESA
+								: {{ $coveringLetter->nama }}
 							</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="width: 150px">Nama Ketua</td>
-							<td style="text-transform: uppercase;">: H. DHANY MEDIAN KARTAMIHARJA</td>
+							<td style="text-transform: uppercase;">: {{ $citizen->nama_lengkap }}</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="text-align: left; vertical-align: top; width: 150px">NO SK</td>
 							<td style="padding-right: 100px;">
-								: 144/44/KEP/2014
+								: {{ $coveringLetter->sk_hukum_ham }}
 							</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="text-align: left; vertical-align: top; width: 150px">Alamat</td>
 							<td>
-								: Kp. Cibodas RT. 001/010 Desa Cisarua
-								 Kecamatan Nagrak Kabupaten Sukabumi
+								: {{ $coveringLetter->alamat_tempat }}
 							</td>
 						</tr>
 						<tr>
 							<td colspan="3" style="text-align: justify;">
 								<br>
 								<p>
-									Lembaga tersebut benar-benar berada di wilayah Desa Cisarua Kecamatan Nagrak Kabupaten Sukabumi.
+									Lembaga tersebut benar-benar berada di wilayah Desa {{ $desa->profil_nama }} Kecamatan {{ $desa->profil_kecamatan }} Kabupaten {{ $desa->profil_kabupaten }}.
 								</p>
 								<br>
 								<p>
@@ -592,12 +579,12 @@
 							<td colspan="3" style="padding-left: 50%; text-transform: uppercase;">
 								<br>
 								<br>
-								Dikeluarkan di: Cimenteng
+								Dikeluarkan di: {{ $desa->profil_nama }}
 								<br>
-								<u>Pada tanggal : 28 Agustus 2017</u>
+								<u>Pada tanggal : {{ date('d F Y') }}</u>
 								<br>
 								<br>
-								<b>KEPALA DESA CIMENTENG</b>
+								<b>KEPALA DESA {{ strtoupper($desa->profil_nama) }}</b>
 								<br>
 								<br>
 								<br>
@@ -609,8 +596,8 @@
 						</tr>
 						<tr>
 							<td colspan="3" style="padding-top: 18em; text-align: center;">
-								Jl. R. Natapraja No.01 Desa Cimenteng Kecamatan Nagrak Kabupaten Sukabumi <br>
-								No HP 081563496263 - 085864836300 e-mail : desacimenteng@gmail.com Kode Pos 43356
+								{{ $desa->profil_alamat }} Desa {{ $desa->profil_nama }} Kecamatan {{ $desa->profil_kecamatan }} <br>
+								Kabupaten {{ $desa->profil_kabupaten }} e-mail : desa{{ strtolower($desa->profil_nama) }}@gmail.com Kode Pos {{ $desa->profil_kode_pos }}
 							</td>
 						</tr>
 					</table>

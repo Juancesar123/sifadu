@@ -61,17 +61,17 @@ class KeteranganKelahiran extends Model
 
     public $table = 'keterangan_kelahirans';
 
-
     protected $dates = ['deleted_at'];
 
-
     public $fillable = [
-    	'nik',
+    	'nik_suami',
+    	'nik_istri',
         'nomor_surat',
         'tanggal',
         'tempat',
         'jenis_kelamin',
         'nama',
+        'anak_ke',
         'footer'
     ];
 
@@ -86,7 +86,8 @@ class KeteranganKelahiran extends Model
         'tempat' => 'string',
         'jenis_kelamin' => 'string',
         'nama' => 'string',
-        'footer'=>'string'
+        'anak_ke' => 'string',
+        'footer'=>'string',
     ];
 
     /**
@@ -95,11 +96,13 @@ class KeteranganKelahiran extends Model
      * @var array
      */
     public static $rules = [
-    	'nik'	=>'required',
+    	'nik_suami'	=>'required',
+    	'nik_istri'	=>'required',
         'nomor_surat' => 'required',
         'tanggal' => 'required',
         'tempat' => 'required',
         'jenis_kelamin' => 'required',
         'nama' => 'required',
+        'anak_ke' => 'required',
     ];
 }

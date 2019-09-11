@@ -2,22 +2,32 @@
 
 namespace App\Http\Controllers\Letter\Covering;
 
-use App\DataTables\KeteranganPenghasilanDataTable;
 use App\Http\Requests;
-use App\Http\Requests\CreateKeteranganPenghasilanRequest;
-use App\Http\Requests\UpdateKeteranganPenghasilanRequest;
-use App\Repositories\KeteranganPenghasilanRepository;
 use Flash;
 use App\Http\Controllers\AppBaseController;
 use Response;
 use PDF;
+use App\Models\datapenduduk as Penduduk;
+use App\Models\KeteranganPenghasilan;
+use App\Models\Profil;
 
 class KeteranganPenghasilanController extends AppBaseController
 {
 	public function cetak($id) {
-		// dd(false);
+		$coveringLetter = KeteranganPenghasilan::findOrFail($id);
+		$citizen = Penduduk::findOrFail($coveringLetter->nik);
+		$desa = Profil::findOrFail(1);
+
+		// dd(
+		// 	json_decode($coveringLetter),
+		// 	json_decode($citizen),
+		// 	json_decode($desa),
+		// );
+
 		$data = compact([
-			// 'letter_number',
+			'coveringLetter',
+			'citizen',
+			'desa',
 		]);
 		$pdf = PDF::loadView('pdf.letter.covering.keterangan_penghasilan', $data, [], [
 			'format'		=> 'folio',

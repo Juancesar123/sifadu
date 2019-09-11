@@ -2,21 +2,32 @@
 
 namespace App\Http\Controllers\Letter\Covering;
 
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Models\datapenduduk;
+use App\Models\datapenduduk as Penduduk;
+use App\Models\KeteranganMenikah;
+use App\Models\Profil;
 use PDF;
 
 class SKMenikahController extends Controller
 {
-
-	public function __construct() {
-	}
-
 	public function cetak($id) {
+		$coveringLetter	= KeteranganMenikah::findOrFail($id);
+		$desa = Profil::findOrFail(1);
+		$mlakilaki		= Penduduk::findOrFail($coveringLetter->nik_mempelai_satu);
+		$mperempuan		= Penduduk::findOrFail($coveringLetter->nik_mempelai_dua);
+
+		// dd(
+		// 	json_decode($coveringLetter),
+		// 	json_decode($mlakilaki),
+		// 	json_decode($mperempuan),
+		// 	json_decode($desa),
+		// );
 
 		$data = compact([
-			// 'letter_number',
+			'coveringLetter',
+			'mlakilaki',
+			'mperempuan',
+			'desa',
 		]);
 
 		$pdf = PDF::loadView('pdf.letter.covering.sk_menikah', $data, [], [
@@ -27,8 +38,6 @@ class SKMenikahController extends Controller
 			'margin_bottom'	=> 0,
 		]);
 
-		// return ;
-		// ob_clean();
 		$pdf = $pdf->output();
 		return response($pdf, 200,
 			[

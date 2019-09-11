@@ -10,21 +10,21 @@
 			</tr>
 			<tr>
 				<td style="text-align: center;">
-					<div style="font-size: 16px;font-weight: bold">
-						KEPALA DESA CIMENTENG
+					<div style="font-size: 16px;font-weight: bold; text-transform: uppercase;">
+						KEPALA DESA {{ $desa->profil_nama }}
 					</div>
 				</td>
 			</tr>
 			<tr>
 				<td style="text-align: center">
 					<div style="font-size: 16px">
-						<strong>KECAMATAN NAGRAK KABUPATEN SUKABUMI</strong>
+						<strong style="text-transform: uppercase;">KECAMATAN {{ $desa->profil_kecamatan }} KABUPATEN {{ $desa->profil_kabupaten }}</strong>
 						<br>
 						<br>
-						<u>SURAT KETERANGAN KELAHIRAN</u>
+						<u style="text-transform: uppercase;">SURAT KETERANGAN KELAHIRAN</u>
 						<br>
 						<span style="font-size: 15px; padding-top:10px;">
-							Nomor : 474.1 /      / Pemdes /2018
+							Nomor : {{ $coveringLetter->nomor_surat }}
 						</span>
 						<br>
 						<br>
@@ -45,7 +45,7 @@
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">b. </td>
 							<td style="width: 110px">Jabatan</td>
-							<td>: Kepala Desa Cimenteng</td>
+							<td>: Kepala Desa {{ $desa->profil_nama }}</td>
 						</tr>
 					</table>
 					<br>
@@ -55,17 +55,17 @@
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="width: 110px">Nama </td>
-							<td style="text-transform: uppercase;">: OON</td>
+							<td style="text-transform: uppercase;">: {{ $ibu->nama_lengkap }}</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="width: 110px">Tempat Tgl/lahir</td>
-							<td>: Jakarta, 21-12-1956</td>
+							<td>: {{ $ibu->tempat_lahir }}, {{ $ibu->tanggal_lahir }}</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="width: 110px">Jenis kelamin</td>
-							<td>: Perempuan</td>
+							<td>: {{ $ibu->jenis_kelamin ? 'Laki Laki' : ' Perempuan' }}</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
@@ -75,18 +75,18 @@
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="width: 110px">Pekerjaan</td>
-							<td>: Mengurus Rumah Tangga</td>
+							<td>: {{ $ibu->jenis_pekerjaan }}</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="width: 110px">Agama</td>
-							<td>: Islam</td>
+							<td>: {{ $ibu->agama }}</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="text-align: left; vertical-align: top; width: 110px">Alamat</td>
 							<td style="padding-right: 150px;">
-								: Kp. Warung Kawung  RT. 003/006   Desa Cimenteng Kecamatan Nagrak  Kabupaten Sukabumi
+								: {{ $ibu->alamat }}
 							</td>
 						</tr>
 						<tr>
@@ -97,45 +97,45 @@
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="width: 110px">Nama </td>
-							<td style="text-transform: uppercase;">: UMAR SANI ( ALMARHUM )</td>
+							<td style="text-transform: uppercase;">: {{ $ayah->nama_lengkap }}</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="width: 110px">Tempat Tgl/lahir</td>
-							<td>: -</td>
+							<td>: {{ $ayah->tempat_lahir }}, {{ $ayah->tanggal_lahir }}</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="width: 110px">Jenis kelamin</td>
-							<td>: -</td>
+							<td>: {{ $ayah->jenis_kelamin ? 'Laki Laki' : 'Perempuan' }}</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="width: 110px">Warga Negara</td>
-							<td>: -</td>
+							<td>: Indonesia</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="width: 110px">Pekerjaan</td>
-							<td>: -</td>
+							<td>: {{ $ayah->jenis_pekerjaan }}</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="width: 110px">Agama</td>
-							<td>: -</td>
+							<td>: {{ $ayah->agama }}</td>
 						</tr>
 						<tr>
 							<td style="text-align: right; vertical-align: top; width: 3em">&nbsp;&nbsp; </td>
 							<td style="text-align: left; vertical-align: top; width: 110px">Alamat</td>
 							<td style="padding-right: 150px;">
-								: -
+								: {{ $ayah->alamat }}
 							</td>
 						</tr>
 					</table>
 					<br>
 					<br>
 
-					<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pada <i><b>26 Juli 1988 di: Sukabumi</b></i> telah melahirkan seorang anak jenis kelamin <i><b>Perempuan</b></i> dengan diberi nama = <i><b>ALPIAH</b></i> = kelahiran yang ke 2 ( Dua ).</P>
+					<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pada <i><b>{{ date('d F Y', strtotime($coveringLetter->tanggal)) }} di: {{ $desa->profil_kabupaten }}</b></i> telah melahirkan seorang anak jenis kelamin <i><b>{{ $coveringLetter->jenis_kelamin ? 'Laki Laki' : 'Perempuan' }}</b></i> dengan diberi nama = <i><b>{{ $coveringLetter->nama }}</b></i> = kelahiran yang ke {{ $coveringLetter->anak_ke }}.</P>
 					<br>
 
 					<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Surat Keterangan ini dibuat atas dasar pengakuan yang berkepentingan yang telah menyadari bahwa pengakuannya ini mengakibatkan status hukum yang berkepentingan dan atau anak-anaknya.</P>
@@ -150,10 +150,10 @@
 					<table>
 						<tr>
 							<td style="line-height: 2em;padding-left: 55%;">
-								Dikeluarkan di: Cimenteng
+								Dikeluarkan di: {{ $desa->profil_nama }}
 								<br>
-								<u>Pada tanggal : 02 Januari 2018</u>
-								<b>KEPALA DESA CIMENTENG</b>
+								<u>Pada tanggal : {{ date('d F Y') }}</u>
+								<b>KEPALA DESA {{ $desa->profil_nama }}</b>
 								<br>
 								<br>
 								<br>
@@ -163,8 +163,8 @@
 						</tr>
 						<tr>
 							<td style="padding-top: 3em; text-align: center;">
-								Jl. R. Natapraja No.01 Desa Cimenteng Kecamatan Nagrak Kabupaten Sukabumi <br>
-								No HP 081563496263 - 085864836300 e-mail : desacimenteng@gmail.com Kode Pos 43356
+								{{ $desa->profil_alamat }} Desa {{ $desa->profil_nama }} Kecamatan {{ $desa->profil_kecamatan }} <br>
+								Kabupaten {{ $desa->profil_kabupaten }} e-mail : desa{{ strtolower($desa->profil_nama) }}@gmail.com Kode Pos {{ $desa->profil_kode_pos }}
 							</td>
 						</tr>
 					</table>

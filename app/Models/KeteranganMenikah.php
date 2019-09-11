@@ -59,7 +59,7 @@ class KeteranganMenikah extends Model
     use SoftDeletes;
 
     public $table = 'keterangan_menikahs';
-    
+
 
     protected $dates = ['deleted_at'];
 
@@ -71,6 +71,7 @@ class KeteranganMenikah extends Model
         'nik_mempelai_dua',
         'saksi_satu',
         'saksi_dua',
+        'tanggal_menikah',
         'pembantu_ppn'
     ];
 
@@ -94,13 +95,14 @@ class KeteranganMenikah extends Model
      */
     public static $rules = [
         'nomor' => 'required',
-        'footer' => 'required',
         'nik_mempelai_satu' => 'required',
         'nik_mempelai_dua' => 'required',
         'saksi_satu' => 'required',
         'saksi_dua' => 'required',
-        'pembantu_ppn' => 'required'
+        'pembantu_ppn' => 'required',
+        'tanggal_menikah' => 'required',
+        'footer' => 'required',
     ];
 
-    
+
 }

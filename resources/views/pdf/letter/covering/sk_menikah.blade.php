@@ -11,14 +11,14 @@
 				<td style="text-align: center; border-bottom: 5px solid black; padding-left: 0; padding-right: 110px">
 					<div style="font-size: 24px;font-weight: bold">
 						KEMENTRIAN AGAMA
-						<p style="font-size:20px;font-weight:bold">
-							KANTOR URUSAN AGAMA KECAMATAN NAGRAK
+						<p style="font-size:20px;font-weight:bold; text-transform: uppercase;">
+							KANTOR URUSAN AGAMA KECAMATAN {{ $desa->profil_kecamatan }}
 						</p>
-						<p style="font-size:16px;font-weight:bold">
-							KABUPATEN SUKABUMI
+						<p style="font-size:16px;font-weight:bold; text-transform: uppercase;">
+							KABUPATEN {{ $desa->profil_kabupaten }}
 						</p>
 						<P style="font-size:13px;font-weight:normal">
-							JL. MESJID ATTAQWA NO. 1 NGARAK SELATAN TELP. (0266) 535143
+							{{ $desa->profil_alamat }}
 						</P>
 					</div>
 				</td>
@@ -29,7 +29,7 @@
 						SURAT KETERANGAN MENIKAH
 					</div>
 					<div style="font-weight: normal;font-size: 14px;">
-						Nomor : KK.10.02/ PW.01/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/2017
+						Nomor : {{ $coveringLetter->nomor }}
 					</div>
 				</td>
 			</tr>
@@ -47,15 +47,15 @@
 							<tr>
 								<td rowspan="7" style="text-align: right; vertical-align: top; width: 50px">1. </td>
 								<td style="width: 150px">Nama Lengkap</td>
-								<td style="text-transform: uppercase;">: teti sumiarti</td>
+								<td style="text-transform: uppercase;">: {{ $mlakilaki->nama_lengkap }}</td>
 							</tr>
 							<tr>
 								<td style="width: 150px">Bin</td>
-								<td style="text-transform: uppercase;">: mansur</td>
+								<td style="text-transform: uppercase;">: {{ $mlakilaki->nama_lengkap_ayah }}</td>
 							</tr>
 							<tr>
 								<td style="width: 150px">Tempat. Tgl. Lahir</td>
-								<td>: Sukabumi, 06-11-1970</td>
+								<td>: {{ $mlakilaki->tempat_lahir }}, {{ $mlakilaki->tangga_lahir }}</td>
 							</tr>
 							<tr>
 								<td style="width: 150px">Warganegara</td>
@@ -63,32 +63,31 @@
 							</tr>
 							<tr>
 								<td style="width: 150px">Agama</td>
-								<td>: Islam</td>
+								<td>: {{ $mlakilaki->agama }}</td>
 							</tr>
 							<tr>
 								<td style="width: 150px">Pekerjaan</td>
-								<td>: -</td>
+								<td>: {{ $mlakilaki->jenis_pekerjaan }}</td>
 							</tr>
 							<tr>
 								<td style="text-align: left; vertical-align: top;width: 150px">Alamat</td>
 								<td>
-									: Kp. Cibodas  RT. 001/010<br>
-									&nbsp; Desa Cimenteng Kecamatan Nagrak <br>
-									&nbsp; Kabupaten Sukabumi
+									: {{ $mlakilaki->alamat }}
 								</td>
 							</tr>
+
 							<tr>
 								<td rowspan="7" style="text-align: right; vertical-align: top; width: 50px">2. </td>
 								<td style="width: 150px">Nama Lengkap</td>
-								<td style="text-transform: uppercase;">: acep supriadi</td>
+								<td style="text-transform: uppercase;">: {{ $mperempuan->nama_lengkap }}</td>
 							</tr>
 							<tr>
-								<td style="width: 150px">Bin</td>
-								<td style="text-transform: uppercase;">: ipan</td>
+								<td style="width: 150px">Binti</td>
+								<td style="text-transform: uppercase;">: {{ $mperempuan->nama_lengkap_ayah }}</td>
 							</tr>
 							<tr>
 								<td style="width: 150px">Tempat. Tgl. Lahir</td>
-								<td>: Bogor, 22-05-1976</td>
+								<td>: {{ $mperempuan->tempat_lahir }}, {{ $mperempuan->tangga_lahir }}</td>
 							</tr>
 							<tr>
 								<td style="width: 150px">Warganegara</td>
@@ -96,39 +95,46 @@
 							</tr>
 							<tr>
 								<td style="width: 150px">Agama</td>
-								<td>: Islam</td>
+								<td>: {{ $mperempuan->agama }}</td>
 							</tr>
 							<tr>
 								<td style="width: 150px">Pekerjaan</td>
-								<td>: Karyawan Swasta</td>
+								<td>: {{ $mperempuan->jenis_pekerjaan }}</td>
 							</tr>
 							<tr>
 								<td style="text-align: left; vertical-align: top;width: 150px">Alamat</td>
 								<td>
-									: Kp. Cicadas  RT. 003/006<br>
-									&nbsp; Desa Cicadas Kecamatan Gunung Putri <br>
-									&nbsp; Kabupaten Bogor
+									: {{ $mperempuan->alamat }}
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table>
+						<tbody>
+							<tr>
+								<td style="text-align: justify;">
+									<br>
+									Kedua orang tersebut telah menikah pada hari {{ date('l', strtotime($coveringLetter->tanggal_menikah)) }} tanggal {{ date('d', strtotime($coveringLetter->tanggal_menikah)) }}
+									Bulan {{ date('F', strtotime($coveringLetter->tanggal_menikah)) }} Tahun {{ date('Y', strtotime($coveringLetter->tanggal_menikah)) }} di hadapan saksi-saksi sebagai berikut:
+									<br>
+									<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. {{ $coveringLetter->saksi_satu }} <br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. {{ $coveringLetter->saksi_dua }}
+									<br>
+									<br>
+									<p>Sehubungan persyaratan administrasinya belum lengkap maka sementara buku nikah belum bisa diproses.</p>
+									<br>
+									<p>Demikian Surat keterangan ini dibuat sebagai bukti sementara dan kepada yang berkepentingan mengetahui adanya.</p>
 								</td>
 							</tr>
 						</tbody>
 					</table>
 					<br>
-					Kedua orang tersebut telah menikah pada hari Sabtu tanggal 29 <br>
-					Bulan Nopember Tahun 2013 di hadapan saksi-saksi sebagai berikut:
-					<br>
-					<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. hendi <br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. ajat sudrajat
-					<br>
-					<br>
-					<p>Sehubungan persyaratan administrasinya belum lengkap maka sementara buku nikah belum bisa diproses.</p>
-					<br>
-					<p>Demikian Surat keterangan ini dibuat sebagai bukti sementara dan kepada yang berkepentingan mengetahui adanya.</p>
 				</td>
 			</tr>
 			<tr>
 				<td style="padding-left: 55%; text-align: center;">
-					Cimenteng, 24 Nopember 2015
+					Cimenteng, {{ date('d F Y') }}
 					<br>
 					<br>
 					Pembantu PPN
@@ -138,16 +144,21 @@
 					<br>
 					<br>
 					<br>
-					<u style="text-transform: uppercase;">Unang Muslihat</u>
+					<u style="text-transform: uppercase;">{{ $coveringLetter->pembantu_ppn }}</u>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<p>{{ $coveringLetter->footer }}</p>
 				</td>
 			</tr>
 		</tbody>
 	</table>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
 	<br>
 	<br>
 	<br>
@@ -166,14 +177,14 @@
 				<td style="text-align: center; border-bottom: 5px solid black; padding-left: 0; padding-right: 110px">
 					<div style="font-size: 24px;font-weight: bold">
 						KEMENTRIAN AGAMA
-						<p style="font-size:20px;font-weight:bold">
-							KANTOR URUSAN AGAMA KECAMATAN NAGRAK
+						<p style="font-size:20px;font-weight:bold; text-transform: uppercase;">
+							KANTOR URUSAN AGAMA KECAMATAN {{ $desa->profil_kecamatan }}
 						</p>
-						<p style="font-size:16px;font-weight:bold">
-							KABUPATEN SUKABUMI
+						<p style="font-size:16px;font-weight:bold; text-transform: uppercase;">
+							KABUPATEN  {{ $desa->profil_kabupaten }}
 						</p>
 						<P style="font-size:13px;font-weight:normal">
-							JL. MESJID ATTAQWA NO. 1 NGARAK SELATAN TELP. (0266) 535143
+							{{ $desa->profil_alamat }}
 						</P>
 					</div>
 				</td>
@@ -184,7 +195,7 @@
 						SURAT KETERANGAN MENIKAH
 					</div>
 					<div style="font-weight: normal;font-size: 14px;">
-						Nomor : KK.10.02/ PW.01/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/2017
+						Nomor : {{ $coveringLetter->nomor }}
 					</div>
 				</td>
 			</tr>
@@ -268,23 +279,31 @@
 							</tr>
 						</tbody>
 					</table>
-					<br>
-					Nama tersebut telah menikah pada hari ............... tanggal ......
-					Bulan ........................ tahun ........, dihadapan saksi-saksi sebagai berikut :
-					<br>
-					<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. ........................................... <br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. ...........................................
-					<br>
-					<br>
-					<p>Sehubungan persyaratan administrasinya belum lengkap maka sementara buku nikah belum bisa diproses.</p>
-					<br>
-					<p>Demikian Surat keterangan ini dibuat sebagai bukti sementara dan kepada yang berkepentingan mengetahui adanya.</p>
+					<table style="width: 100%">
+						<tbody>
+							<tr>
+								<td style="text-align: justify;">
+									<br>
+									Nama tersebut telah menikah pada hari ............... tanggal ......
+									Bulan ........................ tahun ........, dihadapan saksi-saksi sebagai berikut :
+									<br>
+									<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. ........................................... <br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. ...........................................
+									<br>
+									<br>
+									<p>Sehubungan persyaratan administrasinya belum lengkap maka sementara buku nikah belum bisa diproses.</p>
+									<br>
+									<p>Demikian Surat keterangan ini dibuat sebagai bukti sementara dan kepada yang berkepentingan mengetahui adanya.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</td>
 			</tr>
 			<tr>
 				<td style="padding-left: 55%; text-align: center;">
-					Nagrak, .......................................
+					{{ $desa->profil_kecamatan }}, .......................................
 					<br>
 					<br>
 					Pembantu PPN
@@ -304,7 +323,7 @@
 					<br>
 					<br>
 					<br>
-					<p>Catatan : Keterangan ini hanya bersifat sementara</p>
+					<p>{{ $coveringLetter->footer }}</p>
 				</td>
 			</tr>
 		</tbody>

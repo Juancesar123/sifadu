@@ -6,28 +6,22 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\suratketerangandomisili;
 use App\Models\datapenduduk;
+use App\Models\Profil;
 use PDF;
 use App\Repositories\suratketerangandomisiliRepository;
 
 class DomicileLetterController extends Controller
 {
-	/** @var  suratketerangandomisiliRepository */
-	private $suratketerangandomisiliRepository;
-
-	public function __construct(suratketerangandomisiliRepository $suratketerangandomisiliRepo)
-	{
-		$this->suratketerangandomisiliRepository = $suratketerangandomisiliRepo;
-	}
-
-
 	public function cetak($id) {
 
 		$coveringLetter = suratketerangandomisili::findOrFail($id);
+		$desa			= Profil::findOrFail(1);
 		$citizen        = datapenduduk::findOrFail($coveringLetter->nik);
 
 		// dd(
 		// 	json_decode($coveringLetter),
 		// 	json_decode($citizen),
+		// 	json_decode($desa),
 		// );
 
 		$data = compact([

@@ -148,8 +148,8 @@ Route::resource('dusuns', 'dusunController');
 Route::resource('agamas', 'agamaController');
 
 Route::resource('pajaktanahs', 'pajaktanahController');
-Route :: get('uploadformdatapajak',function(){
-    return view('pajaktanahs.formupload');
+Route::get('uploadformdatapajak',function(){
+	return view('pajaktanahs.formupload');
 });
 Route::post('prosesuploaddatapajak','pajaktanahcontroller@uploadfile');
 Route::get('updatestatuspajak/{id}','pajaktanahcontroller@updatestatus');
@@ -176,14 +176,13 @@ Route::resource('daftarPemilihTetaps', 'DaftarPemilihTetapController');
 
 // Route Surat
 Route::group(['prefix' => "letter/", "namespace" => "Letter"], function () {
-
     Route::group(['prefix' => "covering/", "namespace" => "Covering"], function () {
         Route::get("identity-card/{id}", "IdentityCardController@index")->name("letter.covering.identity_card");
         Route::get("family-card/{id}", "FamilyCardController@index")->name("letter.covering.family_card");
-        Route::get("keterangan-kelahiran/{id}", "KeteranganKelahiranController@cetak");
-        Route::get("keterangan-usaha-baru/{id}", "UsahaBaruController@cetak");
-        Route::get("keterangan-menikah/{id}", "SKMenikahController@cetak");
-        Route::get("keterangan-penghasilan/{id}", "KeteranganPenghasilanController@cetak");
+        Route::get("keterangan-kelahiran/{id}", "KeteranganKelahiranController@cetak")->name('letter.covering.keterangan-kelahiran');
+        Route::get("keterangan-usaha-baru/{id}", "UsahaBaruController@cetak")->name('letter.covering.keterangan-usaha-baru');
+        Route::get("keterangan-menikah/{id}", "SKMenikahController@cetak")->name('letter.covering.keterangan-menikah');
+        Route::get("keterangan-penghasilan/{id}", "KeteranganPenghasilanController@cetak")->name('letter.covering.keterangan-penghasilan');
         Route::get("sktm/{id}", "SKTMController@cetak")->name("letter.covering.sktm");
         Route::get("domicile-letter/{id}", "DomicileLetterController@cetak")->name("letter.covering.domicile-letter");
         Route::get("descwork-letter/{id}", "DescWorkController@index")->name("letter.covering.descwork-letter");

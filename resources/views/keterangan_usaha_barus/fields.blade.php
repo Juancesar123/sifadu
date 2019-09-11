@@ -10,14 +10,14 @@
 
 <!-- Nomor Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('nomor', 'Nomor:') !!}
+    {!! Form::label('nomor', 'Nomor Surat:') !!}
     {!! Form::text('nomor', null, ['class' => 'form-control', 'required']) !!}
 </div>
 
-<!-- Footer Field -->
-<div class="form-group col-sm-12 col-lg-12">
-    {!! Form::label('footer', 'Footer:') !!}
-    {!! Form::textarea('footer', null, ['class' => 'form-control', 'required']) !!}
+<!-- Nomor Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('nama', 'Nama Lembaga:') !!}
+    {!! Form::text('nama', null, ['class' => 'form-control', 'required']) !!}
 </div>
 
 <!-- Jenis Usaha Field -->
@@ -32,10 +32,34 @@
     {!! Form::number('luas_tempat', null, ['class' => 'form-control', 'required']) !!}
 </div>
 
-<!-- Alamat Tempat Field -->
+<!-- Nomor Field -->
 <div class="form-group col-sm-6">
+    {!! Form::label('badan_hukum', 'Badan Hukum:') !!}
+    {!! Form::text('badan_hukum', null, ['class' => 'form-control', 'required']) !!}
+</div>
+
+<!-- Nomor Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('sk_hukum_ham', 'SK Hukum & HAM:') !!}
+    {!! Form::text('sk_hukum_ham', null, ['class' => 'form-control', 'required']) !!}
+</div>
+
+<!-- Nomor Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('no_npwp', 'Nomor NPWP:') !!}
+    {!! Form::text('no_npwp', null, ['class' => 'form-control', 'required']) !!}
+</div>
+
+<!-- Alamat Tempat Field -->
+<div class="form-group col-sm-12">
     {!! Form::label('alamat_tempat', 'Alamat Tempat:') !!}
-    {!! Form::number('alamat_tempat', null, ['class' => 'form-control', 'required']) !!}
+    {!! Form::textarea('alamat_tempat', null, ['class' => 'form-control', 'required']) !!}
+</div>
+
+<!-- Footer Field -->
+<div class="form-group col-sm-12 col-lg-12">
+    {!! Form::label('footer', 'Footer:') !!}
+    {!! Form::textarea('footer', null, ['class' => 'form-control', 'required']) !!}
 </div>
 
 <!-- Submit Field -->

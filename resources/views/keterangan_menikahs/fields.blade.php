@@ -42,6 +42,11 @@
     {!! Form::text('pembantu_ppn', null, ['class' => 'form-control', 'required']) !!}
 </div>
 
+<div class="form-group col-sm-4">
+    {!! Form::label('tanggal_menikah', 'Tanggal menikah') !!}
+    {!! Form::date('tanggal_menikah', isset($data->tanggal_menikah) ? $data->tanggal_menikah : null, ['class' => 'form-control','required' => 'required']) !!}
+</div>
+
 <!-- Footer Field -->
 <div class="form-group col-sm-12 col-lg-12">
     {!! Form::label('footer', 'Footer Cetak Data:') !!}

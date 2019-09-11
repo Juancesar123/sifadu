@@ -29,7 +29,8 @@ class suratpengantarktpDataTable extends DataTable
      */
     public function query(suratpengantarktp $model)
     {
-        return $model->newQuery()->join('datapenduduks', 'suratpengantarktps.nama_atau_nik', '=', 'datapenduduks.id')
+        return $model->newQuery()
+        ->join('datapenduduks', 'suratpengantarktps.nama_atau_nik', '=', 'datapenduduks.id')
         ->select('suratpengantarktps.*','datapenduduks.nama_lengkap','datapenduduks.nik');
     }
 

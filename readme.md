@@ -1,3 +1,6 @@
+http://sifadu.desacimenteng.test/cetakdukacapil/5
+http://sifadu.desacimenteng.test/formpengantarkk/0
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">

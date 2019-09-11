@@ -389,7 +389,7 @@
                     display: inline-block;
                     white-space: nowrap;
                     ">
-                        <div style="font-size:15px;font-weight:bold;width:10px; border-width: 1px; border-style:solid; height:30px;float:left">
+                        <div style="font-size:15px;font-weight:bold;width:10px; border-width: 1px; border-style:solid; height:30px;float:left;">
                             5
                         </div>
                     </td>
@@ -706,40 +706,28 @@
                     white-space: nowrap;
                     ">
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-
                         </div>
                         <div style="width:30px; border-width: 1px; border-style:solid; height:30px;float:left">
-
                         </div>
                     </td>
                 </tr>

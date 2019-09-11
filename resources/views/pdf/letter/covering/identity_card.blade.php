@@ -166,7 +166,7 @@
             <td style="width:40%;">
                 <table class="w-100 box">
                     <tr>
-                        <td>{{ env('DESA_NAME') }}</td>
+                        <td>{{ $desa->profil_nama }}</td>
                     </tr>
                 </table>
             </td>

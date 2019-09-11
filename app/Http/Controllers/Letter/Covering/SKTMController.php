@@ -4,32 +4,25 @@ namespace App\Http\Controllers\Letter\Covering;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Models\suratketerangantidakmampu;
+use App\Models\suratketerangantidakmampu as SKTM;
 use App\Models\datapenduduk;
+use App\Models\Profil;
 use PDF;
 use App\Repositories\suratketerangantidakmampuRepository;
 
 class SKTMController extends Controller
-
 {
-
-	/** @var  suratketerangantidakmampuRepository */
-	private $suratketerangantidakmampuRepository;
-
-	public function __construct(suratketerangantidakmampuRepository $suratketerangantidakmampuRepo)
-	{
-		$this->suratketerangantidakmampuRepository = $suratketerangantidakmampuRepo;
-	}
-
-
 	public function cetak($id) {
-
-		$coveringLetter	= suratketerangantidakmampu::findOrFail($id);
+		$coveringLetter	= SKTM::findOrFail($id);
+		$desa			= Profil::findOrFail(1);
 		$citizen		= datapenduduk::findOrFail($coveringLetter->nik);
+
 		// dd(
 		// 	json_decode($coveringLetter),
+		// 	json_decode($desa),
 		// 	json_decode($citizen),
 		// );
+
 		$letter_number = $coveringLetter->nomor_surat;
 		$footer_cetak_data = $coveringLetter->footer_cetak_data;
 		$name    = $citizen->nama_lengkap;
@@ -58,7 +51,8 @@ class SKTMController extends Controller
 			"religion",
 			"nik",
 			"job",
-			'footer_cetak_data'
+			'footer_cetak_data',
+			'desa',
 		]);
 
 

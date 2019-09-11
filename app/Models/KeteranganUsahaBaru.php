@@ -58,6 +58,10 @@ class KeteranganUsahaBaru extends Model
         'nik',
         'nomor',
         'footer',
+        'nama',
+        'no_npwp',
+        'badan_hukum',
+        'sk_hukum_ham',
         'jenis_usaha',
         'luas_tempat',
         'alamat_tempat'
@@ -70,8 +74,13 @@ class KeteranganUsahaBaru extends Model
      */
     protected $casts = [
         'nomor' => 'string',
+        'nama' => 'string',
+        'no_npwp' => 'string',
+        'badan_hukum' => 'string',
+        'sk_hukum_ham' => 'string',
+        'alamat_tempat' => 'string',
         'footer' => 'string',
-        'jenis_usaha' => 'string'
+        'jenis_usaha' => 'string',
     ];
 
     /**
@@ -81,6 +90,10 @@ class KeteranganUsahaBaru extends Model
      */
     public static $rules = [
         'nik' => 'required',
+        'nama' => 'required',
+        'no_npwp' => 'required',
+        'badan_hukum' => 'required',
+        'sk_hukum_ham' => 'required',
         'nomor' => 'required',
         'footer' => 'required',
         'jenis_usaha' => 'required',

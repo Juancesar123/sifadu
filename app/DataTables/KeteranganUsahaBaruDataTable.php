@@ -65,10 +65,14 @@ class KeteranganUsahaBaruDataTable extends DataTable
     {
         return [
             'nomor',
-            'footer',
+            'nama',
+            'no_npwp',
+            'badan_hukum',
+            'sk_hukum_ham',
             'jenis_usaha',
             'luas_tempat',
-            'alamat_tempat'
+            'alamat_tempat',
+            'footer',
         ];
     }
 

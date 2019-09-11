@@ -9,16 +9,16 @@
 					<img style="width: 120px;height: auto" src="{{asset('img/logo/ikhlas_beramal.png')}}" alt="">
 				</td>
 				<td style="text-align: center; border-bottom: 5px solid black; padding-left: 0; padding-right: 110px">
-					<div style="font-size: 16px;font-weight: bold">
-						PEMERINTAH KABUPATEN SUKABUMI
+					<div style="font-size: 16px;font-weight: bold; text-transform: uppercase;">
+						PEMERINTAH KABUPATEN {{ $desa->profil_kabupaten }}
 						<p style="font-size:16px;font-weight:bold">
-							KECAMATAN NAGRAK
+							KECAMATAN {{ $desa->profil_kecamatan }}
 						</p>
 						<p style="font-size:20px;font-weight:bold">
-							KEPALA DESA {{ strtoupper(env('DESA_NAME')) }}
+							KEPALA DESA {{ $desa->profil_nama }}
 						</p>
 						<P style="font-size:13px;font-weight:normal">
-							JL. MESJID ATTAQWA NO. 1 NGARAK SELATAN TELP. (0266) 535143
+							{{ $desa->profil_alamat }}
 						</P>
 					</div>
 				</td>
@@ -117,8 +117,8 @@
 			<tr>
 				<td></td>
 				<td style="text-align:left;padding: 25px 0 25px 375px; font-size: 15px;">
-					<p>Dibuat di &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Cimenteng</p>
-					<p>Pada tanggal : {{ date('d F Y', strtotime($dibuat_pada)) }}</p>
+					<p>Dibuat di &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: {{ $desa->profil_nama }}</p>
+					<p>Pada tanggal : {{ date('d F Y') }}</p>
 				</td>
 			</tr>
 		</tbody>
@@ -129,8 +129,8 @@
 			<tr style='border: 1px solid black'>
 				<td style="text-align:center; padding-top:0px; padding-bottom:30px;">
 					<div style="font-size: 15px;">
-						<p>Curug Kembar</p>
-						<p style="margin-bottom:100px;">PEMOHON DESA CIMENTENG</p><br>
+						<p>{{ $desa->profil_kecamatan }}</p>
+						<p style="margin-bottom:100px; text-transform: uppercase;">PEMOHON DESA {{ $desa->profil_nama }}</p><br>
 						<br>
 						<br>
 						<br>
@@ -144,8 +144,8 @@
 				</td>
 				<td style="text-align:center; padding-top:0px; padding-bottom:30px;">
 					<div style="font-size: 15px;">
-						<p>Curug Kembar</p>
-						<p style="margin-bottom:100px;">KEPALA DESA CIMENTENG</p><br>
+						<p>{{ $desa->profil_kecamatan }}</p>
+						<p style="margin-bottom:100px; text-transform: uppercase;">KEPALA DESA {{ $desa->profil_nama }}</p><br>
 						<br>
 						<br>
 						<br>
