@@ -20,11 +20,14 @@ class KeteranganKelahiranRepository extends BaseRepository
      * @var array
      */
     protected $fieldSearchable = [
+        'nik_suami',
+        'nik_istri',
         'nomor_surat',
         'tanggal',
         'tempat',
         'jenis_kelamin',
-        'nama'
+        'nama',
+        'anak_ke',
     ];
 
     /**
