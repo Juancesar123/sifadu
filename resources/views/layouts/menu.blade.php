@@ -6,6 +6,7 @@ Request::is('parameterstatuskawins*') ||
 Request::is('jenispekerjaans*') ||
 Request::is('pendidikans*') ||
 Request::is('dusuns*') ||
+Request::is('parameterIndikatorKemiskinans*') ||
 Request::is('agamas*');
 @endphp
 <li class="treeview {{ $menu_open ? 'menu-open' : '' }}">
@@ -37,6 +38,9 @@ Request::is('agamas*');
 		</li>
 		<li class="{{ Request::is('agamas*') ? 'active' : '' }}">
 			<a href="{!! route('agamas.index') !!}"><i class="fa fa-circle-o"></i>Agama</a>
+		</li>
+		<li class="{{ Request::is('parameterIndikatorKemiskinans*') ? 'active' : '' }}">
+			<a href="{!! route('parameterIndikatorKemiskinans.index') !!}"><i class="fa fa-circle-o"></i><span>Indikator Kemiskinans</span></a>
 		</li>
 	</ul>
 </li>
@@ -559,7 +563,7 @@ Request::is('perpustakaan*');
 		</a>
 	</li>
 	<li>
-		<a href="{!! route('datakosong.index') !!}">
+		<a href="{!! route('kemiskinan.index') !!}">
 			<i class="fa fa-users"></i> <span>Kemiskinan</span>
 		</a>
 	</li>
@@ -597,4 +601,6 @@ Request::is('perpustakaan*');
 		opacity:0.6;
 	}
 </style>
-@endsection
+@endsection<li class="{{ Request::is('kemiskinan*') ? 'active' : '' }}">
+    <a href="{!! route('kemiskinan.index') !!}"><i class="fa fa-edit"></i><span>Penduduk Miskins</span></a>
+</li>

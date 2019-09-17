@@ -205,5 +205,7 @@ class datapenduduk extends Model
         'status_KTP' => 'required'
     ];
 
-
+    public function kemiskinan() {
+    	return $this->hasMany('App\Models\PendudukMiskin', 'id_penduduk', 'id');
+    }
 }

@@ -363,3 +363,7 @@ VIEW :customDatas
 NOTE : custom data GIS
 */
 Route::resource('customDatas', 'CustomDataController');
+
+Route::resource('parameterIndikatorKemiskinans', 'ParameterIndikatorKemiskinanController');
+
+Route::resource('kemiskinan', 'PendudukMiskinController');

@@ -91,3 +91,7 @@ Route::resource('keterangan_penghasilans', 'KeteranganPenghasilanAPIController')
 Route::resource('keterangan_menikahs', 'KeteranganMenikahAPIController');
 
 Route::resource('keterangan_usaha_barus', 'KeteranganUsahaBaruAPIController');
+
+Route::resource('parameter_indikator_kemiskinans', 'ParameterIndikatorKemiskinanAPIController');
+
+Route::resource('penduduk_miskins', 'PendudukMiskinAPIController');
