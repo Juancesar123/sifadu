@@ -47,6 +47,29 @@ Request::is('agamas*');
 
 @php
 $menu_open =
+Request::is('logo-login*') ||
+Request::is('logo-banner-home*');
+@endphp
+<li class="treeview {{ $menu_open ? 'menu-open' : '' }}">
+	<a href="#">
+		<i class="fa fa-picture-o"></i>
+		<span>Logo</span>
+		<span class="pull-right-container">
+			<i class="fa fa-angle-left pull-right"></i>
+		</span>
+	</a>
+	<ul class="treeview-menu" style="display: {{ $menu_open ? 'block' : 'none' }}">
+		<li class="{{ Request::is('logo-login*') ? 'active' : '' }}">
+			<a href="{{ url('logo-login') }}"><i class="fa fa-circle-o"></i>Logo Login</a>
+		</li>
+		<li class="{{ Request::is('logo-banner-home*') ? 'active' : '' }}">
+			<a href="{{ url('logo-banner-home') }}"><i class="fa fa-circle-o"></i>Logo Banner Home</a>
+		</li>
+	</ul>
+</li>
+
+@php
+$menu_open =
 Request::is('potensiPertambangans*') ||
 Request::is('perkebunans*') ||
 Request::is('peternakans*') ||
@@ -601,6 +624,4 @@ Request::is('perpustakaan*');
 		opacity:0.6;
 	}
 </style>
-@endsection<li class="{{ Request::is('kemiskinan*') ? 'active' : '' }}">
-    <a href="{!! route('kemiskinan.index') !!}"><i class="fa fa-edit"></i><span>Penduduk Miskins</span></a>
-</li>
+@endsection

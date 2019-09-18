@@ -47,8 +47,6 @@ Route::resource('penyakitmenular', 'PenyakitMenularController');
 
 Route::resource('bencanaalam', 'BencanaAlamController');
 
-Route::resource('kemiskinan', 'KemiskinanController');
-
 Route::resource('puskesmas', 'PuskesmasController');
 
 Route::resource('bidan', 'BidanController');
@@ -90,9 +88,6 @@ Route::resource('posyandu', 'PosyanduController');
 Route::resource('pendudukpindahs', 'pendudukpindahController')->middleware('auth');;
 
 Route::resource('pengangguran', 'PengangguranController');
-
-Route::get('kemiskinan/getnik', 'KemiskinanController@getnik');
-Route::resource('kemiskinan', 'KemiskinanController');
 
 Route::resource('rencanapembangunans', 'rencanapembangunanController');
 
@@ -367,3 +362,9 @@ Route::resource('customDatas', 'CustomDataController');
 Route::resource('parameterIndikatorKemiskinans', 'ParameterIndikatorKemiskinanController');
 
 Route::resource('kemiskinan', 'PendudukMiskinController');
+
+Route::get('logo-login', 'LogoController@getLogoLogin');
+Route::put('logo-login', 'LogoController@putLogoLogin');
+
+Route::get('logo-banner-home', 'LogoController@getLogoBannerHome');
+Route::put('logo-banner-home', 'LogoController@putLogoBannerHome');

@@ -7,11 +7,12 @@ use App\Http\Requests;
 use App\Http\Requests\CreatePendudukMiskinRequest;
 use App\Http\Requests\UpdatePendudukMiskinRequest;
 use App\Models\datapenduduk as Penduduk;
+use App\Models\PendudukMiskin;
+use App\Models\ParameterIndikatorKemiskinan;
 use App\Repositories\PendudukMiskinRepository;
 use Flash;
 use App\Http\Controllers\AppBaseController;
 use Response;
-use DB;
 
 class PendudukMiskinController extends AppBaseController
 {
@@ -25,56 +26,33 @@ class PendudukMiskinController extends AppBaseController
     {
         return $pendudukMiskinDataTable->render('penduduk_miskins.index');
     }
-
-    public function create()
-    {
-        return view('penduduk_miskins.create');
-    }
-    public function store(CreatePendudukMiskinRequest $request)
-    {
-        $input = $request->all();
-
-        $pendudukMiskin = $this->pendudukMiskinRepository->create($input);
-
-        Flash::success('Penduduk Miskin saved successfully.');
-
-        return redirect(route('kemiskinan.index'));
-    }
     public function show($id_penduduk)
     {
-        $penduduk = Penduduk::findWithoutFail($id_penduduk);
-
-        if (empty($penduduk)) {
-            Flash::error('Penduduk Miskin not found');
-
-            return redirect(route('kemiskinan.index'));
-        }
-        dd($penduduk);
+        $penduduk = Penduduk::with('kemiskinan.indikator')->findOrFail($id_penduduk);
+        // dd(json_decode($penduduk));
         return view('penduduk_miskins.show')->with('penduduk', $penduduk);
     }
     public function edit($id)
     {
-        $pendudukMiskin = $this->pendudukMiskinRepository->findWithoutFail($id);
-
-        if (empty($pendudukMiskin)) {
-            Flash::error('Penduduk Miskin not found');
-
-            return redirect(route('kemiskinan.index'));
-        }
-
-        return view('penduduk_miskins.edit')->with('pendudukMiskin', $pendudukMiskin);
+        $penduduk = Penduduk::with('kemiskinan')->findOrFail($id);
+        $indikator = ParameterIndikatorKemiskinan::select('id','indikator_kemiskinan')->get();
+        // dd(
+        // 	json_decode($penduduk),
+        // 	array_column($penduduk->kemiskinan->toArray(), 'id_indikator_kemiskinan'),
+        // 	json_decode($indikator),
+        // );
+        return view('penduduk_miskins.edit', compact('penduduk', 'indikator'));
     }
     public function update($id, UpdatePendudukMiskinRequest $request)
     {
-        $pendudukMiskin = $this->pendudukMiskinRepository->findWithoutFail($id);
-
-        if (empty($pendudukMiskin)) {
-            Flash::error('Penduduk Miskin not found');
-
-            return redirect(route('kemiskinan.index'));
+    	// dd($request->all());
+        PendudukMiskin::where('id_penduduk', $request->id_penduduk)->delete();
+        foreach ($request->id_indikator_kemiskinan as $key => $value) {
+	        PendudukMiskin::create([
+	        	'id_penduduk'=>$request->id_penduduk,
+	        	'id_indikator_kemiskinan'=>$value
+	        ]);
         }
-
-        $pendudukMiskin = $this->pendudukMiskinRepository->update($request->all(), $id);
 
         Flash::success('Penduduk Miskin updated successfully.');
 
@@ -82,9 +60,9 @@ class PendudukMiskinController extends AppBaseController
     }
     public function destroy($id)
     {
-        $pendudukMiskin = $this->pendudukMiskinRepository->findWithoutFail($id);
+        $penduduk = $this->pendudukMiskinRepository->findWithoutFail($id);
 
-        if (empty($pendudukMiskin)) {
+        if (empty($penduduk)) {
             Flash::error('Penduduk Miskin not found');
 
             return redirect(route('kemiskinan.index'));

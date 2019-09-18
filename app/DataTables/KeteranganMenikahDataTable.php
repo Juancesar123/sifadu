@@ -69,14 +69,12 @@ class KeteranganMenikahDataTable extends DataTable
     {
         return [
             'nomor',
-            'nik_mempelai_satu',
             [
                 'name' => 'ms.nama_lengkap',
                 'data'  => 'ml',
                 'title' => 'Mempelai Laki-laki',
                 'defaultContent'    => ''
             ],
-            'nik_mempelai_dua',
             [
                 'name' => 'md.nama_lengkap',
                 'data'  => 'mp',

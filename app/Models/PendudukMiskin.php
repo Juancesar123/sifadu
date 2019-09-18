@@ -30,34 +30,20 @@ use Eloquent as Model;
 class PendudukMiskin extends Model
 {
     public $table = 'penduduk_miskins';
-
-
     public $fillable = [
         'id_penduduk',
         'id_indikator_kemiskinan'
     ];
-
-    /**
-     * The attributes that should be casted to native types.
-     *
-     * @var array
-     */
     protected $casts = [
 
     ];
-
-    /**
-     * Validation rules
-     *
-     * @var array
-     */
     public static $rules = [
         'id_penduduk' => 'required',
         'id_indikator_kemiskinan' => 'required'
     ];
 
     public function indikator() {
-    	return $this->hasMany('App\Models\ParameterIndikatorKemiskinan', 'id', 'id_indikator_kemiskinan');
+    	return $this->hasOne('App\Models\ParameterIndikatorKemiskinan', 'id', 'id_indikator_kemiskinan');
     }
     public function penduduk() {
     	return $this->belongsTo('App\Models\datapenduduk', 'id_penduduk', 'id');

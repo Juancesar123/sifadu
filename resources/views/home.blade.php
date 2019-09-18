@@ -12,7 +12,7 @@
 	<div class="col-md-12">
 		<div class="col-md-8">
 			<div class="row">
-				<img class="img-responsive" src="{{ asset('img/banner.jpeg') }}">
+				<img class="img-responsive" src="{{ asset('img/logo/'.$logo->value) }}">
 			</div>
 			<section class="content">
 				<div class="row">
